@@ -14,38 +14,6 @@ const Home = () => {
     mensaje: ''
   });
 
-  const [noticias, setNoticias] = useState(noticias_destacadas);
-  const [loadingNews, setLoadingNews] = useState(true);
-
-  useEffect(() => {
-    // Función para consumir API de noticias reales (Ej. NewsAPI o RSS del SII)
-    const fetchNews = async () => {
-      try {
-        // En un entorno real con API KEY, descomentar y usar tu llave:
-        // const res = await fetch('https://newsapi.org/v2/everything?q=impuestos+chile+sii&language=es&apiKey=TU_API_KEY_AQUI');
-        // const data = await res.json();
-        // if (data.articles && data.articles.length >= 3) {
-        //   setNoticias(data.articles.slice(0, 3).map(a => ({
-        //     titulo: a.title,
-        //     fecha: new Date(a.publishedAt).toLocaleDateString(),
-        //     descripcion: a.description || "Noticia en desarrollo..."
-        //   })));
-        //   return;
-        // }
-        
-        // Si no hay API KEY, usamos los datos locales muy relevantes de data.json
-        setNoticias(noticias_destacadas);
-      } catch (error) {
-        console.error("Error cargando API de noticias. Usando respaldo local.", error);
-        setNoticias(noticias_destacadas);
-      } finally {
-        setLoadingNews(false);
-      }
-    };
-
-    fetchNews();
-  }, [noticias_destacadas]);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -204,6 +172,32 @@ const Home = () => {
         <div className="about-image"></div>
       </section>
 
+      {/* 5.5. Constitución de Sociedades Grid */}
+      <section className="news-section" style={{background: '#f9f9f9'}}>
+        <div className="container">
+          <div className="text-center" style={{marginBottom: '50px'}}>
+            <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Constitución de Sociedades</h2>
+            <p style={{color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto'}}>Te asesoramos en la creación de tu empresa según tus objetivos comerciales.</p>
+          </div>
+          
+          <div className="news-grid">
+            {tipos_de_sociedades_que_asesora.map((sociedad, idx) => {
+              const images = [heroImg, aboutImg, heroImg]; 
+              return (
+                <div className="news-card" key={idx}>
+                  <div className="news-image" style={{backgroundImage: `url(${images[idx]})`}}></div>
+                  <div className="news-content">
+                    <h4 className="news-title">{sociedad.tipo}</h4>
+                    <p className="news-meta">{sociedad.nombre_completo || 'Sociedad'}</p>
+                    <p className="news-excerpt">{sociedad.descripcion}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* 6. Actualidad / News Grid */}
       <section className="news-section">
         <div className="container">
@@ -213,23 +207,19 @@ const Home = () => {
           </div>
           
           <div className="news-grid">
-            {loadingNews ? (
-              <p style={{textAlign: 'center', gridColumn: '1 / -1'}}>Cargando actualidad...</p>
-            ) : (
-              noticias.map((noticia, idx) => {
-                const images = [heroImg, aboutImg, heroImg]; 
-                return (
-                  <div className="news-card" key={idx}>
-                    <div className="news-image" style={{backgroundImage: `url(${images[idx]})`}}></div>
-                    <div className="news-content">
-                      <h4 className="news-title">{noticia.titulo}</h4>
-                      <p className="news-meta">{noticia.fecha}</p>
-                      <p className="news-excerpt">{noticia.descripcion.substring(0, 120)}...</p>
-                    </div>
+            {noticias_destacadas.map((noticia, idx) => {
+              const images = [heroImg, aboutImg, heroImg]; 
+              return (
+                <div className="news-card" key={idx}>
+                  <div className="news-image" style={{backgroundImage: `url(${images[idx]})`}}></div>
+                  <div className="news-content">
+                    <h4 className="news-title">{noticia.titulo}</h4>
+                    <p className="news-meta">{noticia.fecha}</p>
+                    <p className="news-excerpt">{noticia.descripcion.substring(0, 120)}...</p>
                   </div>
-                );
-              })
-            )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
