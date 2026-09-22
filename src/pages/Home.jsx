@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import data from '../data.json';
 import { Icon } from '@iconify/react';
 import heroImg from '../assets/images/hero.jpg';
