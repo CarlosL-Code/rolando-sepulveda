@@ -1,0 +1,265 @@
+import { useState } from 'react';
+import data from '../data.json';
+import { Icon } from '@iconify/react';
+import heroImg from '../assets/images/hero.jpg';
+import aboutImg from '../assets/images/about.jpg';
+
+const Home = () => {
+  const { profesional, empresa, tipos_de_sociedades_que_asesora, noticias_destacadas } = data;
+  
+  const [formData, setFormData] = useState({
+    nombre: '',
+    email: '',
+    telefono: '',
+    mensaje: ''
+  });
+
+  const [noticias, setNoticias] = useState(noticias_destacadas);
+  const [loadingNews, setLoadingNews] = useState(true);
+
+  useEffect(() => {
+    // Función para consumir API de noticias reales (Ej. NewsAPI o RSS del SII)
+    const fetchNews = async () => {
+      try {
+        // En un entorno real con API KEY, descomentar y usar tu llave:
+        // const res = await fetch('https://newsapi.org/v2/everything?q=impuestos+chile+sii&language=es&apiKey=TU_API_KEY_AQUI');
+        // const data = await res.json();
+        // if (data.articles && data.articles.length >= 3) {
+        //   setNoticias(data.articles.slice(0, 3).map(a => ({
+        //     titulo: a.title,
+        //     fecha: new Date(a.publishedAt).toLocaleDateString(),
+        //     descripcion: a.description || "Noticia en desarrollo..."
+        //   })));
+        //   return;
+        // }
+        
+        // Si no hay API KEY, usamos los datos locales muy relevantes de data.json
+        setNoticias(noticias_destacadas);
+      } catch (error) {
+        console.error("Error cargando API de noticias. Usando respaldo local.", error);
+        setNoticias(noticias_destacadas);
+      } finally {
+        setLoadingNews(false);
+      }
+    };
+
+    fetchNews();
+  }, [noticias_destacadas]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert('Mensaje enviado. ¡Gracias!');
+    setFormData({ nombre: '', email: '', telefono: '', mensaje: '' });
+  };
+
+  return (
+    <div className="page-home">
+      {/* 1. Hero Section */}
+      <section className="hero">
+        <button className="slider-arrow prev-arrow"><Icon icon="mdi:chevron-left" /></button>
+        <button className="slider-arrow next-arrow"><Icon icon="mdi:chevron-right" /></button>
+
+        <div className="container">
+          <div className="hero-content">
+            <h1>{empresa.nombre.toUpperCase()}</h1>
+            <p>Servicio profesional liderado por {profesional.nombre_completo}, {profesional.profesion}. {profesional.experiencia}.</p>
+            <a href="#contacto" className="hero-link">
+              <Icon icon="mdi:chevron-right" className="icon-cyan"/> ¡Contáctanos ahora!
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Features / Cards Section (Overlapping Hero) */}
+      <section className="features-section">
+        <div className="container">
+          <div className="features-grid">
+            
+            <div className="feature-text-card">
+              <h3>¿Por qué elegirnos?</h3>
+              <p>{empresa.mision.substring(0, 150)}...</p>
+              <a href="#contacto" className="btn btn-dark">LEER MÁS</a>
+            </div>
+            
+            <div className="feature-image-card" style={{backgroundImage: `url(${aboutImg})`}}>
+              <div>
+                <h4>{tipos_de_sociedades_que_asesora[0].tipo}</h4>
+                <p>{tipos_de_sociedades_que_asesora[0].descripcion.substring(0, 100)}...</p>
+              </div>
+              <a href="#contacto" className="btn btn-cyan">LEER MÁS</a>
+            </div>
+
+            <div className="feature-image-card" style={{backgroundImage: `url(${heroImg})`}}>
+              <div>
+                <h4>Transformación Digital</h4>
+                <p>Aplicamos tecnología y sistemas de vanguardia en nuestro trabajo para un servicio de calidad.</p>
+              </div>
+              <a href="#contacto" className="btn btn-dark">LEER MÁS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Quote Section */}
+      <section className="quote-section" id="contacto">
+        <div className="container">
+          <div className="quote-grid">
+            
+            <div className="quote-content">
+              <h2>Solicita una Cotización Gratuita</h2>
+              <p>¡Te responderemos a la brevedad posible!</p>
+              <p style={{color: 'var(--color-text-light)', fontSize: '0.85rem', marginTop: '20px'}}>
+                Envíanos tu información completando el formulario. Nuestros expertos prepararán la mejor oferta para que tu negocio funcione de la manera más fluida.
+              </p>
+
+              <div className="icon-box-grid">
+                <div className="icon-box">
+                  <Icon icon="mdi:chess-rook" className="icon" />
+                  <h5>Servicio Personalizado</h5>
+                  <p>Enfocándonos a pequeñas, medianas y grandes empresas que requieran de nuestros servicios.</p>
+                </div>
+                <div className="icon-box">
+                  <Icon icon="mdi:calculator" className="icon" />
+                  <h5>Experiencia Comprobada</h5>
+                  <p>{profesional.experiencia}. Miembro del {profesional.colegiatura}.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="quote-form-container">
+              <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <input type="text" name="nombre" className="form-control" placeholder="Tu Nombre Completo" value={formData.nombre} onChange={handleChange} required />
+                </div>
+                <div className="form-group">
+                  <input type="email" name="email" className="form-control" placeholder="Tu Correo Electrónico" value={formData.email} onChange={handleChange} required />
+                </div>
+                <div className="form-group">
+                  <input type="tel" name="telefono" className="form-control" placeholder="Tu Teléfono de Contacto" value={formData.telefono} onChange={handleChange} required />
+                </div>
+                <div className="form-group">
+                  <textarea name="mensaje" className="form-control" placeholder="Describe tu consulta o requerimiento..." value={formData.mensaje} onChange={handleChange} required></textarea>
+                </div>
+                <button type="submit" className="btn btn-cyan" style={{width: '100%', marginTop: '10px'}}>
+                  ENVIAR MENSAJE
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Stats Section */}
+      <section className="stats-section">
+        <div className="container">
+          <h2>Nuestra Experiencia, Habilidades y Especialidad.</h2>
+          <p>Te brindamos las mejores soluciones posibles para el crecimiento y prosperidad de tu negocio.</p>
+          
+          <div className="stats-grid">
+            <div className="stat-item">
+              <Icon icon="mdi:account-outline" className="icon" />
+              <h3>{empresa.estadisticas.clientes_felices}+</h3>
+              <p>Clientes Felices</p>
+            </div>
+            <div className="stat-item">
+              <Icon icon="mdi:tshirt-crew-outline" className="icon" />
+              <h3>{empresa.estadisticas.miembros_equipo}</h3>
+              <p>Miembros del Equipo</p>
+            </div>
+            <div className="stat-item">
+              <Icon icon="mdi:lightbulb-outline" className="icon" />
+              <h3>{empresa.estadisticas.cantidad_servicios}+</h3>
+              <p>Tipos de Servicios</p>
+            </div>
+            <div className="stat-item">
+              <Icon icon="mdi:map-marker-outline" className="icon" />
+              <h3>40+</h3>
+              <p>Años de Experiencia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. About Split Section */}
+      <section className="about-section">
+        <div className="about-content">
+          <h2>Sobre nosotros</h2>
+          <h3 style={{marginBottom: '5px'}}>{profesional.nombre_completo}</h3>
+          <p style={{color: 'var(--color-secondary)', fontSize: '0.95rem', fontWeight: '600', marginBottom: '15px'}}>
+            {profesional.profesion} | {profesional.colegiatura}
+          </p>
+          <p style={{fontSize: '0.9rem', color: 'var(--color-text-light)', marginBottom: '15px'}}>
+            {empresa.mision}
+          </p>
+          <p style={{fontSize: '0.9rem', color: 'var(--color-text-light)'}}>
+            {empresa.vision}
+          </p>
+        </div>
+        <div className="about-image"></div>
+      </section>
+
+      {/* 6. Actualidad / News Grid */}
+      <section className="news-section">
+        <div className="container">
+          <div className="text-center" style={{marginBottom: '50px'}}>
+            <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Actualidad e Información Clave</h2>
+            <p style={{color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto'}}>Mantente informado con los temas más relevantes en materia contable, tributaria y laboral.</p>
+          </div>
+          
+          <div className="news-grid">
+            {loadingNews ? (
+              <p style={{textAlign: 'center', gridColumn: '1 / -1'}}>Cargando actualidad...</p>
+            ) : (
+              noticias.map((noticia, idx) => {
+                const images = [heroImg, aboutImg, heroImg]; 
+                return (
+                  <div className="news-card" key={idx}>
+                    <div className="news-image" style={{backgroundImage: `url(${images[idx]})`}}></div>
+                    <div className="news-content">
+                      <h4 className="news-title">{noticia.titulo}</h4>
+                      <p className="news-meta">{noticia.fecha}</p>
+                      <p className="news-excerpt">{noticia.descripcion.substring(0, 120)}...</p>
+                    </div>
+                  </div>
+                );
+              })
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Experience Banner & Overlapping Mission/Vision */}
+      <section className="experience-banner">
+        <div className="container text-center">
+          <p className="subtitle-small">Asesoría Contable, Tributaria y Laboral</p>
+          <h2>{profesional.experiencia}, ayudando a empresas a encontrar soluciones integrales</h2>
+          <a href="#contacto" className="btn btn-cyan">LEER MÁS</a>
+        </div>
+      </section>
+
+      <section className="mission-vision-section">
+        <div className="container">
+          <div className="mission-vision-grid">
+            <div className="mv-card">
+              <h4>Nuestra Misión</h4>
+              <p>{empresa.mision}</p>
+            </div>
+            <div className="mv-card">
+              <h4>Nuestra Visión</h4>
+              <p>{empresa.vision}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+};
+
+export default Home;

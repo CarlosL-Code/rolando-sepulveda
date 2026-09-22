@@ -1,0 +1,96 @@
+{
+  "profesional": {
+    "nombre_completo": "Rolando Fidel Sepúlveda Quidel",
+    "profesion": "Contador Público y Auditor",
+    "titulos_y_formacion": [
+      "Contador Público y Auditor",
+      "Licenciado en Control de Gestión Tributaria",
+      "Diplomado en Normas Internacionales de Información Financiera (NIIF)"
+    ],
+    "colegiatura": "Colegio de Contadores de Chile",
+    "experiencia": "Más de 40 años en asesorías contables y tributarias"
+  },
+  "empresa": {
+    "nombre": "Rolando Sepúlveda Auditorías",
+    "pagina_facebook": "contabilidadrs",
+    "sitio_web": "https://www.contabilidadrs.cl",
+    "categoria": "Servicio financiero",
+    "estadisticas": {
+      "clientes_felices": 80,
+      "cantidad_servicios": 5,
+      "miembros_equipo": 7,
+      "seguidores_facebook": 169,
+      "opiniones_facebook": 2
+    },
+    "mision": "Prestar apoyo y servicios personalizados a los clientes de manera oportuna y de gran calidad, brindando seguridad en materia contable, tributaria y laboral, entregando información oportuna y confiable, ajustándose a las disposiciones legales y atendiendo contingencias ante organismos fiscalizadores.",
+    "vision": "Ser una empresa con servicios de calidad y compromiso, aplicando tecnología y sistemas para un servicio personalizado, enfocada en pequeñas, medianas y grandes empresas, buscando ser reconocidos a nivel nacional."
+  },
+  "servicios": [
+    "Contabilidad para empresas",
+    "Auditorías contables",
+    "Recursos humanos y remuneraciones",
+    "Servicios para corporaciones educacionales, fundaciones y entidades individuales",
+    "Facturación electrónica",
+    "Asesoría para conformación de empresas"
+  ],
+  "tipos_de_sociedades_que_asesora": [
+    {
+      "tipo": "SpA",
+      "nombre_completo": "Sociedad por Acciones",
+      "descripcion": "Persona jurídica creada por una o más personas cuya participación en el capital es representada por acciones."
+    },
+    {
+      "tipo": "Responsabilidad Limitada",
+      "descripcion": "Empresa constituida por varias personas naturales, o personas naturales y jurídicas."
+    },
+    {
+      "tipo": "EIRL",
+      "nombre_completo": "Empresa Individual de Responsabilidad Limitada",
+      "descripcion": "Solo personas naturales (no jurídicas) pueden constituir este tipo de empresa."
+    }
+  ],
+  "contacto": {
+    "direccion": "Arturo Prat 696, of. 326, Temuco, Chile, 4780000",
+    "telefono_fijo": "(45) 221 3212",
+    "celular_whatsapp": "+56 9 9452 7995",
+    "email": "fidelauditoria@gmail.com",
+    "sitio_web": "contabilidadrs.cl",
+    "facebook": "https://www.facebook.com/contabilidadrs/"
+  },
+  "navegacion": [
+    { "texto": "Inicio", "url": "/" },
+    { "texto": "Sobre nosotros", "url": "/sobre-nosotros" },
+    { "texto": "Servicios", "url": "/servicios" },
+    { "texto": "Contactos", "url": "/contacto" }
+  ],
+  "sobre_nosotros_pagina": {
+    "titulo": "Sobre nosotros",
+    "descripcion": "Rolando Fidel Sepúlveda Quidel, contador público y auditor, licenciado en control de gestión tributaria, diplomado en normas internacionales de información financiera, con más de 40 años de experiencia en asesorías contables y tributarias, colegiado en el Colegio de Contadores de Chile. Contamos con un equipo de trabajo capacitado para entregar un servicio de calidad y atención personalizada a cada cliente.",
+    "mision": "Somos una empresa que presta apoyo y servicios personalizados a nuestro cliente de manera oportuna y de gran calidad, para así brindarles seguridad en materia contable, tributaria y laboral, velando por entregar información oportuna y confiable para proteger los intereses de nuestros clientes, ajustándonos a las disposiciones y requerimientos legales establecidos, atendiendo las eventuales contingencias de los organismos fiscalizadores.",
+    "vision": "Ser una empresa con servicios de calidad y compromiso para nuestros clientes, así también como para nuestro personal de trabajo, aplicar tecnología y sistemas en nuestro trabajo en pos de un servicio de calidad y personalizado para nuestros clientes, enfocándonos a pequeñas, medianas y grandes empresas que requieran de nuestros servicios, para ser reconocidos a nivel Nacional."
+  },
+  "enlaces_de_interes": [
+    { "nombre": "AFC Chile (Seguro de Cesantía)", "url": "http://www.afc.cl" },
+    { "nombre": "SII (Servicio de Impuestos Internos)", "url": "http://www.sii.cl" }
+  ],
+  "redes_sociales": [
+    { "red": "Facebook", "url": "https://www.facebook.com/contabilidadrs" }
+  ],
+  "noticias_destacadas": [
+    {
+      "titulo": "Cumplimiento Tributario y Fiscalización",
+      "fecha": "Actualidad SII",
+      "descripcion": "El Servicio de Impuestos Internos fortalece constantemente la fiscalización. Es vital mantener una contabilidad ordenada y al día para evitar observaciones, multas e intereses."
+    },
+    {
+      "titulo": "Implementación Ley 40 Horas",
+      "fecha": "Actualidad Laboral",
+      "descripcion": "Te guiamos en la adaptación y cumplimiento gradual de la reducción de la jornada laboral a 40 horas semanales, ajustando contratos y anexos según la nueva normativa legal."
+    },
+    {
+      "titulo": "Beneficios Tributarios para Pymes",
+      "fecha": "Actualidad Pyme",
+      "descripcion": "Conoce los regímenes tributarios Pro Pyme (Transparente y General) y cómo acogerse a los beneficios fiscales vigentes para potenciar el crecimiento y liquidez de tu empresa."
+    }
+  ]
+}
