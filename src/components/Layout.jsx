@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 
 const Layout = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const { empresa, contacto, navegacion, enlaces_de_interes, redes_sociales } = data;
 
   useEffect(() => {
@@ -15,15 +16,18 @@ const Layout = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
-          <NavLink to="/" className="nav-brand">
+          <NavLink to="/" className="nav-brand" onClick={closeMenu}>
             <span className="text-cyan">ROLANDO</span><span>SEPÚLVEDA</span>
           </NavLink>
 
-          <div className="nav-menu">
+          {/* Desktop Nav */}
+          <div className="nav-menu desktop-nav">
             <div className="nav-links">
               {navegacion.map((item, index) => (
                 <NavLink key={index} to={item.url}>{item.texto}</NavLink>
@@ -31,8 +35,43 @@ const Layout = () => {
             </div>
             <a href="#contacto" className="btn btn-cyan">CONTÁCTANOS</a>
           </div>
+
+          {/* Hamburger Icon */}
+          <button className="menu-toggle" onClick={() => setMenuOpen(true)}>
+            <Icon icon="mdi:menu" />
+          </button>
         </div>
       </nav>
+
+      {/* Off Canvas Overlay */}
+      <div className={`offcanvas-overlay ${menuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
+
+      {/* Off Canvas Menu */}
+      <div className={`offcanvas-menu ${menuOpen ? 'active' : ''}`}>
+        <div className="offcanvas-header">
+          <NavLink to="/" className="nav-brand" onClick={closeMenu}>
+            <span className="text-cyan" style={{color: 'var(--color-primary)'}}>ROLANDO</span>
+          </NavLink>
+          <button className="close-menu" onClick={closeMenu}>
+            <Icon icon="mdi:close" />
+          </button>
+        </div>
+        <div className="offcanvas-links">
+          {navegacion.map((item, index) => (
+            <NavLink key={index} to={item.url} onClick={closeMenu}>{item.texto}</NavLink>
+          ))}
+          <a href="#contacto" className="btn btn-cyan" style={{marginTop: '20px', width: '100%', textAlign: 'center'}} onClick={closeMenu}>CONTÁCTANOS</a>
+        </div>
+        
+        <div className="offcanvas-footer">
+          <div className="social-icons">
+             {redes_sociales.map((social, idx) => (
+                <a key={idx} href={social.url} target="_blank" rel="noreferrer"><Icon icon={`mdi:${social.red.toLowerCase()}`} /></a>
+             ))}
+          </div>
+          <p style={{fontSize: '0.85rem', color: 'var(--color-text-light)'}}>{contacto.telefono_fijo}</p>
+        </div>
+      </div>
 
       <main>
         <Outlet />
