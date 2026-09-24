@@ -177,9 +177,9 @@ const Home = () => {
                     <Icon icon={icons[idx % icons.length]} className="c-icon" />
                   </div>
                   <h3>{servicio}</h3>
-                  <p>Gestión y asesoría profesional para optimizar el rendimiento y cumplimiento normativo.</p>
-                  <a href={whatsappLink(`Hola, deseo cotizar el servicio: ${servicio}`)} className="btn-link" target="_blank" rel="noreferrer">
-                    COTIZAR <Icon icon="mdi:arrow-right" />
+                  <p style={{flexGrow: 1}}>Gestión y asesoría profesional para optimizar el rendimiento y cumplimiento normativo.</p>
+                  <a href={whatsappLink(`Hola, deseo cotizar el servicio: ${servicio}`)} className="btn btn-whatsapp" style={{marginTop: '15px', justifyContent: 'center', width: '100%', padding: '12px'}} target="_blank" rel="noreferrer">
+                    <Icon icon="mdi:whatsapp" style={{fontSize: '1.2rem', marginRight: '5px'}} /> COTIZAR SERVICIO
                   </a>
                 </div>
               );
