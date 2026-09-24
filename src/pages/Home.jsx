@@ -210,28 +210,24 @@ const Home = () => {
           
           <div className="news-tvn-layout">
             {data.noticias_destacadas.length > 0 && (
-              <div className="news-featured" style={{backgroundImage: `url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80')`}}>
+              <a href={data.noticias_destacadas[0].url} target="_blank" rel="noopener noreferrer" className="news-featured" style={{display: 'block', textDecoration: 'none', backgroundImage: `url('${data.noticias_destacadas[0].imagen}')`}}>
                 <div className="news-overlay-fixed">
                   <span className="badge">{data.noticias_destacadas[0].fecha}</span>
-                  <h3>{data.noticias_destacadas[0].titulo}</h3>
-                  <p>{data.noticias_destacadas[0].descripcion}</p>
+                  <h3 style={{color: '#fff'}}>{data.noticias_destacadas[0].titulo}</h3>
+                  <p style={{color: '#e2e8f0'}}>{data.noticias_destacadas[0].descripcion}</p>
                 </div>
-              </div>
+              </a>
             )}
             <div className="news-sidebar">
               {data.noticias_destacadas.slice(1).map((noticia, idx) => {
-                const stockImages = [
-                  'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80',
-                  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80'
-                ]; 
                 return (
-                  <div className="news-side-card" key={idx}>
-                    <div className="side-img" style={{backgroundImage: `url(${stockImages[idx]})`}}></div>
+                  <a href={noticia.url} target="_blank" rel="noopener noreferrer" className="news-side-card" key={idx} style={{textDecoration: 'none', color: 'inherit', display: 'flex'}}>
+                    <div className="side-img" style={{backgroundImage: `url('${noticia.imagen}')`}}></div>
                     <div className="side-text">
                       <span className="meta">{noticia.fecha}</span>
-                      <h4>{noticia.titulo}</h4>
+                      <h4 style={{color: 'var(--color-heading)'}}>{noticia.titulo}</h4>
                     </div>
-                  </div>
+                  </a>
                 );
               })}
             </div>
