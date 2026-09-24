@@ -65,7 +65,7 @@ const Home = () => {
           <div className="hero-content">
             <h1 className="slide-up">{empresa.nombre.toUpperCase()}</h1>
             <p className="fade-in">Servicio profesional liderado por {profesional.nombre_completo}, Contador Público y Auditor. {profesional.experiencia} en asesorías contables y tributarias.</p>
-            <div className="hero-buttons fade-in-delayed">
+            <div className="hero-buttons fade-in-delayed" style={{marginTop: '40px'}}>
               <a href="#contacto" className="btn btn-cyan" style={{marginRight: '15px'}}>SOLICITA UNA COTIZACIÓN</a>
               <Link to="/servicios" className="btn btn-outline">VER SERVICIOS</Link>
             </div>
@@ -123,16 +123,20 @@ const Home = () => {
       </section>
 
       {/* 3. About Section (Redesigned overlapping layout) */}
-      <section className="premium-about-section" id="sobre-nosotros">
+      <section className="premium-about-section" id="nuestra-firma">
         <div className="container">
           <div className="about-overlap-grid">
             <div className="about-image-wrapper">
               <div className="about-image-frame">
                 <img src={rolandoDePie} alt={profesional.nombre_completo} className="about-photo" />
               </div>
+              <div className="floating-badge">
+                <h3>40+</h3>
+                <p>Años de Experiencia</p>
+              </div>
             </div>
             <div className="about-text-wrapper">
-              <h2 className="section-title">Sobre nuestra firma</h2>
+              <h2 className="section-title">Nuestra Firma</h2>
               <h3 className="profesional-name">{profesional.nombre_completo}</h3>
               <p className="profesional-credentials">{profesional.profesion} | {profesional.colegiatura}</p>
               <div className="separator"></div>

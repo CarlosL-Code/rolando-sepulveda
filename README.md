@@ -1,16 +1,42 @@
-# React + Vite
+# Contabilidad RS - Sitio Web Corporativo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Este proyecto es una aplicación web moderna y premium desarrollada para la firma **Rolando Sepúlveda Auditorías**, orientada a ofrecer servicios de contabilidad, tributación y asesoría laboral.
 
-Currently, two official plugins are available:
+## Características del Proyecto
+- **Diseño Premium**: Interfaz moderna con animaciones fluidas (fade-ins, glassmorphism).
+- **Hero Dinámico**: Control de imágenes tipo slider automático.
+- **Formulario Integrado con WhatsApp**: Las cotizaciones generan automáticamente mensajes preformateados hacia la API de WhatsApp, maximizando la conversión sin necesidad de backend.
+- **Testimonios**: Sección de confianza para mostrar el impacto en clientes reales.
+- **Responsive**: Se adapta perfectamente a todos los dispositivos (móviles, tablets, escritorio) incluyendo menú *off-canvas* para navegación celular.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías Utilizadas
+- **React 18** (Librería principal)
+- **Vite** (Empaquetador y entorno de desarrollo ultra rápido)
+- **React Router DOM v6** (Navegación multi-página y hash-routing)
+- **CSS3** (Estilizado sin frameworks pesados, uso extensivo de CSS Grid, Flexbox, y Variables CSS)
+- **Iconify** (Íconos vectoriales escalables)
 
-## React Compiler
+## Estructura del Código
+- `/src/components/`: Componentes reutilizables como el Layout principal y la Barra de Navegación.
+- `/src/pages/`: Vistas de las páginas principales (Home, Servicios, Contacto).
+- `/src/assets/`: Imágenes locales (Hero, Acerca de, Logos).
+- `/src/data.json`: Archivo de configuración central. Aquí puedes cambiar fácilmente textos, correos, redes sociales, estadísticas y servicios sin tocar el código fuente.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Pasos para ejecutar este proyecto localmente
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. **Instalar Node.js**: Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 16 o superior).
+2. **Abrir una terminal**: Navega hasta la carpeta del proyecto.
+3. **Instalar dependencias**: Ejecuta el comando:
+   ```bash
+   npm install
+   ```
+4. **Levantar el servidor local**:
+   ```bash
+   npm run dev
+   ```
+   Esto abrirá un enlace local (usualmente `http://localhost:5173/`).
+5. **Construir para producción (Subir a Vercel/Host)**:
+   ```bash
+   npm run build
+   ```
+   Esto generará la carpeta `dist/` con el sitio web optimizado, listo para ser desplegado.
