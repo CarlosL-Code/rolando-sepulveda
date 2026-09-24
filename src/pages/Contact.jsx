@@ -74,8 +74,8 @@ const Contact = () => {
 
               <div style={{marginTop: '60px', position: 'relative', zIndex: 2}}>
                 <h4 style={{marginBottom: '15px', color: '#fff', fontSize: '1.1rem'}}>Atención Inmediata</h4>
-                <a href={whatsappLink('Hola, necesito realizar una consulta corporativa.')} target="_blank" rel="noreferrer" className="btn btn-whatsapp" style={{width: '100%', justifyContent: 'center'}}>
-                  <Icon icon="mdi:whatsapp" style={{fontSize: '1.3rem', marginRight: '8px'}} />
+                <a href={whatsappLink('Hola, necesito realizar una consulta corporativa.')} target="_blank" rel="noreferrer" className="btn btn-whatsapp" style={{width: '100%', justifyContent: 'center', borderRadius: '50px', padding: '15px'}}>
+                  <Icon icon="mdi:whatsapp" style={{fontSize: '1.4rem', marginRight: '8px'}} />
                   Chatear por WhatsApp
                 </a>
               </div>
