@@ -70,8 +70,8 @@
     "vision": "Ser una empresa con servicios de calidad y compromiso para nuestros clientes, así también como para nuestro personal de trabajo, aplicar tecnología y sistemas en nuestro trabajo en pos de un servicio de calidad y personalizado para nuestros clientes, enfocándonos a pequeñas, medianas y grandes empresas que requieran de nuestros servicios, para ser reconocidos a nivel Nacional."
   },
   "enlaces_de_interes": [
-    { "nombre": "AFC Chile (Seguro de Cesantía)", "url": "https://www.afc.cl" },
-    { "nombre": "SII (Servicio de Impuestos Internos)", "url": "https://www.sii.cl" }
+    { "nombre": "AFC Chile (Seguro de Cesantía)", "url": "http://www.afc.cl" },
+    { "nombre": "SII (Servicio de Impuestos Internos)", "url": "http://www.sii.cl" }
   ],
   "redes_sociales": [
     { "red": "Facebook", "url": "https://www.facebook.com/contabilidadrs" }
