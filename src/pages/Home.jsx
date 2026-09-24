@@ -1,13 +1,26 @@
 import { useState, useEffect } from 'react';
 import data from '../data.json';
 import { Icon } from '@iconify/react';
-import heroImg from '../assets/images/hero.jpg';
-import aboutImg from '../assets/images/about.jpg';
+import heroImg1 from '../assets/images/hero.jpg';
+import heroImg2 from '../assets/images/about.jpg';
+import rolandoDePie from '../assets/images/rolando-de-pie.jpg';
 import { whatsappLink } from '../utils/whatsapp';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const { profesional, empresa, tipos_de_sociedades_que_asesora, noticias_destacadas } = data;
+  const { profesional, empresa } = data;
   
+  // Hero Slider logic
+  const heroImages = [heroImg1, heroImg2, 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80'];
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [heroImages.length]);
+
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -22,189 +35,148 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Mensaje enviado. ¡Gracias!');
-    setFormData({ nombre: '', email: '', telefono: '', mensaje: '' });
+    const message = `Hola, quisiera solicitar una cotización gratuita.\nNombre: ${formData.nombre}\nCorreo: ${formData.email}\nTeléfono: ${formData.telefono}\nConsulta: ${formData.mensaje}`;
+    window.open(whatsappLink(message), '_blank', 'noopener,noreferrer');
   };
 
   return (
-    <div className="page-home">
-      {/* 1. Hero Section */}
+    <div className="page-home animate-up">
+      {/* 1. Dynamic Hero Section */}
       <section className="hero">
-        <button className="slider-arrow prev-arrow"><Icon icon="mdi:chevron-left" /></button>
-        <button className="slider-arrow next-arrow"><Icon icon="mdi:chevron-right" /></button>
-
-        <div className="container">
+        {heroImages.map((img, index) => (
+          <div 
+            key={index} 
+            className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
+            style={{
+              backgroundImage: `url(${img})`,
+              position: 'absolute',
+              top: 0, left: 0, right: 0, bottom: 0,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: index === currentSlide ? 1 : 0,
+              transition: 'opacity 1.5s ease-in-out',
+              zIndex: 0
+            }}
+          ></div>
+        ))}
+        <div className="hero-overlay" style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(15, 23, 42, 0.7)', zIndex: 1}}></div>
+        
+        <div className="container text-center" style={{position: 'relative', zIndex: 2}}>
           <div className="hero-content">
-            <h1>{empresa.nombre.toUpperCase()}</h1>
-            <p>Servicio profesional liderado por {profesional.nombre_completo}, {profesional.profesion}. {profesional.experiencia}.</p>
-            <a href="#contacto" className="hero-link">
-              <Icon icon="mdi:chevron-right" className="icon-cyan"/> ¡Contáctanos ahora!
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* 2. Features / Cards Section (Overlapping Hero) */}
-      <section className="features-section">
-        <div className="container">
-          <div className="features-grid">
-            
-            <div className="feature-text-card">
-              <h3>¿Por qué elegirnos?</h3>
-              <p>{empresa.mision.substring(0, 150)}...</p>
-              <a href="#contacto" className="btn btn-dark">LEER MÁS</a>
-            </div>
-            
-            <div className="feature-image-card" style={{backgroundImage: `url(${aboutImg})`}}>
-              <div>
-                <h4>{tipos_de_sociedades_que_asesora[0].tipo}</h4>
-                <p>{tipos_de_sociedades_que_asesora[0].descripcion.substring(0, 100)}...</p>
-              </div>
-              <a href="#contacto" className="btn btn-cyan">LEER MÁS</a>
-            </div>
-
-            <div className="feature-image-card" style={{backgroundImage: `url(${heroImg})`}}>
-              <div>
-                <h4>Transformación Digital</h4>
-                <p>Aplicamos tecnología y sistemas de vanguardia en nuestro trabajo para un servicio de calidad.</p>
-              </div>
-              <a href="#contacto" className="btn btn-dark">LEER MÁS</a>
+            <h1 className="slide-up">{empresa.nombre.toUpperCase()}</h1>
+            <p className="fade-in">Servicio profesional liderado por {profesional.nombre_completo}, Contador Público y Auditor. {profesional.experiencia} en asesorías contables y tributarias.</p>
+            <div className="hero-buttons fade-in-delayed">
+              <a href="#contacto" className="btn btn-cyan" style={{marginRight: '15px'}}>SOLICITA UNA COTIZACIÓN</a>
+              <Link to="/servicios" className="btn btn-outline">VER SERVICIOS</Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 3. Quote Section */}
-      <section className="quote-section" id="contacto">
+      {/* 2. Premium Quote Section */}
+      <section className="premium-quote-section" id="contacto">
         <div className="container">
-          <div className="quote-grid">
-            
-            <div className="quote-content">
-              <h2>Solicita una Cotización Gratuita</h2>
-              <p>¡Te responderemos a la brevedad posible!</p>
-              <p style={{color: 'var(--color-text-light)', fontSize: '0.85rem', marginTop: '20px'}}>
-                Envíanos tu información completando el formulario. Nuestros expertos prepararán la mejor oferta para que tu negocio funcione de la manera más fluida.
-              </p>
-
-              <div className="icon-box-grid">
-                <div className="icon-box">
-                  <Icon icon="mdi:chess-rook" className="icon" />
-                  <h5>Servicio Personalizado</h5>
-                  <p>Enfocándonos a pequeñas, medianas y grandes empresas que requieran de nuestros servicios.</p>
+          <div className="premium-quote-grid">
+            <div className="quote-text">
+              <h2>Solicita una Cotización Personalizada</h2>
+              <p>Envíanos tu información y requerimientos. Nuestro equipo de expertos preparará la mejor oferta para optimizar tus finanzas.</p>
+              
+              <div className="quote-features">
+                <div className="q-feature">
+                  <Icon icon="mdi:shield-check" className="q-icon" />
+                  <div>
+                    <h4>Confidencialidad Absoluta</h4>
+                    <p>Tus datos financieros manejados con la más estricta reserva legal y ética.</p>
+                  </div>
                 </div>
-                <div className="icon-box">
-                  <Icon icon="mdi:calculator" className="icon" />
-                  <h5>Experiencia Comprobada</h5>
-                  <p>{profesional.experiencia}. Miembro del {profesional.colegiatura}.</p>
+                <div className="q-feature">
+                  <Icon icon="mdi:clock-fast" className="q-icon" />
+                  <div>
+                    <h4>Respuesta Rápida</h4>
+                    <p>Evaluamos tus necesidades y respondemos a la brevedad posible.</p>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div className="quote-form-container">
+            
+            <div className="premium-quote-form">
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <input type="text" name="nombre" className="form-control" placeholder="Tu Nombre Completo" value={formData.nombre} onChange={handleChange} required />
+                  <input type="text" name="nombre" className="form-control premium-input" placeholder="Razón Social o Nombre Completo" value={formData.nombre} onChange={handleChange} required />
                 </div>
                 <div className="form-group">
-                  <input type="email" name="email" className="form-control" placeholder="Tu Correo Electrónico" value={formData.email} onChange={handleChange} required />
+                  <input type="email" name="email" className="form-control premium-input" placeholder="Correo Corporativo" value={formData.email} onChange={handleChange} required />
                 </div>
                 <div className="form-group">
-                  <input type="tel" name="telefono" className="form-control" placeholder="Tu Teléfono de Contacto" value={formData.telefono} onChange={handleChange} required />
+                  <input type="tel" name="telefono" className="form-control premium-input" placeholder="Teléfono Móvil" value={formData.telefono} onChange={handleChange} required />
                 </div>
                 <div className="form-group">
-                  <textarea name="mensaje" className="form-control" placeholder="Describe tu consulta o requerimiento..." value={formData.mensaje} onChange={handleChange} required></textarea>
+                  <textarea name="mensaje" className="form-control premium-input" placeholder="Describe brevemente tus necesidades corporativas..." value={formData.mensaje} onChange={handleChange} required></textarea>
                 </div>
-                <button type="submit" className="btn btn-cyan" style={{width: '100%', marginTop: '10px'}}>
-                  ENVIAR MENSAJE
+                <button type="submit" className="btn btn-cyan btn-glow">
+                  ENVIAR SOLICITUD
                 </button>
               </form>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* 4. Stats Section */}
-      <section className="stats-section">
+      {/* 3. About Section (Redesigned overlapping layout) */}
+      <section className="premium-about-section" id="sobre-nosotros">
         <div className="container">
-          <h2>Nuestra Experiencia, Habilidades y Especialidad.</h2>
-          <p>Te brindamos las mejores soluciones posibles para el crecimiento y prosperidad de tu negocio.</p>
-          
-          <div className="stats-grid">
-            <div className="stat-item">
-              <Icon icon="mdi:account-outline" className="icon" />
-              <h3>{empresa.estadisticas.clientes_felices}+</h3>
-              <p>Clientes Felices</p>
+          <div className="about-overlap-grid">
+            <div className="about-image-wrapper">
+              <div className="about-image-frame">
+                <img src={rolandoDePie} alt={profesional.nombre_completo} className="about-photo" />
+              </div>
             </div>
-            <div className="stat-item">
-              <Icon icon="mdi:tshirt-crew-outline" className="icon" />
-              <h3>{empresa.estadisticas.miembros_equipo}</h3>
-              <p>Miembros del Equipo</p>
-            </div>
-            <div className="stat-item">
-              <Icon icon="mdi:lightbulb-outline" className="icon" />
-              <h3>{empresa.estadisticas.cantidad_servicios}+</h3>
-              <p>Tipos de Servicios</p>
-            </div>
-            <div className="stat-item">
-              <Icon icon="mdi:map-marker-outline" className="icon" />
-              <h3>40+</h3>
-              <p>Años de Experiencia</p>
+            <div className="about-text-wrapper">
+              <h2 className="section-title">Sobre nuestra firma</h2>
+              <h3 className="profesional-name">{profesional.nombre_completo}</h3>
+              <p className="profesional-credentials">{profesional.profesion} | {profesional.colegiatura}</p>
+              <div className="separator"></div>
+              <p className="about-desc">{empresa.mision}</p>
+              <div className="stats-row">
+                <div className="mini-stat">
+                  <h4>{empresa.estadisticas.clientes_felices}+</h4>
+                  <span>Clientes</span>
+                </div>
+                <div className="mini-stat">
+                  <h4>40+</h4>
+                  <span>Años Exp.</span>
+                </div>
+                <div className="mini-stat">
+                  <h4>{empresa.estadisticas.miembros_equipo}</h4>
+                  <span>Expertos</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. About Split Section */}
-      <section className="about-section" id="sobre-nosotros">
-        <div className="about-content">
-          <h2 style={{fontSize: '2.5rem', marginBottom: '15px'}}>Sobre nosotros</h2>
-          <h3 style={{marginBottom: '5px', color: 'var(--color-primary)'}}>{profesional.nombre_completo}</h3>
-          <p style={{color: 'var(--color-secondary)', fontSize: '1rem', fontWeight: '600', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px'}}>
-            {profesional.profesion} | {profesional.colegiatura}
-          </p>
-          <div style={{width: '60px', height: '4px', background: 'var(--color-secondary)', marginBottom: '25px'}}></div>
-          <p style={{fontSize: '1rem', color: 'var(--color-text)', marginBottom: '20px', lineHeight: '1.8'}}>
-            {empresa.mision}
-          </p>
-          <p style={{fontSize: '1rem', color: 'var(--color-text)', lineHeight: '1.8'}}>
-            {empresa.vision}
-          </p>
-        </div>
-        <div className="about-image" style={{backgroundImage: `url('/src/assets/images/rolando-de-pie.jpg')`, backgroundPosition: 'center top'}}></div>
-      </section>
-
-      {/* 6. Servicios Premium Grid */}
-      <section className="premium-services-section">
+      {/* 4. Compact Premium Services Grid */}
+      <section className="compact-services-section">
         <div className="container">
-          <div className="text-center" style={{marginBottom: '60px'}}>
-            <h2 style={{fontSize: '2.8rem', color: 'var(--color-primary)', marginBottom: '15px'}}>Nuestros Servicios</h2>
-            <div style={{width: '80px', height: '4px', background: 'var(--color-secondary)', margin: '0 auto 20px'}}></div>
-            <p style={{color: 'var(--color-text)', maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem'}}>Brindamos soluciones integrales adaptadas a las necesidades de tu empresa. Conoce nuestras áreas de especialidad.</p>
+          <div className="text-center section-header">
+            <h2 className="section-title">Nuestros Servicios</h2>
+            <p className="section-subtitle">Soluciones estratégicas y contables adaptadas a su negocio.</p>
           </div>
           
-          <div className="premium-services-grid">
+          <div className="compact-services-grid">
             {data.servicios.map((servicio, idx) => {
-              const bgImages = [
-                'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-                'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80',
-                'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
-                'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
-                'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80',
-                'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80'
-              ];
-              const quoteMessage = `Hola, quisiera solicitar una cotización por el servicio de: ${servicio}`;
+              const icons = ['mdi:calculator-variant', 'mdi:clipboard-check', 'mdi:account-group', 'mdi:domain', 'mdi:file-document-outline', 'mdi:handshake-outline'];
               return (
-                <div className={`premium-service-row ${idx % 2 !== 0 ? 'reverse' : ''}`} key={idx}>
-                  <div className="service-img" style={{backgroundImage: `url(${bgImages[idx]})`}}></div>
-                  <div className="service-text">
-                    <Icon icon="mdi:check-decagram" className="service-icon" />
-                    <h3>{servicio}</h3>
-                    <p>Ofrecemos un enfoque personalizado y estratégico en {servicio.toLowerCase()}, asegurando el cumplimiento normativo y el crecimiento sostenido de su negocio en el competitivo mercado actual.</p>
-                    <a href={whatsappLink(quoteMessage)} className="btn btn-whatsapp" target="_blank" rel="noreferrer">
-                      <Icon icon="mdi:whatsapp" style={{marginRight: '8px', fontSize: '1.3rem'}}/> COTIZAR SERVICIO
-                    </a>
+                <div className="compact-service-card" key={idx}>
+                  <div className="card-icon-wrapper">
+                    <Icon icon={icons[idx % icons.length]} className="c-icon" />
                   </div>
+                  <h3>{servicio}</h3>
+                  <p>Gestión y asesoría profesional para optimizar el rendimiento y cumplimiento normativo.</p>
+                  <a href={whatsappLink(`Hola, deseo cotizar el servicio: ${servicio}`)} className="btn-link" target="_blank" rel="noreferrer">
+                    COTIZAR <Icon icon="mdi:arrow-right" />
+                  </a>
                 </div>
               );
             })}
@@ -212,18 +184,18 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 6.5. Actualidad / News TVN Style */}
-      <section className="news-section" style={{background: '#f8f9fa'}}>
+      {/* 5. Actualidad / News TVN Style (Fixed text colors) */}
+      <section className="news-section">
         <div className="container">
-          <div className="text-center" style={{marginBottom: '50px'}}>
-            <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Actualidad e Información Clave</h2>
-            <div style={{width: '60px', height: '4px', background: 'var(--color-secondary)', margin: '0 auto 20px'}}></div>
+          <div className="text-center section-header">
+            <h2 className="section-title">Actualidad e Información</h2>
+            <p className="section-subtitle">Manténgase al día con las últimas normativas y cambios tributarios.</p>
           </div>
           
           <div className="news-tvn-layout">
             {data.noticias_destacadas.length > 0 && (
               <div className="news-featured" style={{backgroundImage: `url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80')`}}>
-                <div className="news-overlay">
+                <div className="news-overlay-fixed">
                   <span className="badge">{data.noticias_destacadas[0].fecha}</span>
                   <h3>{data.noticias_destacadas[0].titulo}</h3>
                   <p>{data.noticias_destacadas[0].descripcion}</p>
@@ -251,27 +223,70 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 7. Experience Banner & Overlapping Mission/Vision */}
-      <section className="experience-banner">
-        <div className="container text-center">
-          <p className="subtitle-small">Asesoría Contable, Tributaria y Laboral</p>
-          <h2>{profesional.experiencia}, ayudando a empresas a encontrar soluciones integrales</h2>
-          <a href="#contacto" className="btn btn-cyan">LEER MÁS</a>
+      {/* 5.5. Premium Testimonials Section */}
+      <section className="testimonials-section">
+        <div className="container">
+          <div className="text-center section-header">
+            <h2 className="section-title">Lo que dicen nuestros clientes</h2>
+            <p className="section-subtitle">Empresas que confían en nuestra trayectoria profesional.</p>
+          </div>
+          
+          <div className="testimonials-grid">
+            {[
+              {
+                nombre: 'Carlos Martínez',
+                empresa: 'Constructora Sur SpA',
+                comentario: 'La asesoría de Don Rolando ha sido fundamental para estructurar contablemente nuestros proyectos. Siempre transparentes, puntuales y con un nivel de profesionalismo intachable. Recomendados al 100%.',
+                rating: 5
+              },
+              {
+                nombre: 'Valentina Rojas',
+                empresa: 'Clínica Médica Integral',
+                comentario: 'Teníamos muchas dudas sobre la nueva ley tributaria y su equipo nos guio paso a paso. Desde que tomamos sus servicios, la gestión de nuestros recursos humanos y contabilidad funciona a la perfección.',
+                rating: 5
+              },
+              {
+                nombre: 'Felipe Valdés',
+                empresa: 'Inversiones Valdés EIRL',
+                comentario: 'Más de 5 años confiando la administración contable de mis negocios a esta firma. La tranquilidad que te da saber que estás respaldado por un equipo experto y con 40 años de experiencia no tiene precio.',
+                rating: 5
+              }
+            ].map((testimonial, idx) => (
+              <div className="testimonial-card" key={idx}>
+                <div className="quote-mark">
+                  <Icon icon="mdi:format-quote-open" />
+                </div>
+                <div className="rating">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Icon key={i} icon="mdi:star" className="star-icon" />
+                  ))}
+                </div>
+                <p className="testimonial-text">"{testimonial.comentario}"</p>
+                <div className="testimonial-author">
+                  <div className="author-avatar">
+                    <Icon icon="mdi:account" />
+                  </div>
+                  <div className="author-info">
+                    <h4>{testimonial.nombre}</h4>
+                    <span>{testimonial.empresa}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="mission-vision-section">
-        <div className="container">
-          <div className="mission-vision-grid">
-            <div className="mv-card">
-              <h4>Nuestra Misión</h4>
-              <p>{empresa.mision}</p>
-            </div>
-            <div className="mv-card">
-              <h4>Nuestra Visión</h4>
-              <p>{empresa.vision}</p>
-            </div>
-          </div>
+      {/* 6. Massive CTA (Replacing Vision) */}
+      <section className="massive-cta-section" style={{backgroundImage: `url(${heroImg2})`}}>
+        <div className="cta-overlay"></div>
+        <div className="container cta-content">
+          <h2>Impulsa el crecimiento y la seguridad de tu empresa hoy mismo</h2>
+          <p>{empresa.vision}</p>
+          <a href={whatsappLink('Hola, necesito contactar con un asesor experto para mi empresa.')} className="btn btn-cyan btn-lg btn-glow" target="_blank" rel="noreferrer">
+            <Icon icon="mdi:whatsapp" style={{fontSize: '1.5rem', marginRight: '8px'}} />
+            HABLAR CON UN ASESOR
+          </a>
         </div>
       </section>
 
