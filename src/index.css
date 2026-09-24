@@ -1443,6 +1443,8 @@ textarea.form-control {
 }
 .horizontal-service-card .service-card-img {
   width: 35%;
+  height: auto;
+  min-height: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -1470,4 +1472,6 @@ textarea.form-control {
     width: 100%;
   }
 }
+
+
 
