@@ -46,7 +46,7 @@ const Layout = () => {
                 <NavLink key={index} to={item.url}>{item.texto}</NavLink>
               ))}
             </div>
-            <a href="#contacto" className="btn btn-cyan">CONTÁCTANOS</a>
+            <a href="#contacto" className="btn btn-glass">CONTÁCTANOS</a>
           </div>
 
           {/* Hamburger Icon */}

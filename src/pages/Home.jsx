@@ -66,8 +66,8 @@ const Home = () => {
             <h1 className="slide-up">{empresa.nombre.toUpperCase()}</h1>
             <p className="fade-in">Servicio profesional liderado por {profesional.nombre_completo}, Contador Público y Auditor. {profesional.experiencia} en asesorías contables y tributarias.</p>
             <div className="hero-buttons fade-in-delayed" style={{marginTop: '40px'}}>
-              <a href="#contacto" className="btn btn-cyan" style={{marginRight: '15px'}}>SOLICITA UNA COTIZACIÓN</a>
-              <Link to="/servicios" className="btn btn-outline">VER SERVICIOS</Link>
+              <a href="#contacto" className="btn btn-cyan" style={{marginRight: '15px'}}>COTIZA CON NOSOTROS</a>
+              <Link to="/servicios" className="btn btn-glass">VER SERVICIOS</Link>
             </div>
           </div>
         </div>
