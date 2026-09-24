@@ -1474,5 +1474,105 @@ textarea.form-control {
   }
 }
 
+/* New Premium Contact Card */
+.contact-premium-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1);
+  display: flex;
+  overflow: hidden;
+}
+.contact-premium-info {
+  background: linear-gradient(135deg, var(--color-primary), #0f172a);
+  color: #fff;
+  width: 40%;
+  padding: 60px;
+  position: relative;
+}
+.contact-premium-info::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.1;
+}
+.contact-premium-info h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.contact-premium-info p {
+  color: #cbd5e1;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+.contact-info-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contact-info-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--color-cyan);
+}
+.contact-premium-form {
+  width: 60%;
+  padding: 60px;
+  background: #fff;
+}
+.contact-premium-form h3 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+.modern-input-group {
+  margin-bottom: 25px;
+}
+.modern-input {
+  width: 100%;
+  padding: 15px 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--color-text);
+  transition: all 0.3s;
+}
+.modern-input:focus {
+  background: #fff;
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 0 4px rgba(41, 128, 185, 0.1);
+  outline: none;
+}
+@media (max-width: 992px) {
+  .contact-premium-wrapper {
+    flex-direction: column;
+  }
+  .contact-premium-info, .contact-premium-form {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+
+
 
 

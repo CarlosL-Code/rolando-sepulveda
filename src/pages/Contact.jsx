@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <div className="page-contact animate-up">
       {/* Hero Header */}
-      <section className="hero" style={{minHeight: '50vh', backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 30%', paddingTop: '150px'}}>
+      <section className="hero" style={{minHeight: '45vh', backgroundImage: `url(${heroImg})`, backgroundPosition: 'center 30%', paddingTop: '120px'}}>
         <div className="container text-center">
           <div className="hero-content slide-up" style={{maxWidth: '800px', margin: '0 auto', paddingBottom: '0'}}>
             <h1>Contacto</h1>
@@ -36,76 +36,80 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Premium Quote Section */}
-      <section className="premium-quote-section" style={{background: '#f8fafc', padding: '80px 0'}}>
+      {/* Brand New Premium Contact Section */}
+      <section style={{background: '#f1f5f9', padding: '100px 0'}}>
         <div className="container">
-          <div className="premium-quote-grid">
+          <div className="contact-premium-wrapper">
             
-            <div className="quote-text">
-              <h2>Información Corporativa</h2>
-              <p>Comunícate directamente con nuestro equipo de expertos en Temuco. Resolveremos tus requerimientos contables, tributarios y laborales de manera oportuna.</p>
+            {/* Left Side: Dark Info Panel */}
+            <div className="contact-premium-info">
+              <h3>Información Corporativa</h3>
+              <p>Comunícate directamente con nuestro equipo de expertos en Temuco. Resolveremos tus requerimientos contables, tributarios y laborales de manera oportuna y profesional.</p>
               
-              <div className="quote-features" style={{marginTop: '40px', gap: '25px'}}>
-                <div className="q-feature">
-                  <Icon icon="mdi:office-building" className="q-icon" />
+              <div className="contact-info-list">
+                <div className="contact-info-item">
+                  <div className="contact-info-icon"><Icon icon="mdi:office-building-marker" /></div>
                   <div>
-                    <h4>Sede Principal</h4>
-                    <p>{contacto.direccion}</p>
+                    <h4 style={{fontSize: '1.1rem', marginBottom: '3px'}}>Sede Principal</h4>
+                    <span style={{color: '#94a3b8', fontSize: '0.95rem'}}>{contacto.direccion}</span>
                   </div>
                 </div>
-                <div className="q-feature">
-                  <Icon icon="mdi:email" className="q-icon" />
+                
+                <div className="contact-info-item">
+                  <div className="contact-info-icon"><Icon icon="mdi:email-fast-outline" /></div>
                   <div>
-                    <h4>Correo Electrónico</h4>
-                    <p><a href={`mailto:${contacto.email}`} style={{color: 'var(--color-text-light)'}}>{contacto.email}</a></p>
+                    <h4 style={{fontSize: '1.1rem', marginBottom: '3px'}}>Correo Electrónico</h4>
+                    <span style={{color: '#94a3b8', fontSize: '0.95rem'}}>{contacto.email}</span>
                   </div>
                 </div>
-                <div className="q-feature">
-                  <Icon icon="mdi:phone-classic" className="q-icon" />
+
+                <div className="contact-info-item">
+                  <div className="contact-info-icon"><Icon icon="mdi:phone-classic" /></div>
                   <div>
-                    <h4>Teléfono Fijo</h4>
-                    <p><a href={`tel:${contacto.telefono_fijo.replace(/[^\d+]/g, '')}`} style={{color: 'var(--color-text-light)'}}>{contacto.telefono_fijo}</a></p>
-                  </div>
-                </div>
-                <div className="q-feature">
-                  <Icon icon="mdi:whatsapp" className="q-icon" />
-                  <div>
-                    <h4>Atención Inmediata</h4>
-                    <p><a href={whatsappLink('Hola, necesito realizar una consulta.')} target="_blank" rel="noreferrer" style={{color: 'var(--color-cyan)', fontWeight: 'bold'}}>{contacto.celular_whatsapp}</a></p>
+                    <h4 style={{fontSize: '1.1rem', marginBottom: '3px'}}>Teléfono Fijo</h4>
+                    <span style={{color: '#94a3b8', fontSize: '0.95rem'}}>{contacto.telefono_fijo}</span>
                   </div>
                 </div>
               </div>
 
-              <div style={{marginTop: '40px'}}>
-                <h4 style={{color: 'var(--color-heading)', marginBottom: '15px'}}>Síguenos en nuestras redes</h4>
-                {data.redes_sociales.map((red, index) => (
-                  <a key={index} href={red.url} target="_blank" rel="noopener noreferrer" style={{display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--color-primary)', color: '#fff', padding: '10px 20px', borderRadius: '8px', fontWeight: 'bold', transition: 'background 0.3s'}}>
-                    <Icon icon="mdi:facebook" style={{fontSize: '1.5rem'}} /> {red.red}
-                  </a>
-                ))}
+              <div style={{marginTop: '60px', position: 'relative', zIndex: 2}}>
+                <h4 style={{marginBottom: '15px', color: '#fff', fontSize: '1.1rem'}}>Atención Inmediata</h4>
+                <a href={whatsappLink('Hola, necesito realizar una consulta corporativa.')} target="_blank" rel="noreferrer" className="btn btn-whatsapp" style={{width: '100%', justifyContent: 'center'}}>
+                  <Icon icon="mdi:whatsapp" style={{fontSize: '1.3rem', marginRight: '8px'}} />
+                  Chatear por WhatsApp
+                </a>
               </div>
             </div>
 
-            <div className="premium-quote-form">
-              <h3 style={{fontSize: '1.8rem', color: '#fff', marginBottom: '10px'}}>Envíenos su Consulta</h3>
-              <p style={{color: '#94a3b8', marginBottom: '30px', fontSize: '0.95rem'}}>Nuestro equipo analizará su requerimiento corporativo y le contactaremos a la brevedad.</p>
+            {/* Right Side: Clean White Form */}
+            <div className="contact-premium-form">
+              <h3>Envíenos su Consulta</h3>
+              <p style={{color: 'var(--color-text-light)', marginBottom: '30px'}}>Nuestro equipo analizará su requerimiento y le contactaremos a la brevedad.</p>
               
               <form onSubmit={handleSubmit}>
-                <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginBottom: '15px'}}>
-                  <div className="form-group" style={{margin: 0}}>
-                    <input type="text" name="nombre" className="form-control premium-input" placeholder="Nombre Completo" value={formData.nombre} onChange={handleChange} required />
+                <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px'}}>
+                  <div className="modern-input-group">
+                    <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: 'var(--color-primary)', fontSize: '0.9rem'}}>Nombre Completo *</label>
+                    <input type="text" name="nombre" className="modern-input" placeholder="Ej. Juan Pérez" value={formData.nombre} onChange={handleChange} required />
                   </div>
-                  <div className="form-group" style={{margin: 0}}>
-                    <input type="email" name="email" className="form-control premium-input" placeholder="Correo Electrónico" value={formData.email} onChange={handleChange} required />
+                  <div className="modern-input-group">
+                    <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: 'var(--color-primary)', fontSize: '0.9rem'}}>Correo Electrónico *</label>
+                    <input type="email" name="email" className="modern-input" placeholder="ejemplo@empresa.com" value={formData.email} onChange={handleChange} required />
                   </div>
                 </div>
-                <div className="form-group" style={{marginBottom: '15px'}}>
-                  <input type="tel" name="telefono" className="form-control premium-input" placeholder="Teléfono Móvil" value={formData.telefono} onChange={handleChange} required />
+
+                <div className="modern-input-group">
+                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: 'var(--color-primary)', fontSize: '0.9rem'}}>Teléfono Móvil *</label>
+                  <input type="tel" name="telefono" className="modern-input" placeholder="+56 9 XXXX XXXX" value={formData.telefono} onChange={handleChange} required />
                 </div>
-                <div className="form-group" style={{marginBottom: '20px'}}>
-                  <textarea name="mensaje" className="form-control premium-input" placeholder="Describe brevemente tus requerimientos o consultas..." value={formData.mensaje} onChange={handleChange} style={{minHeight: '120px', resize: 'vertical'}} required></textarea>
+
+                <div className="modern-input-group">
+                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: 'var(--color-primary)', fontSize: '0.9rem'}}>Mensaje o Requerimiento *</label>
+                  <textarea name="mensaje" className="modern-input" placeholder="Describa brevemente en qué podemos ayudarle..." value={formData.mensaje} onChange={handleChange} style={{minHeight: '150px', resize: 'vertical'}} required></textarea>
                 </div>
-                <button type="submit" className="btn btn-cyan btn-glow">
+
+                <button type="submit" className="btn btn-cyan btn-glow" style={{width: '100%', fontSize: '1.1rem', padding: '15px'}}>
+                  <Icon icon="mdi:send" style={{marginRight: '8px', fontSize: '1.2rem'}} />
                   ENVIAR MENSAJE
                 </button>
               </form>
@@ -114,6 +118,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
     </div>
   );
 };
