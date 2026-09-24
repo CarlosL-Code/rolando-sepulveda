@@ -3,6 +3,7 @@ import data from '../data.json';
 import { Icon } from '@iconify/react';
 import heroImg from '../assets/images/hero.jpg';
 import aboutImg from '../assets/images/about.jpg';
+import { whatsappLink } from '../utils/whatsapp';
 
 const Home = () => {
   const { profesional, empresa, tipos_de_sociedades_que_asesora, noticias_destacadas } = data;
