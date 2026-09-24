@@ -1421,3 +1421,52 @@ textarea.form-control {
   font-size: 0.9rem;
   color: var(--color-text-light);
 }
+
+/* Horizontal Services Grid (For Services Page) */
+.horizontal-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.horizontal-service-card {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.horizontal-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.horizontal-service-card .service-card-img {
+  width: 40%;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.horizontal-service-card .service-card-content {
+  width: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .horizontal-services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .horizontal-service-card {
+    flex-direction: column;
+  }
+  .horizontal-service-card .service-card-img {
+    width: 100%;
+    min-height: 200px;
+  }
+  .horizontal-service-card .service-card-content {
+    width: 100%;
+  }
+}

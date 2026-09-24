@@ -22,7 +22,7 @@ const Services = () => {
       {/* Services Compact Grid with Images */}
       <section className="premium-services-section" style={{background: '#f8fafc', padding: '80px 0'}}>
         <div className="container">
-          <div className="compact-services-grid">
+          <div className="horizontal-services-grid">
             {servicios.map((servicio, idx) => {
               const serviceImages = [
                 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80', // Contabilidad (calculadora/laptop)
@@ -34,7 +34,7 @@ const Services = () => {
               ];
               const quoteMessage = `Hola, quisiera solicitar una cotización por el servicio de: ${servicio}`;
               return (
-                <div className="compact-service-card" key={idx}>
+                <div className="horizontal-service-card" key={idx}>
                   <div className="service-card-img" style={{backgroundImage: `url(${serviceImages[idx % serviceImages.length]})`}}></div>
                   <div className="service-card-content">
                     <h3 style={{fontSize: '1.4rem', color: 'var(--color-primary)', marginBottom: '15px'}}>{servicio}</h3>
