@@ -99,21 +99,30 @@ const Home = () => {
               </div>
             </div>
             
-            <div className="premium-quote-form">
+            <div className="premium-quote-form" style={{padding: '50px'}}>
+              <h3 style={{fontSize: '1.8rem', color: '#fff', marginBottom: '30px'}}>Comencemos tu Evaluación</h3>
               <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <input type="text" name="nombre" className="form-control premium-input" placeholder="Razón Social o Nombre Completo" value={formData.nombre} onChange={handleChange} required />
+                <div className="modern-input-group">
+                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: '#cbd5e1', fontSize: '0.9rem'}}>Razón Social o Nombre Completo *</label>
+                  <input type="text" name="nombre" className="modern-input" placeholder="Ej. Empresa SpA" value={formData.nombre} onChange={handleChange} required />
                 </div>
-                <div className="form-group">
-                  <input type="email" name="email" className="form-control premium-input" placeholder="Correo Corporativo" value={formData.email} onChange={handleChange} required />
+                
+                <div className="modern-input-group">
+                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: '#cbd5e1', fontSize: '0.9rem'}}>Correo Corporativo *</label>
+                  <input type="email" name="email" className="modern-input" placeholder="contacto@empresa.com" value={formData.email} onChange={handleChange} required />
                 </div>
-                <div className="form-group">
-                  <input type="tel" name="telefono" className="form-control premium-input" placeholder="Teléfono Móvil" value={formData.telefono} onChange={handleChange} required />
+                
+                <div className="modern-input-group">
+                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: '#cbd5e1', fontSize: '0.9rem'}}>Teléfono Móvil *</label>
+                  <input type="tel" name="telefono" className="modern-input" placeholder="+56 9 XXXX XXXX" value={formData.telefono} onChange={handleChange} required />
                 </div>
-                <div className="form-group">
-                  <textarea name="mensaje" className="form-control premium-input" placeholder="Describe brevemente tus necesidades corporativas..." value={formData.mensaje} onChange={handleChange} required></textarea>
+                
+                <div className="modern-input-group">
+                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: '#cbd5e1', fontSize: '0.9rem'}}>Necesidades Corporativas *</label>
+                  <textarea name="mensaje" className="modern-input" placeholder="Describe brevemente tus requerimientos contables o tributarios..." value={formData.mensaje} onChange={handleChange} style={{minHeight: '120px', resize: 'vertical'}} required></textarea>
                 </div>
-                <button type="submit" className="btn btn-cyan btn-glow">
+                
+                <button type="submit" className="btn btn-cyan btn-glow" style={{width: '100%', fontSize: '1.1rem', padding: '15px', marginTop: '10px'}}>
                   ENVIAR SOLICITUD
                 </button>
               </form>
@@ -306,3 +315,4 @@ const Home = () => {
 };
 
 export default Home;
+
