@@ -156,71 +156,53 @@ const Home = () => {
       </section>
 
       {/* 5. About Split Section */}
-      <section className="about-section">
+      <section className="about-section" id="sobre-nosotros">
         <div className="about-content">
-          <h2>Sobre nosotros</h2>
-          <h3 style={{marginBottom: '5px'}}>{profesional.nombre_completo}</h3>
-          <p style={{color: 'var(--color-secondary)', fontSize: '0.95rem', fontWeight: '600', marginBottom: '15px'}}>
+          <h2 style={{fontSize: '2.5rem', marginBottom: '15px'}}>Sobre nosotros</h2>
+          <h3 style={{marginBottom: '5px', color: 'var(--color-primary)'}}>{profesional.nombre_completo}</h3>
+          <p style={{color: 'var(--color-secondary)', fontSize: '1rem', fontWeight: '600', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px'}}>
             {profesional.profesion} | {profesional.colegiatura}
           </p>
-          <p style={{fontSize: '0.9rem', color: 'var(--color-text-light)', marginBottom: '15px'}}>
+          <div style={{width: '60px', height: '4px', background: 'var(--color-secondary)', marginBottom: '25px'}}></div>
+          <p style={{fontSize: '1rem', color: 'var(--color-text)', marginBottom: '20px', lineHeight: '1.8'}}>
             {empresa.mision}
           </p>
-          <p style={{fontSize: '0.9rem', color: 'var(--color-text-light)'}}>
+          <p style={{fontSize: '1rem', color: 'var(--color-text)', lineHeight: '1.8'}}>
             {empresa.vision}
           </p>
         </div>
-        <div className="about-image"></div>
+        <div className="about-image" style={{backgroundImage: `url('/src/assets/images/rolando-de-pie.jpg')`, backgroundPosition: 'center top'}}></div>
       </section>
 
-      {/* 5.5. Constitución de Sociedades Grid */}
-      <section className="news-section" style={{background: '#f9f9f9'}}>
+      {/* 6. Servicios Premium Grid */}
+      <section className="premium-services-section">
         <div className="container">
-          <div className="text-center" style={{marginBottom: '50px'}}>
-            <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Constitución de Sociedades</h2>
-            <p style={{color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto'}}>Te asesoramos en la creación de tu empresa según tus objetivos comerciales.</p>
+          <div className="text-center" style={{marginBottom: '60px'}}>
+            <h2 style={{fontSize: '2.8rem', color: 'var(--color-primary)', marginBottom: '15px'}}>Nuestros Servicios</h2>
+            <div style={{width: '80px', height: '4px', background: 'var(--color-secondary)', margin: '0 auto 20px'}}></div>
+            <p style={{color: 'var(--color-text)', maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem'}}>Brindamos soluciones integrales adaptadas a las necesidades de tu empresa. Conoce nuestras áreas de especialidad.</p>
           </div>
           
-          <div className="news-grid">
-            {tipos_de_sociedades_que_asesora.map((sociedad, idx) => {
-              const images = [heroImg, aboutImg, heroImg]; 
-              return (
-                <div className="news-card" key={idx}>
-                  <div className="news-image" style={{backgroundImage: `url(${images[idx]})`}}></div>
-                  <div className="news-content">
-                    <h4 className="news-title">{sociedad.tipo}</h4>
-                    <p className="news-meta">{sociedad.nombre_completo || 'Sociedad'}</p>
-                    <p className="news-excerpt">{sociedad.descripcion}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. Servicios / WhatsApp Quote Grid */}
-      <section className="news-section" style={{background: '#f9f9f9'}}>
-        <div className="container">
-          <div className="text-center" style={{marginBottom: '50px'}}>
-            <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Nuestros Servicios</h2>
-            <p style={{color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto'}}>Brindamos soluciones integrales adaptadas a las necesidades de tu empresa. Cotiza tu plan fácilmente a través de WhatsApp.</p>
-          </div>
-          
-          <div className="news-grid">
+          <div className="premium-services-grid">
             {data.servicios.map((servicio, idx) => {
-              const bgGradient = idx % 2 === 0 ? 'linear-gradient(135deg, #34495e, #52758a)' : 'linear-gradient(135deg, #3e657a, #253f57)';
+              const bgImages = [
+                'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+                'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80',
+                'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
+                'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
+                'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80',
+                'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80'
+              ];
               const quoteMessage = `Hola, quisiera solicitar una cotización por el servicio de: ${servicio}`;
               return (
-                <div className="news-card" key={idx}>
-                  <div className="news-image" style={{backgroundImage: bgGradient, height: '160px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <Icon icon="mdi:briefcase-check" style={{fontSize: '4rem', color: 'rgba(255,255,255,0.8)'}} />
-                  </div>
-                  <div className="news-content">
-                    <h4 className="news-title">{servicio}</h4>
-                    <p className="news-excerpt">Asesoría y gestión profesional en {servicio.toLowerCase()} para potenciar su organización.</p>
-                    <a href={whatsappLink(quoteMessage)} className="btn btn-whatsapp" target="_blank" rel="noreferrer" style={{marginTop: 'auto', display: 'flex', justifyContent: 'center', borderRadius: '6px', padding: '12px'}}>
-                      <Icon icon="mdi:whatsapp" style={{marginRight: '8px', fontSize: '1.2rem'}}/> COTIZAR PLAN
+                <div className={`premium-service-row ${idx % 2 !== 0 ? 'reverse' : ''}`} key={idx}>
+                  <div className="service-img" style={{backgroundImage: `url(${bgImages[idx]})`}}></div>
+                  <div className="service-text">
+                    <Icon icon="mdi:check-decagram" className="service-icon" />
+                    <h3>{servicio}</h3>
+                    <p>Ofrecemos un enfoque personalizado y estratégico en {servicio.toLowerCase()}, asegurando el cumplimiento normativo y el crecimiento sostenido de su negocio en el competitivo mercado actual.</p>
+                    <a href={whatsappLink(quoteMessage)} className="btn btn-whatsapp" target="_blank" rel="noreferrer">
+                      <Icon icon="mdi:whatsapp" style={{marginRight: '8px', fontSize: '1.3rem'}}/> COTIZAR SERVICIO
                     </a>
                   </div>
                 </div>
@@ -230,33 +212,41 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 6.5. Actualidad / News Grid */}
-      <section className="news-section">
+      {/* 6.5. Actualidad / News TVN Style */}
+      <section className="news-section" style={{background: '#f8f9fa'}}>
         <div className="container">
           <div className="text-center" style={{marginBottom: '50px'}}>
             <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Actualidad e Información Clave</h2>
-            <p style={{color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto'}}>Mantente informado con los temas más relevantes en materia contable, tributaria y laboral.</p>
+            <div style={{width: '60px', height: '4px', background: 'var(--color-secondary)', margin: '0 auto 20px'}}></div>
           </div>
           
-          <div className="news-grid">
-            {data.noticias_destacadas.map((noticia, idx) => {
-              const stockImages = [
-                'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80',
-                'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80',
-                'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80'
-              ]; 
-              return (
-                <div className="news-card" key={idx}>
-                  <div className="news-image" style={{backgroundImage: `url(${stockImages[idx]})`}}></div>
-                  <div className="news-content">
-                    <p className="news-meta">{noticia.fecha}</p>
-                    <h4 className="news-title">{noticia.titulo}</h4>
-                    <p className="news-excerpt">{noticia.descripcion.substring(0, 120)}...</p>
-                    <a href="#" className="hero-link" style={{marginTop: 'auto', color: 'var(--color-secondary)'}}>Leer artículo completo <Icon icon="mdi:arrow-right" /></a>
-                  </div>
+          <div className="news-tvn-layout">
+            {data.noticias_destacadas.length > 0 && (
+              <div className="news-featured" style={{backgroundImage: `url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80')`}}>
+                <div className="news-overlay">
+                  <span className="badge">{data.noticias_destacadas[0].fecha}</span>
+                  <h3>{data.noticias_destacadas[0].titulo}</h3>
+                  <p>{data.noticias_destacadas[0].descripcion}</p>
                 </div>
-              );
-            })}
+              </div>
+            )}
+            <div className="news-sidebar">
+              {data.noticias_destacadas.slice(1).map((noticia, idx) => {
+                const stockImages = [
+                  'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80',
+                  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80'
+                ]; 
+                return (
+                  <div className="news-side-card" key={idx}>
+                    <div className="side-img" style={{backgroundImage: `url(${stockImages[idx]})`}}></div>
+                    <div className="side-text">
+                      <span className="meta">{noticia.fecha}</span>
+                      <h4>{noticia.titulo}</h4>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>

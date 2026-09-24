@@ -59,7 +59,7 @@
   },
   "navegacion": [
     { "texto": "Inicio", "url": "/" },
-    { "texto": "Sobre nosotros", "url": "/sobre-nosotros" },
+    { "texto": "Sobre nosotros", "url": "/#sobre-nosotros" },
     { "texto": "Servicios", "url": "/servicios" },
     { "texto": "Contactos", "url": "/contacto" }
   ],

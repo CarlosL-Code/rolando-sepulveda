@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import data from '../data.json';
 import { Icon } from '@iconify/react';
 import brandLogo from '../assets/images/rolando-sepulveda-logo.png';
@@ -7,7 +7,10 @@ import brandLogo from '../assets/images/rolando-sepulveda-logo.png';
 const Layout = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
   const { empresa, contacto, navegacion, enlaces_de_interes, redes_sociales } = data;
+
+  const isHome = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +24,7 @@ const Layout = () => {
 
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <nav className={`navbar ${(scrolled || !isHome) ? 'scrolled' : ''}`}>
         <div className="container">
           <NavLink to="/" className="nav-brand" onClick={closeMenu}>
             <img src={brandLogo} alt="Rolando Sepúlveda" />
