@@ -202,8 +202,8 @@ const Home = () => {
       <section className="news-section" style={{background: '#f9f9f9'}}>
         <div className="container">
           <div className="text-center" style={{marginBottom: '50px'}}>
-            <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Cotiza Nuestros Servicios</h2>
-            <p style={{color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto'}}>Brindamos soluciones integrales adaptadas a las necesidades de tu empresa. Cotiza fácilmente a través de WhatsApp.</p>
+            <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Nuestros Servicios</h2>
+            <p style={{color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto'}}>Brindamos soluciones integrales adaptadas a las necesidades de tu empresa. Cotiza tu plan fácilmente a través de WhatsApp.</p>
           </div>
           
           <div className="news-grid">
@@ -211,16 +211,47 @@ const Home = () => {
               const bgGradient = idx % 2 === 0 ? 'linear-gradient(135deg, #34495e, #52758a)' : 'linear-gradient(135deg, #3e657a, #253f57)';
               const quoteMessage = `Hola, quisiera solicitar una cotización por el servicio de: ${servicio}`;
               return (
-                <div className="news-card" style={{boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', overflow: 'hidden', background: '#fff'}} key={idx}>
-                  <div className="news-image" style={{backgroundImage: bgGradient, height: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0}}>
-                    <Icon icon="mdi:briefcase-check" style={{fontSize: '4rem', color: 'rgba(255,255,255,0.7)'}} />
+                <div className="news-card" key={idx}>
+                  <div className="news-image" style={{backgroundImage: bgGradient, height: '160px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <Icon icon="mdi:briefcase-check" style={{fontSize: '4rem', color: 'rgba(255,255,255,0.8)'}} />
                   </div>
-                  <div className="news-content" style={{display: 'flex', flexDirection: 'column', height: '100%', padding: '25px', paddingBottom: '30px'}}>
-                    <h4 className="news-title" style={{minHeight: '40px', fontSize: '1.05rem', color: 'var(--color-primary)'}}>{servicio}</h4>
-                    <p className="news-excerpt" style={{marginBottom: '20px', color: 'var(--color-text-light)', fontSize: '0.85rem'}}>Asesoría y gestión profesional en {servicio.toLowerCase()} para su organización.</p>
-                    <a href={whatsappLink(quoteMessage)} className="btn btn-whatsapp" target="_blank" rel="noreferrer" style={{marginTop: 'auto', display: 'flex', justifyContent: 'center', borderRadius: '4px', padding: '12px'}}>
-                      <Icon icon="mdi:whatsapp" style={{marginRight: '8px', fontSize: '1.2rem'}}/> COTIZAR
+                  <div className="news-content">
+                    <h4 className="news-title">{servicio}</h4>
+                    <p className="news-excerpt">Asesoría y gestión profesional en {servicio.toLowerCase()} para potenciar su organización.</p>
+                    <a href={whatsappLink(quoteMessage)} className="btn btn-whatsapp" target="_blank" rel="noreferrer" style={{marginTop: 'auto', display: 'flex', justifyContent: 'center', borderRadius: '6px', padding: '12px'}}>
+                      <Icon icon="mdi:whatsapp" style={{marginRight: '8px', fontSize: '1.2rem'}}/> COTIZAR PLAN
                     </a>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 6.5. Actualidad / News Grid */}
+      <section className="news-section">
+        <div className="container">
+          <div className="text-center" style={{marginBottom: '50px'}}>
+            <h2 style={{fontSize: '2.5rem', marginBottom: '10px'}}>Actualidad e Información Clave</h2>
+            <p style={{color: 'var(--color-text-light)', maxWidth: '600px', margin: '0 auto'}}>Mantente informado con los temas más relevantes en materia contable, tributaria y laboral.</p>
+          </div>
+          
+          <div className="news-grid">
+            {data.noticias_destacadas.map((noticia, idx) => {
+              const stockImages = [
+                'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80',
+                'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80',
+                'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80'
+              ]; 
+              return (
+                <div className="news-card" key={idx}>
+                  <div className="news-image" style={{backgroundImage: `url(${stockImages[idx]})`}}></div>
+                  <div className="news-content">
+                    <p className="news-meta">{noticia.fecha}</p>
+                    <h4 className="news-title">{noticia.titulo}</h4>
+                    <p className="news-excerpt">{noticia.descripcion.substring(0, 120)}...</p>
+                    <a href="#" className="hero-link" style={{marginTop: 'auto', color: 'var(--color-secondary)'}}>Leer artículo completo <Icon icon="mdi:arrow-right" /></a>
                   </div>
                 </div>
               );
