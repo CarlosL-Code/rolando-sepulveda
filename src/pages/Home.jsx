@@ -99,30 +99,26 @@ const Home = () => {
               </div>
             </div>
             
-            <div className="premium-quote-form" style={{padding: '50px'}}>
-              <h3 style={{fontSize: '1.8rem', color: '#fff', marginBottom: '30px'}}>Comencemos tu Evaluación</h3>
+            <div className="premium-quote-form">
+              <h3 style={{fontSize: '1.8rem', color: '#fff', marginBottom: '10px'}}>Comencemos tu Evaluación</h3>
+              <p style={{color: '#94a3b8', marginBottom: '30px', fontSize: '0.95rem'}}>Nuestro equipo analizará su requerimiento corporativo y le contactaremos a la brevedad.</p>
+              
               <form onSubmit={handleSubmit}>
-                <div className="modern-input-group">
-                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: '#cbd5e1', fontSize: '0.9rem'}}>Razón Social o Nombre Completo *</label>
-                  <input type="text" name="nombre" className="modern-input" placeholder="Ej. Empresa SpA" value={formData.nombre} onChange={handleChange} required />
+                <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginBottom: '15px'}}>
+                  <div className="form-group" style={{margin: 0}}>
+                    <input type="text" name="nombre" className="form-control premium-input" placeholder="Razón Social o Nombre Completo" value={formData.nombre} onChange={handleChange} required />
+                  </div>
+                  <div className="form-group" style={{margin: 0}}>
+                    <input type="email" name="email" className="form-control premium-input" placeholder="Correo Corporativo" value={formData.email} onChange={handleChange} required />
+                  </div>
                 </div>
-                
-                <div className="modern-input-group">
-                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: '#cbd5e1', fontSize: '0.9rem'}}>Correo Corporativo *</label>
-                  <input type="email" name="email" className="modern-input" placeholder="contacto@empresa.com" value={formData.email} onChange={handleChange} required />
+                <div className="form-group" style={{marginBottom: '15px'}}>
+                  <input type="tel" name="telefono" className="form-control premium-input" placeholder="Teléfono Móvil" value={formData.telefono} onChange={handleChange} required />
                 </div>
-                
-                <div className="modern-input-group">
-                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: '#cbd5e1', fontSize: '0.9rem'}}>Teléfono Móvil *</label>
-                  <input type="tel" name="telefono" className="modern-input" placeholder="+56 9 XXXX XXXX" value={formData.telefono} onChange={handleChange} required />
+                <div className="form-group" style={{marginBottom: '20px'}}>
+                  <textarea name="mensaje" className="form-control premium-input" placeholder="Describe brevemente tus necesidades corporativas..." value={formData.mensaje} onChange={handleChange} style={{minHeight: '120px', resize: 'vertical'}} required></textarea>
                 </div>
-                
-                <div className="modern-input-group">
-                  <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: '#cbd5e1', fontSize: '0.9rem'}}>Necesidades Corporativas *</label>
-                  <textarea name="mensaje" className="modern-input" placeholder="Describe brevemente tus requerimientos contables o tributarios..." value={formData.mensaje} onChange={handleChange} style={{minHeight: '120px', resize: 'vertical'}} required></textarea>
-                </div>
-                
-                <button type="submit" className="btn btn-cyan btn-glow" style={{width: '100%', fontSize: '1.1rem', padding: '15px', marginTop: '10px'}}>
+                <button type="submit" className="btn btn-cyan btn-glow">
                   ENVIAR SOLICITUD
                 </button>
               </form>
@@ -315,4 +311,5 @@ const Home = () => {
 };
 
 export default Home;
+
 
