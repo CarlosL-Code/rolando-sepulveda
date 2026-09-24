@@ -1020,7 +1020,7 @@ textarea.form-control {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: start;
 }
 .quote-text h2 {
   font-size: 2.5rem;
@@ -1073,6 +1073,7 @@ textarea.form-control {
   background: linear-gradient(90deg, var(--color-secondary), var(--color-cyan));
 }
 .premium-input {
+  width: 100%;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
@@ -1088,7 +1089,7 @@ textarea.form-control {
   outline: none;
 }
 .premium-input::placeholder {
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 .btn-glow {
   width: 100%;
