@@ -1,9 +1,9 @@
 import data from '../data.json';
 import { Icon } from '@iconify/react';
-import aboutImg from '../assets/images/about.jpg';
+import standingPortrait from '../assets/images/rolando-de-pie.jpg';
 
 const About = () => {
-  const { sobre_nosotros_pagina, empresa, profesional } = data;
+  const { sobre_nosotros_pagina, profesional } = data;
 
   return (
     <div className="page-about">
@@ -17,18 +17,16 @@ const About = () => {
         <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center'}}>
           <div>
             <h2 style={{marginBottom: '10px', fontSize: '2rem'}}>{profesional.nombre_completo}</h2>
-            <p style={{color: 'var(--color-secondary)', fontWeight: '600', fontSize: '1.1rem', marginBottom: '20px'}}>
+            <p style={{color: 'var(--color-primary)', fontWeight: '600', fontSize: '1.1rem', marginBottom: '20px'}}>
               {profesional.profesion}
             </p>
             <p style={{fontSize: '1rem', color: 'var(--color-text)', lineHeight: '1.8', marginBottom: '20px'}}>
               {sobre_nosotros_pagina.descripcion}
             </p>
-            <p style={{fontSize: '0.95rem', color: 'var(--color-text-light)', fontStyle: 'italic', display: 'flex', alignItems: 'center', gap: '10px'}}>
-              <Icon icon="mdi:check-decagram" className="text-cyan" /> {profesional.experiencia}
-            </p>
+            <p className="validation-note">Antecedentes por validar con Rolando antes de publicar: títulos, formación, afiliación profesional y años de experiencia mencionados en esta página.</p>
           </div>
           <div>
-            <img src={aboutImg} alt="Acerca de nosotros" style={{width: '100%', borderRadius: '4px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)'}} />
+            <img src={standingPortrait} alt="Retrato de Rolando Sepúlveda de pie" loading="lazy" style={{width: '100%', maxHeight: '560px', objectFit: 'contain', borderRadius: '4px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)'}} />
           </div>
         </div>
       </div>
@@ -52,32 +50,14 @@ const About = () => {
           </div>
         </div>
       </section>
-      
-      {/* Reusing Stats Section */}
       <section className="stats-section" style={{marginTop: 0}}>
         <div className="container">
-          <h2>Resultados que hablan por sí solos</h2>
+          <h2>Áreas de atención</h2>
           <div className="stats-grid" style={{marginTop: '60px'}}>
-            <div className="stat-item">
-              <Icon icon="mdi:account-outline" className="icon" />
-              <h3>{empresa.estadisticas.clientes_felices}+</h3>
-              <p>Clientes Felices</p>
-            </div>
-            <div className="stat-item">
-              <Icon icon="mdi:tshirt-crew-outline" className="icon" />
-              <h3>{empresa.estadisticas.miembros_equipo}</h3>
-              <p>Miembros del Equipo</p>
-            </div>
-            <div className="stat-item">
-              <Icon icon="mdi:lightbulb-outline" className="icon" />
-              <h3>{empresa.estadisticas.cantidad_servicios}+</h3>
-              <p>Tipos de Servicios</p>
-            </div>
-            <div className="stat-item">
-              <Icon icon="mdi:map-marker-outline" className="icon" />
-              <h3>40+</h3>
-              <p>Años de Experiencia</p>
-            </div>
+            <div className="stat-item"><Icon icon="mdi:calculator" className="icon" /><h3>Contable</h3><p>Servicios para empresas</p></div>
+            <div className="stat-item"><Icon icon="mdi:file-document-outline" className="icon" /><h3>Tributaria</h3><p>Asesoría</p></div>
+            <div className="stat-item"><Icon icon="mdi:account-group-outline" className="icon" /><h3>Laboral</h3><p>Servicios</p></div>
+            <div className="stat-item"><Icon icon="mdi:map-marker-outline" className="icon" /><h3>Temuco</h3><p>La Araucanía</p></div>
           </div>
         </div>
       </section>

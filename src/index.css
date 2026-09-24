@@ -188,7 +188,7 @@ p {
 .hero {
   min-height: 100vh;
   position: relative;
-  background-image: url('/src/assets/images/hero.jpg');
+  background-image: linear-gradient(115deg, #34495e, #253f57);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -200,7 +200,7 @@ p {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(44, 62, 80, 0.7); /* Dark overlay */
+  background: rgba(44, 62, 80, 0.52); /* Dark overlay */
 }
 
 /* Slider Arrows */
@@ -468,7 +468,7 @@ textarea.form-control {
 /* Experience Banner Section */
 .experience-banner {
   position: relative;
-  background-image: url('/src/assets/images/about.jpg'); /* Reusing an image, can be changed */
+  background-image: linear-gradient(115deg, #34495e, #253f57);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -535,7 +535,7 @@ textarea.form-control {
 /* Stats Section */
 .stats-section {
   position: relative;
-  background-image: url('/src/assets/images/about.jpg');
+  background-image: linear-gradient(115deg, #34495e, #253f57);
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -612,7 +612,7 @@ textarea.form-control {
 }
 
 .about-image {
-  background-image: url('/src/assets/images/hero.jpg');
+  background-image: none;
   background-size: cover;
   background-position: center left;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
@@ -800,3 +800,64 @@ textarea.form-control {
     border-bottom: 1px solid var(--color-border);
   }
 }
+
+/* Premium Animations & Effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #fff;
+  margin-top: 15px;
+  width: 100%;
+}
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+  color: #fff;
+}
+
+
+.nav-brand img { display: block; width: 260px; max-height: 70px; object-fit: contain; transition: all 0.3s ease; }
+.navbar.scrolled .nav-brand img { max-height: 55px; width: 200px; }
+.navbar-logo-mobile { max-height: 50px; width: auto; object-fit: contain; }
+.menu-toggle:focus-visible, .close-menu:focus-visible { outline: 3px solid #b58b2d; outline-offset: 3px; }
+.skip-link { position: fixed; top: -100px; left: 12px; z-index: 2000; padding: 10px 14px; background: #fff; color: #34495e; }
+.skip-link:focus { top: 10px; }
+.about-image { display: flex; align-items: stretch; justify-content: center; background: #e9eef0; mask-image: none; -webkit-mask-image: none; }
+.about-image img { display: block; width: 100%; height: 100%; min-height: 400px; object-fit: contain; object-position: center bottom; }
+.validation-note { padding: 10px 14px; background: #fff8e7; border-left: 3px solid #b58b2d; color: #514522; font-size: .85rem; }
+.service-quote-card .btn { margin-left: auto; }
+.btn-cyan { background-color: #087fa3; color: #fff; }
+.btn-cyan:hover { background-color: #066b8a; color: #fff; }
+.page-home .hero { background-color: #34495e; background-size: auto 100%; background-position: right center; background-repeat: no-repeat; }
+
+@media (max-width: 992px) { .nav-brand img { width: 175px; } }
+@media (max-width: 992px) { .page-about .container > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; gap: 30px !important; } }
+@media (max-width: 768px) { .service-quote-card .btn { margin: 0; } .page-home .hero { background-image: linear-gradient(115deg, #34495e, #253f57) !important; background-size: cover; background-position: center; } }
+@media (max-width: 600px) { .page-about section[style*="padding: 100px"] { padding: 60px 0 !important; } .page-about section .container > div[style*="grid-template-columns"] > div { padding: 28px !important; } }

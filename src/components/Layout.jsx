@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import data from '../data.json';
 import { Icon } from '@iconify/react';
+import logo from '../assets/images/rolando-sepulveda-logo.png';
+import { whatsappLink } from '../utils/whatsapp';
 
 const Layout = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -20,10 +22,11 @@ const Layout = () => {
 
   return (
     <>
+      <a className="skip-link" href="#contenido">Saltar al contenido</a>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
-          <NavLink to="/" className="nav-brand" onClick={closeMenu}>
-            <span className="text-cyan">ROLANDO</span><span>SEPÚLVEDA</span>
+          <NavLink to="/" className="nav-brand" aria-label="Rolando Sepúlveda Auditorías, inicio" onClick={closeMenu}>
+            <img src={logo} alt="Rolando Sepúlveda Auditorías" />
           </NavLink>
 
           {/* Desktop Nav */}
@@ -33,12 +36,12 @@ const Layout = () => {
                 <NavLink key={index} to={item.url}>{item.texto}</NavLink>
               ))}
             </div>
-            <a href="#contacto" className="btn btn-cyan">CONTÁCTANOS</a>
+            <a href="/contacto" className="btn btn-cyan">CONTÁCTANOS</a>
           </div>
 
           {/* Hamburger Icon */}
-          <button className="menu-toggle" onClick={() => setMenuOpen(true)}>
-            <Icon icon="mdi:menu" />
+          <button className="menu-toggle" aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
+            <span aria-hidden="true">☰</span>
           </button>
         </div>
       </nav>
@@ -49,18 +52,18 @@ const Layout = () => {
       {/* Off Canvas Menu */}
       <div className={`offcanvas-menu ${menuOpen ? 'active' : ''}`}>
         <div className="offcanvas-header">
-          <NavLink to="/" className="nav-brand" onClick={closeMenu}>
-            <span className="text-cyan" style={{color: 'var(--color-primary)'}}>ROLANDO</span>
+          <NavLink to="/" className="nav-brand" aria-label="Rolando Sepúlveda Auditorías, inicio" onClick={closeMenu}>
+            <img src={logo} alt="Rolando Sepúlveda Auditorías" />
           </NavLink>
           <button className="close-menu" onClick={closeMenu}>
-            <Icon icon="mdi:close" />
+            <span aria-hidden="true">×</span>
           </button>
         </div>
         <div className="offcanvas-links">
           {navegacion.map((item, index) => (
             <NavLink key={index} to={item.url} onClick={closeMenu}>{item.texto}</NavLink>
           ))}
-          <a href="#contacto" className="btn btn-cyan" style={{marginTop: '20px', width: '100%', textAlign: 'center'}} onClick={closeMenu}>CONTÁCTANOS</a>
+          <a href="/contacto" className="btn btn-cyan" style={{marginTop: '20px', width: '100%', textAlign: 'center'}} onClick={closeMenu}>CONTÁCTANOS</a>
         </div>
         
         <div className="offcanvas-footer">
@@ -73,7 +76,7 @@ const Layout = () => {
         </div>
       </div>
 
-      <main>
+      <main id="contenido">
         <Outlet />
       </main>
 
@@ -89,8 +92,8 @@ const Layout = () => {
               <ul>
                 <li><Icon icon="mdi:map-marker" /> {contacto.direccion}</li>
                 <li><Icon icon="mdi:phone" /> {contacto.telefono_fijo}</li>
-                <li><Icon icon="mdi:whatsapp" /> {contacto.celular_whatsapp}</li>
-                <li><Icon icon="mdi:email" /> {contacto.email}</li>
+                <li><a href={whatsappLink('Hola, quisiera solicitar una cotización gratuita.')} target="_blank" rel="noreferrer" aria-label={`Solicitar cotización por WhatsApp al ${contacto.celular_whatsapp}`}><Icon icon="mdi:whatsapp" /> {contacto.celular_whatsapp}</a></li>
+                <li><a href={`mailto:${contacto.email}`}><Icon icon="mdi:email" /> {contacto.email}</a></li>
               </ul>
             </div>
             <div className="footer-col">
