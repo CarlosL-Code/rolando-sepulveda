@@ -1426,10 +1426,11 @@ textarea.form-control {
 .horizontal-services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 30px;
 }
 .horizontal-service-card {
   display: flex;
+  align-items: stretch;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -1441,13 +1442,12 @@ textarea.form-control {
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 .horizontal-service-card .service-card-img {
-  width: 40%;
-  min-height: 250px;
+  width: 35%;
   background-size: cover;
   background-position: center;
 }
 .horizontal-service-card .service-card-content {
-  width: 60%;
+  width: 65%;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -1470,3 +1470,4 @@ textarea.form-control {
     width: 100%;
   }
 }
+
