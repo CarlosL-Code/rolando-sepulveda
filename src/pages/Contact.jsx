@@ -87,7 +87,7 @@ const Contact = () => {
               <p style={{color: 'var(--color-text-light)', marginBottom: '30px'}}>Nuestro equipo analizará su requerimiento y le contactaremos a la brevedad.</p>
               
               <form onSubmit={handleSubmit}>
-                <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px'}}>
+                <div className="responsive-form-row">
                   <div className="modern-input-group">
                     <label style={{display: 'block', marginBottom: '8px', fontWeight: '600', color: 'var(--color-primary)', fontSize: '0.9rem'}}>Nombre Completo *</label>
                     <input type="text" name="nombre" className="modern-input" placeholder="Ej. Juan Pérez" value={formData.nombre} onChange={handleChange} required />

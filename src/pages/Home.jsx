@@ -104,7 +104,7 @@ const Home = () => {
               <p style={{color: '#94a3b8', marginBottom: '30px', fontSize: '0.95rem'}}>Nuestro equipo analizará su requerimiento corporativo y le contactaremos a la brevedad.</p>
               
               <form onSubmit={handleSubmit}>
-                <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginBottom: '15px'}}>
+                <div className="responsive-form-row">
                   <div className="form-group" style={{margin: 0}}>
                     <input type="text" name="nombre" className="form-control premium-input" placeholder="Razón Social o Nombre Completo" value={formData.nombre} onChange={handleChange} required />
                   </div>

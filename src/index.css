@@ -1583,3 +1583,28 @@ textarea.form-control {
   background: #fff;
 }
 
+
+
+.responsive-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+
+/* RESPONSIVE FIXES */
+@media (max-width: 768px) {
+  .responsive-form-row {
+    grid-template-columns: 1fr !important;
+  }
+  .premium-about-section, .news-section, .premium-services-section, .quote-section, .testimonials-section, .premium-quote-section, .massive-cta-section {
+    padding: 60px 0 !important;
+  }
+  .contact-premium-wrapper {
+    margin: 20px;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem !important;
+  }
+  .section-title {
+    font-size: 2rem !important;
+  }
+}
+
+
+
