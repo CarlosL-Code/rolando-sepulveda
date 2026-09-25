@@ -1587,8 +1587,28 @@ textarea.form-control {
 
 .responsive-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
 
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
 /* RESPONSIVE FIXES */
 @media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar .container {
+    width: 90%;
+  }
+  .menu-toggle {
+    margin-right: 5px;
+  }
   .responsive-form-row {
     grid-template-columns: 1fr !important;
   }
@@ -1605,6 +1625,7 @@ textarea.form-control {
     font-size: 2rem !important;
   }
 }
+
 
 
 
