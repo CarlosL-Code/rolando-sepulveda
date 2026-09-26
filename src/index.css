@@ -138,7 +138,7 @@ p {
 }
 .navbar.scrolled {
   position: fixed;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -1297,7 +1297,7 @@ textarea.form-control {
 }
 
 /* News Fixed Text Color */
-.news-overlay-fixed {
+.news-featured { min-height: 400px !important; } .news-overlay-fixed {
   position: relative;
   z-index: 2;
   padding: 50px;
@@ -1596,13 +1596,36 @@ textarea.form-control {
 
 /* RESPONSIVE FIXES */
 @media (max-width: 768px) {
+  .news-featured { min-height: 400px !important; } .news-overlay-fixed {
+    padding: 20px !important;
+  }
+  .news-overlay-fixed h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 10px !important;
+  }
+  .news-overlay-fixed p {
+    font-size: 0.95rem !important;
+  }
+  .menu-toggle {
+    display: block !important;
+    color: #fff !important;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    z-index: 1050;
+  }
+  .navbar.scrolled .menu-toggle {
+    color: var(--color-primary) !important;
+    text-shadow: none;
+  }
+  .menu-toggle svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 768px) {
   .hero-buttons {
     flex-direction: column;
   }
-  .hero-buttons .btn {
-    width: 100%;
-    text-align: center;
-  }
+  .hero-buttons .btn { width: 100%; text-align: center; margin-bottom: 15px; }
   .navbar .container {
     width: 90%;
   }
@@ -1625,6 +1648,10 @@ textarea.form-control {
     font-size: 2rem !important;
   }
 }
+
+
+
+
 
 
 
