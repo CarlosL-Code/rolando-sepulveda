@@ -3,6 +3,7 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import data from '../data.json';
 import { Icon } from '@iconify/react';
 import brandLogo from '../assets/images/rolando-sepulveda-logo.png';
+import { whatsappLink } from '../utils/whatsapp';
 
 const Layout = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -130,8 +131,12 @@ const Layout = () => {
           </div>
         </div>
       </footer>
+      <a href={whatsappLink('Hola, me gustaría hacer una consulta en general.')} className="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+        <Icon icon="mdi:whatsapp" />
+      </a>
     </>
   );
 };
 
 export default Layout;
+
