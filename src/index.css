@@ -1698,13 +1698,14 @@ textarea.form-control {
 }
 @media (max-width: 768px) {
   .floating-whatsapp {
-    bottom: 85px;
+    bottom: 40px;
     right: 20px;
     width: 55px;
     height: 55px;
     font-size: 1.8rem;
   }
 }
+
 
 
 
