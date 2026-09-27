@@ -1630,6 +1630,9 @@ textarea.form-control {
   .navbar .container {
     width: 90%;
   }
+  .nav-brand img {
+    max-height: 45px !important;
+  }
   .menu-toggle {
     margin-right: 5px;
   }
@@ -1695,11 +1698,14 @@ textarea.form-control {
 }
 @media (max-width: 768px) {
   .floating-whatsapp {
-    bottom: 20px;
+    bottom: 85px;
     right: 20px;
     width: 55px;
     height: 55px;
     font-size: 1.8rem;
   }
 }
+
+
+
 
