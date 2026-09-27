@@ -1,4 +1,4 @@
-{
+﻿{
     "profesional":  {
                         "nombre_completo":  "Rolando Fidel Sepúlveda Quidel",
                         "profesion":  "Contador Público y Auditor",
@@ -103,21 +103,22 @@
                                     "fecha":  "Actualidad SII",
                                     "descripcion":  "El Servicio de Impuestos Internos fortalece constantemente la fiscalización. Es vital mantener una contabilidad ordenada y al día para evitar observaciones, multas e intereses.",
                                     "imagen":  "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200\u0026q=80",
-                                    "url":  "https://www.sii.cl/destacados/cumplimiento_tributario/index.html"
+                                    "url":  "https://www.bcn.cl/leychile/navegar?idNorma=1209351"
                                 },
                                 {
                                     "titulo":  "Implementación Ley 40 Horas",
                                     "fecha":  "Actualidad Laboral",
                                     "descripcion":  "Te guiamos en la adaptación y cumplimiento gradual de la reducción de la jornada laboral a 40 horas semanales, ajustando contratos y anexos según la nueva normativa legal.",
                                     "imagen":  "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600\u0026q=80",
-                                    "url":  "https://www.dt.gob.cl/portal/1626/w3-propertyvalue-148301.html"
+                                    "url":  "https://www.mintrab.gob.cl/40-horas/"
                                 },
                                 {
                                     "titulo":  "Beneficios Tributarios para Pymes",
                                     "fecha":  "Actualidad Pyme",
                                     "descripcion":  "Conoce los regímenes tributarios Pro Pyme (Transparente y General) y cómo acogerse a los beneficios fiscales vigentes para potenciar el crecimiento y liquidez de tu empresa.",
                                     "imagen":  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600\u0026q=80",
-                                    "url":  "https://www.sii.cl/destacados/pyme/"
+                                    "url":  "https://www.bcn.cl/portal/leyfacil/recurso/regimen-tributario-para-micro,-pequenas-y-medianas-empresas-(mipymes)"
                                 }
                             ]
 }
+
