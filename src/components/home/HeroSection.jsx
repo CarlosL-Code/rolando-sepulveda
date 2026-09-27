@@ -8,7 +8,7 @@ import heroImg4 from '../../assets/images/hero-4.jpg';
 
 const HeroSection = () => {
   const { profesional, empresa } = data;
-  const heroImages = [heroImg2, heroImg3, heroImg4];
+  const heroImages = [heroImg1,heroImg3, heroImg4];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
