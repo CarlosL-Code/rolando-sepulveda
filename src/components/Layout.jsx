@@ -131,7 +131,7 @@ const Layout = () => {
           </div>
         </div>
       </footer>
-      <a href={whatsappLink('Hola, me gustaría hacer una consulta en general.')} className="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+      <a href={whatsappLink('Hola, me gustarÃ­a hacer una consulta en general.')} className="floating-whatsapp" target="_blank" rel="noopener noreferrer">
         <Icon icon="mdi:whatsapp" />
       </a>
     </>
@@ -139,4 +139,3 @@ const Layout = () => {
 };
 
 export default Layout;
-
