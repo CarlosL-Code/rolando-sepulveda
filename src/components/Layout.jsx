@@ -83,7 +83,6 @@ const Layout = () => {
                 <a key={idx} href={social.url} target="_blank" rel="noreferrer"><Icon icon={`mdi:${social.red.toLowerCase()}`} /></a>
              ))}
           </div>
-          <p style={{fontSize: '0.85rem', color: 'var(--color-text-light)'}}>{contacto.telefono_fijo}</p>
         </div>
       </div>
 
@@ -102,7 +101,6 @@ const Layout = () => {
               <h4>Contacto</h4>
               <ul>
                 <li><Icon icon="mdi:map-marker" /> {contacto.direccion}</li>
-                <li><Icon icon="mdi:phone" /> {contacto.telefono_fijo}</li>
                 <li><Icon icon="mdi:whatsapp" /> {contacto.celular_whatsapp}</li>
                 <li><Icon icon="mdi:email" /> {contacto.email}</li>
               </ul>

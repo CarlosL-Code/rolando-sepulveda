@@ -1,0 +1,3 @@
+import {FileBlob,PresentationFile} from '@oai/artifact-tool';
+const p=await PresentationFile.importPptx(await FileBlob.load('C:/Users/carlo/Documents/Propuestas/Propuesta_Final/nuevos/Informe_Estrategico_Invierte360_Diseño_Final.pptx'));
+for (const i of [0,12]) {const s=p.slides.items[i]; console.log('SLIDE',i+1,Object.keys(s)); for(const im of s.images.items)console.log('IMAGE',i+1,Object.keys(im),im.frame,im.crop,im.fit,im.name); for(const sh of s.shapes.items)if(sh.text?.toString?.().includes('INFORME ESTRATÉGICO')||sh.text?.toString?.().includes('Vendedor')) console.log('SHAPE',sh.name,sh.frame,sh.text?.style, Object.keys(sh));}

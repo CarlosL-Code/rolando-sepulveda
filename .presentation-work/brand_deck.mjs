@@ -1,0 +1,18 @@
+import fs from 'node:fs/promises';
+import {FileBlob,PresentationFile} from '@oai/artifact-tool';
+const source='C:/Users/carlo/Documents/PROYECTOS/CONTADORES/contabilidad-rs/output/pptx/Invierte360_Diagnostico_y_Propuesta_Digital.pptx';
+const p=await PresentationFile.importPptx(await FileBlob.load(source));
+const company=new Uint8Array(await fs.readFile('C:/Users/carlo/Documents/PROYECTOS/CONTADORES/contabilidad-rs/.presentation-work/brand/invierte360.png'));
+const personal=new Uint8Array(await fs.readFile('C:/Users/carlo/Documents/PROYECTOS/CONTADORES/contabilidad-rs/.presentation-work/brand/carlos_lozano.png'));
+const cover=p.slides.items[0];
+cover.images.add({blob:company,contentType:'image/png',alt:'Logo de Invierte360',fit:'contain',position:{left:69,top:278,width:40,height:40}});
+const companyWordmark=p.resolve('sh/ts7md4r2'); companyWordmark.frame={left:120,top:286,width:250,height:42};
+cover.images.add({blob:personal,contentType:'image/png',alt:'Logo personal de Carlos Lozano',fit:'contain',position:{left:746,top:574,width:96,height:110}});
+for(let i=1;i<p.slides.items.length;i++) p.slides.items[i].images.add({blob:company,contentType:'image/png',alt:'Logo de Invierte360',fit:'contain',position:{left:24,top:678,width:20,height:20}});
+const closing=p.slides.items[20];
+closing.images.add({blob:personal,contentType:'image/png',alt:'Logo personal de Carlos Lozano',fit:'contain',position:{left:1082,top:548,width:78,height:90}});
+for(const id of ['sh/po3itc72','sh/cj65wzyd']) p.resolve(id).fill='#1D482B';
+p.resolve('sh/pwvmlkzm').text.style={typeface:'Arial',fontSize:24,bold:true,color:'#F2464E',autoFit:'none'};
+const out='C:/Users/carlo/Documents/PROYECTOS/CONTADORES/contabilidad-rs/.presentation-work/build/brand-candidate.pptx';
+await (await PresentationFile.exportPptx(p)).save(out);
+console.log(out);

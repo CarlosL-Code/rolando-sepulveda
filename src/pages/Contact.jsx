@@ -62,14 +62,6 @@ const Contact = () => {
                     <span style={{color: '#94a3b8', fontSize: '0.95rem'}}>{contacto.email}</span>
                   </div>
                 </div>
-
-                <div className="contact-info-item">
-                  <div className="contact-info-icon"><Icon icon="mdi:phone-classic" /></div>
-                  <div>
-                    <h4 style={{fontSize: '1.1rem', marginBottom: '3px'}}>Teléfono Fijo</h4>
-                    <span style={{color: '#94a3b8', fontSize: '0.95rem'}}>{contacto.telefono_fijo}</span>
-                  </div>
-                </div>
               </div>
 
               <div style={{marginTop: '60px', position: 'relative', zIndex: 2}}>

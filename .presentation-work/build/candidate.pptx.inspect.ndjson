@@ -1,0 +1,476 @@
+{"kind":"deck","id":"pr/bb9d0h","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"subtitle","type":"subtitle","textPreview":"Click to edit Master subtitle style"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Title and Content","type":"obj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Section Header","type":"secHead","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Two Content","type":"twoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Comparison","type":"twoTxTwoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 5","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout6.xml","name":"Title Only","type":"titleOnly","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout7.xml","name":"Blank","type":"blank","placeholders":[{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout8.xml","name":"Content with Caption","type":"objTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout9.xml","name":"Picture with Caption","type":"picTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"picture","type":"picture"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout10.xml","name":"Title and Vertical Text","type":"vertTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout11.xml","name":"Vertical Title and Text","type":"vertTitleAndTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"1/27/13"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"PROPUESTA DE MEJORA DIGITAL","textShapes":9}
+{"kind":"shape","id":"sh/547294r6","slide":1,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"shape","id":"sh/k3yl0zql","slide":1,"name":"Rectangle 2","bbox":[897.6,0,382.08,720]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"name":"TextBox 3","text":"PROPUESTA DE MEJORA DIGITAL","textPreview":"PROPUESTA DE MEJORA DIGITAL","textChars":27,"textLines":1,"bbox":[67.2,62.4,384,28.8]}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"name":"TextBox 4","text":"Diagnóstico y plan de mejora\npara convertir visitas en contactos","textPreview":"Diagnóstico y plan de mejora | para convertir visitas en contactos","textChars":64,"textLines":2,"bbox":[67.2,129.6,748.8,134.4]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"name":"TextBox 5","text":"INVIERTE360","textPreview":"INVIERTE360","textChars":11,"textLines":1,"bbox":[69.12,288,288,33.6]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"name":"TextBox 6","text":"Diagnóstico · soluciones · prioridades · propuesta","textPreview":"Diagnóstico · soluciones · prioridades · propuesta","textChars":50,"textLines":1,"bbox":[69.12,340.8,672,38.4]}
+{"kind":"shape","id":"sh/fu94fe98","slide":1,"name":"Rounded Rectangle 7","bbox":[69.12,432,739.2,110.4]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"name":"TextBox 8","text":"Tesis central","textPreview":"Tesis central","textChars":13,"textLines":1,"bbox":[94.08,456,134.4,24]}
+{"kind":"textbox","id":"sh/wn6dc7eh","slide":1,"name":"TextBox 9","text":"Convertir y medir mejor antes de escalar adquisición.","textPreview":"Convertir y medir mejor antes de escalar adquisición.","textChars":53,"textLines":1,"bbox":[94.08,491.52,662.4,36.48]}
+{"kind":"textbox","id":"sh/ul4vaxgb","slide":1,"name":"TextBox 11","text":"Paquete de diagnóstico y estrategia · $100.000 CLP","textPreview":"Paquete de diagnóstico y estrategia · $100.000 CLP","textChars":50,"textLines":1,"bbox":[69.12,654.72,528,24]}
+{"kind":"textbox","id":"sh/vmdcj2xw","slide":1,"name":"TextBox 12","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/4r6dg7et","slide":1,"name":"TextBox 13","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/alovadw3","slide":1,"name":"Picture 10","bbox":[933.12,115.2,288,470.4]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":""}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"ALCANCE","textShapes":16}
+{"kind":"shape","id":"sh/9072xkry","slide":2,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"name":"TextBox 2","text":"ALCANCE","textPreview":"ALCANCE","textChars":7,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"TextBox 3","text":"Qué se hizo hoy","textPreview":"Qué se hizo hoy","textChars":15,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"name":"TextBox 4","text":"Revisión pública y pruebas funcionales. Sin acceso interno a plataformas.","textPreview":"Revisión pública y pruebas funcionales. Sin acceso interno a plataformas.","textChars":73,"textLines":1,"bbox":[54.72,132.48,1132.8,38.4]}
+{"kind":"shape","id":"sh/x4r21kru","slide":2,"name":"Rounded Rectangle 5","bbox":[62.4,192,268.8,163.2]}
+{"kind":"shape","id":"sh/w3i1sfa9","slide":2,"name":"Rounded Rectangle 6","bbox":[62.4,192,5.76,163.2]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"name":"TextBox 7","text":"Visualización","textPreview":"Visualización","textChars":13,"textLines":1,"bbox":[81.6,209.28,235.2,26.88]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"name":"TextBox 8","text":"Home, navegación, catálogo, fichas, contenido y confianza.","textPreview":"Home, navegación, catálogo, fichas, contenido y confianza.","textChars":58,"textLines":1,"bbox":[81.6,247.68,232.32,96]}
+{"kind":"shape","id":"sh/ove9o7yd","slide":2,"name":"Rounded Rectangle 9","bbox":[360,192,268.8,163.2]}
+{"kind":"shape","id":"sh/9wnqhczy","slide":2,"name":"Rounded Rectangle 10","bbox":[360,192,5.76,163.2]}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"name":"TextBox 11","text":"Pruebas","textPreview":"Pruebas","textChars":7,"textLines":1,"bbox":[379.2,209.28,235.2,26.88]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"name":"TextBox 12","text":"Formulario, WhatsApp, filtros, calculadora y recorridos.","textPreview":"Formulario, WhatsApp, filtros, calculadora y recorridos.","textChars":56,"textLines":1,"bbox":[379.2,247.68,232.32,96]}
+{"kind":"shape","id":"sh/wjy9sry9","slide":2,"name":"Rounded Rectangle 13","bbox":[657.6,192,268.8,163.2]}
+{"kind":"shape","id":"sh/xk7qlczu","slide":2,"name":"Rounded Rectangle 14","bbox":[657.6,192,5.76,163.2]}
+{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"name":"TextBox 15","text":"Conversión","textPreview":"Conversión","textChars":10,"textLines":1,"bbox":[676.8,209.28,235.2,26.88]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"name":"TextBox 16","text":"Continuidad entre interés, contacto y operación comercial.","textPreview":"Continuidad entre interés, contacto y operación comercial.","textChars":58,"textLines":1,"bbox":[676.8,247.68,232.32,96]}
+{"kind":"shape","id":"sh/cnupgny5","slide":2,"name":"Rounded Rectangle 17","bbox":[955.2,192,268.8,163.2]}
+{"kind":"shape","id":"sh/do3q9szq","slide":2,"name":"Rounded Rectangle 18","bbox":[955.2,192,5.76,163.2]}
+{"kind":"textbox","id":"sh/t8byxkn2","slide":2,"name":"TextBox 19","text":"Estrategia","textPreview":"Estrategia","textChars":10,"textLines":1,"bbox":[974.4,209.28,235.2,26.88]}
+{"kind":"textbox","id":"sh/s72xofmh","slide":2,"name":"TextBox 20","text":"Priorización y mejoras propuestas a partir de lo observado.","textPreview":"Priorización y mejoras propuestas a partir de lo observado.","textChars":59,"textLines":1,"bbox":[974.4,247.68,232.32,96]}
+{"kind":"shape","id":"sh/76twva5c","slide":2,"name":"Rounded Rectangle 21","bbox":[62.4,403.2,1152,115.2]}
+{"kind":"textbox","id":"sh/65kfmpor","slide":2,"name":"TextBox 22","text":"NO SE AUDITÓ INTERNAMENTE","textPreview":"NO SE AUDITÓ INTERNAMENTE","textChars":25,"textLines":1,"bbox":[86.4,430.08,259.2,24]}
+{"kind":"textbox","id":"sh/hcvy14ne","slide":2,"name":"TextBox 23","text":"WordPress Admin · Hostinger · SMTP · GA4/GTM · Google Ads · Meta Ads","textPreview":"WordPress Admin · Hostinger · SMTP · GA4/GTM · Google Ads · Meta Ads","textChars":68,"textLines":1,"bbox":[86.4,472.32,1027.2,28.8]}
+{"kind":"textbox","id":"sh/gbmxszmt","slide":2,"name":"TextBox 24","text":"Las causas internas y el rendimiento histórico quedan para una fase con acceso autorizado.","textPreview":"Las causas internas y el rendimiento histórico quedan para una fase con acceso autorizado.","textChars":90,"textLines":1,"bbox":[69.12,566.4,1113.6,38.4]}
+{"kind":"textbox","id":"sh/fadgzu58","slide":2,"name":"TextBox 25","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/u94fqp4n","slide":2,"name":"TextBox 26","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":""}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"METODOLOGÍA","textShapes":13}
+{"kind":"shape","id":"sh/cza94vmx","slide":3,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"name":"TextBox 2","text":"METODOLOGÍA","textPreview":"METODOLOGÍA","textChars":11,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"name":"TextBox 3","text":"Nivel de evidencia","textPreview":"Nivel de evidencia","textChars":18,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/3ah8rqlg","slide":3,"name":"Rounded Rectangle 4","bbox":[62.4,187.2,552,153.6]}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"name":"TextBox 5","text":"A · Comprobado","textPreview":"A · Comprobado","textChars":14,"textLines":1,"bbox":[89.28,211.2,470.4,28.8]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"name":"TextBox 6","text":"Prueba manual o confirmación directa.","textPreview":"Prueba manual o confirmación directa.","textChars":37,"textLines":1,"bbox":[89.28,256.32,484.8,48]}
+{"kind":"shape","id":"sh/m5cra54z","slide":3,"name":"Rounded Rectangle 7","bbox":[648,187.2,552,153.6]}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"name":"TextBox 8","text":"B · Público actual","textPreview":"B · Público actual","textChars":18,"textLines":1,"bbox":[674.88,211.2,470.4,28.8]}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"name":"TextBox 9","text":"Visible durante la revisión.","textPreview":"Visible durante la revisión.","textChars":28,"textLines":1,"bbox":[674.88,256.32,484.8,48]}
+{"kind":"shape","id":"sh/m1c3mlsn","slide":3,"name":"Rounded Rectangle 10","bbox":[62.4,379.2,552,153.6]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"name":"TextBox 11","text":"C · Snapshot","textPreview":"C · Snapshot","textChars":12,"textLines":1,"bbox":[89.28,403.2,470.4,28.8]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"name":"TextBox 12","text":"Hallazgo inicial que puede haber cambiado.","textPreview":"Hallazgo inicial que puede haber cambiado.","textChars":42,"textLines":1,"bbox":[89.28,448.32,484.8,48]}
+{"kind":"shape","id":"sh/v6l4jq94","slide":3,"name":"Rounded Rectangle 13","bbox":[648,379.2,552,153.6]}
+{"kind":"textbox","id":"sh/a5c3ql8z","slide":3,"name":"TextBox 14","text":"D · Pendiente","textPreview":"D · Pendiente","textChars":13,"textLines":1,"bbox":[674.88,403.2,470.4,28.8]}
+{"kind":"textbox","id":"sh/x8nml0ra","slide":3,"name":"TextBox 15","text":"Requiere acceso interno.","textPreview":"Requiere acceso interno.","textChars":24,"textLines":1,"bbox":[674.88,448.32,484.8,48]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"TextBox 16","text":"Regla: no afirmar una causa técnica sin evidencia ni presentar como actual un problema histórico ya corregido.","textPreview":"Regla: no afirmar una causa técnica sin evidencia ni presentar como actual un problema histórico ya corregido.","textChars":110,"textLines":1,"bbox":[69.12,585.6,1123.2,38.4]}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"name":"TextBox 17","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/i9w3u58v","slide":3,"name":"TextBox 18","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":""}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"RESUMEN EJECUTIVO","textShapes":16}
+{"kind":"shape","id":"sh/1cj2d8b6","slide":4,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"name":"TextBox 2","text":"RESUMEN EJECUTIVO","textPreview":"RESUMEN EJECUTIVO","textChars":17,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"TextBox 3","text":"La conversión requiere continuidad en cada paso","textPreview":"La conversión requiere continuidad en cada paso","textChars":47,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/ql8jytsj","slide":4,"name":"Rounded Rectangle 4","bbox":[52.8,192,216,144]}
+{"kind":"shape","id":"sh/doj29oba","slide":4,"name":"Rounded Rectangle 5","bbox":[52.8,192,5.76,144]}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"name":"TextBox 6","text":"Captación","textPreview":"Captación","textChars":9,"textLines":1,"bbox":[72,209.28,182.4,26.88]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"name":"TextBox 7","text":"Validar recepción real.","textPreview":"Validar recepción real.","textChars":23,"textLines":1,"bbox":[72,247.68,179.52,76.8]}
+{"kind":"shape","id":"sh/ih8ju9sn","slide":4,"name":"Rounded Rectangle 8","bbox":[292.8,192,216,144]}
+{"kind":"shape","id":"sh/kbm987y5","slide":4,"name":"Rounded Rectangle 9","bbox":[292.8,192,5.76,144]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"name":"TextBox 10","text":"Contexto","textPreview":"Contexto","textChars":8,"textLines":1,"bbox":[312,209.28,182.4,26.88]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"TextBox 11","text":"Conservar proyecto e intención.","textPreview":"Conservar proyecto e intención.","textChars":31,"textLines":1,"bbox":[312,247.68,179.52,76.8]}
+{"kind":"shape","id":"sh/jadsz2xk","slide":4,"name":"Rounded Rectangle 12","bbox":[532.8,192,216,144]}
+{"kind":"shape","id":"sh/w72947yt","slide":4,"name":"Rounded Rectangle 13","bbox":[532.8,192,5.76,144]}
+{"kind":"textbox","id":"sh/x8vaxsfe","slide":4,"name":"TextBox 14","text":"Conversión","textPreview":"Conversión","textChars":10,"textLines":1,"bbox":[552,209.28,182.4,26.88]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"name":"TextBox 15","text":"Reducir fricción.","textPreview":"Reducir fricción.","textChars":17,"textLines":1,"bbox":[552,247.68,179.52,76.8]}
+{"kind":"shape","id":"sh/v6tsv2xo","slide":4,"name":"Rounded Rectangle 16","bbox":[772.8,192,216,144]}
+{"kind":"shape","id":"sh/g36tgryd","slide":4,"name":"Rounded Rectangle 17","bbox":[772.8,192,5.76,144]}
+{"kind":"textbox","id":"sh/h4fa9wfy","slide":4,"name":"TextBox 18","text":"Confianza","textPreview":"Confianza","textChars":9,"textLines":1,"bbox":[792,209.28,182.4,26.88]}
+{"kind":"textbox","id":"sh/p0batw72","slide":4,"name":"TextBox 19","text":"Consistencia y prueba.","textPreview":"Consistencia y prueba.","textChars":22,"textLines":1,"bbox":[792,247.68,179.52,76.8]}
+{"kind":"shape","id":"sh/oz29krqh","slide":4,"name":"Rounded Rectangle 20","bbox":[1012.8,192,216,144]}
+{"kind":"shape","id":"sh/3ytsrmpw","slide":4,"name":"Rounded Rectangle 21","bbox":[1012.8,192,5.76,144]}
+{"kind":"textbox","id":"sh/2xkrih8b","slide":4,"name":"TextBox 22","text":"Medición","textPreview":"Medición","textChars":8,"textLines":1,"bbox":[1032,209.28,182.4,26.88]}
+{"kind":"textbox","id":"sh/1wbapc7q","slide":4,"name":"TextBox 23","text":"Acciones útiles, no solo visitas.","textPreview":"Acciones útiles, no solo visitas.","textChars":33,"textLines":1,"bbox":[1032,247.68,179.52,76.8]}
+{"kind":"shape","id":"sh/gv29g7q5","slide":4,"name":"Rounded Rectangle 24","bbox":[62.4,398.4,1152,100.8]}
+{"kind":"textbox","id":"sh/fu9sn2p0","slide":4,"name":"TextBox 25","text":"TRÁFICO  →  INTERÉS  →  CONTACTO  →  SEGUIMIENTO  →  OPORTUNIDAD COMERCIAL","textPreview":"TRÁFICO  →  INTERÉS  →  CONTACTO  →  SEGUIMIENTO  →  OPORTUNIDAD COMERCIAL","textChars":74,"textLines":1,"bbox":[86.4,432,1104,33.6]}
+{"kind":"textbox","id":"sh/et0reh8f","slide":4,"name":"TextBox 26","text":"Primero recuperar y medir. Después mejorar conversión y escalar.","textPreview":"Primero recuperar y medir. Después mejorar conversión y escalar.","textChars":64,"textLines":1,"bbox":[67.2,552,1132.8,38.4]}
+{"kind":"textbox","id":"sh/tsrqlc7u","slide":4,"name":"TextBox 27","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/sri9s7q9","slide":4,"name":"TextBox 28","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":""}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"MAPA ACTUAL","textShapes":19}
+{"kind":"shape","id":"sh/dgbulwnm","slide":5,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"name":"TextBox 2","text":"MAPA ACTUAL","textPreview":"MAPA ACTUAL","textChars":11,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"name":"TextBox 3","text":"Las interrupciones aparecen entre interés y seguimiento","textPreview":"Las interrupciones aparecen entre interés y seguimiento","textChars":55,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/yhkbe1o7","slide":5,"name":"Rounded Rectangle 4","bbox":[62.4,216,196.8,100.8]}
+{"kind":"textbox","id":"sh/l4bupwny","slide":5,"name":"TextBox 5","text":"Home / zona","textPreview":"Home / zona","textChars":11,"textLines":1,"bbox":[76.8,247.68,168,28.8]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"name":"TextBox 6","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[262.08,247.68,33.6,28.8]}
+{"kind":"shape","id":"sh/n6dcr65o","slide":5,"name":"Rounded Rectangle 7","bbox":[302.4,216,196.8,100.8]}
+{"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"name":"TextBox 8","text":"Catálogo","textPreview":"Catálogo","textChars":8,"textLines":1,"bbox":[316.8,247.68,168,28.8]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"name":"TextBox 9","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[502.08,247.68,33.6,28.8]}
+{"kind":"shape","id":"sh/x4vedgvm","slide":5,"name":"Rounded Rectangle 10","bbox":[542.4,216,196.8,100.8]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"name":"TextBox 11","text":"Ficha / cálculo","textPreview":"Ficha / cálculo","textChars":15,"textLines":1,"bbox":[556.8,247.68,168,28.8]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"name":"TextBox 12","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[742.08,247.68,33.6,28.8]}
+{"kind":"shape","id":"sh/k7mxovud","slide":5,"name":"Rounded Rectangle 13","bbox":[782.4,216,196.8,100.8]}
+{"kind":"textbox","id":"sh/58vehgvy","slide":5,"name":"TextBox 14","text":"WhatsApp / form","textPreview":"WhatsApp / form","textChars":15,"textLines":1,"bbox":[796.8,247.68,168,28.8]}
+{"kind":"textbox","id":"sh/i54fmlc7","slide":5,"name":"TextBox 15","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[982.08,247.68,33.6,28.8]}
+{"kind":"shape","id":"sh/j6dwfqds","slide":5,"name":"Rounded Rectangle 16","bbox":[1022.4,216,196.8,100.8]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"name":"TextBox 17","text":"Excel / asesor","textPreview":"Excel / asesor","textChars":14,"textLines":1,"bbox":[1036.8,247.68,168,28.8]}
+{"kind":"textbox","id":"sh/tcfel0vu","slide":5,"name":"TextBox 18","text":"CTA/anchor","textPreview":"CTA/anchor","textChars":10,"textLines":1,"bbox":[72,350.4,172.8,28.8]}
+{"kind":"textbox","id":"sh/hgrmpwj2","slide":5,"name":"TextBox 19","text":"filtros/taxonomía","textPreview":"filtros/taxonomía","textChars":17,"textLines":1,"bbox":[312,350.4,172.8,28.8]}
+{"kind":"textbox","id":"sh/gfi5grih","slide":5,"name":"TextBox 20","text":"estado/contexto","textPreview":"estado/contexto","textChars":15,"textLines":1,"bbox":[552,350.4,172.8,28.8]}
+{"kind":"textbox","id":"sh/fe94nm1w","slide":5,"name":"TextBox 21","text":"recepción/origen","textPreview":"recepción/origen","textChars":16,"textLines":1,"bbox":[792,350.4,172.8,28.8]}
+{"kind":"textbox","id":"sh/ud0ne10b","slide":5,"name":"TextBox 22","text":"seguimiento","textPreview":"seguimiento","textChars":11,"textLines":1,"bbox":[1032,350.4,172.8,28.8]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"name":"TextBox 23","text":"Objetivo del rediseño del recorrido: que cada paso conserve intención y tenga un siguiente paso verificable.","textPreview":"Objetivo del rediseño del recorrido: que cada paso conserve intención y tenga un siguiente paso verificable.","textChars":108,"textLines":1,"bbox":[72,504,1123.2,48]}
+{"kind":"textbox","id":"sh/4ji5kbid","slide":5,"name":"TextBox 24","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/3i94r61s","slide":5,"name":"TextBox 25","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":""}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/yhg7epsj","slide":6,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"TextBox 3","text":"Home: el recorrido debe terminar en una acción verificable","textPreview":"Home: el recorrido debe terminar en una acción verificable","textChars":58,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/ml07i9sv","slide":6,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/7m98ru9g","slide":6,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"name":"TextBox 7","text":"Evidencia","textPreview":"Evidencia","textChars":9,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"name":"TextBox 8","text":"CTA/anchor observado en el levantamiento; revalidar estado actual.","textPreview":"CTA/anchor observado en el levantamiento; revalidar estado actual.","textChars":66,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/h4bupgn6","slide":6,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/w32twb6l","slide":6,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"name":"TextBox 11","text":"Impacto","textPreview":"Impacto","textChars":7,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"name":"TextBox 12","text":"Una interrupción puede desperdiciar intención.","textPreview":"Una interrupción puede desperdiciar intención.","textChars":46,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/5svutgni","slide":6,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/47mt0b6x","slide":6,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/j6dcr65c","slide":6,"name":"TextBox 15","text":"Mejora","textPreview":"Mejora","textChars":6,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/i54bylor","slide":6,"name":"TextBox 16","text":"CTA por intención + destino funcional.","textPreview":"CTA por intención + destino funcional.","textChars":38,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/twfux0ne","slide":6,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/svmt4v6t","slide":6,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/cbe5g3ih","slide":6,"name":"TextBox 19","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/e9orqlsj","slide":6,"name":"Picture 4","bbox":[55.68,174.72,686.4,446.4]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":""}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/cb2tkvap","slide":7,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"name":"TextBox 3","text":"Filtros: hoy funcionan, pero necesitan más certeza de interacción","textPreview":"Filtros: hoy funcionan, pero necesitan más certeza de interacción","textChars":65,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/kzmdova1","slide":7,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/l0vuh0rm","slide":7,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"name":"TextBox 7","text":"Actual","textPreview":"Actual","textChars":6,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"name":"TextBox 8","text":"Catálogo y filtros operativos.","textPreview":"Catálogo y filtros operativos.","textChars":30,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/baxkjqlk","slide":7,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/a9ojq5kz","slide":7,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"name":"TextBox 11","text":"Fricción","textPreview":"Fricción","textChars":8,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"name":"TextBox 12","text":"Actualización / Aplicar puede sentirse redundante.","textPreview":"Actualización / Aplicar puede sentirse redundante.","textChars":50,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/25ojml43","slide":7,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"name":"TextBox 15","text":"Mejora","textPreview":"Mejora","textChars":6,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/o761ov2t","slide":7,"name":"TextBox 16","text":"Una lógica clara + feedback + resultados.","textPreview":"Una lógica clara + feedback + resultados.","textChars":41,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/f2d0b6lc","slide":7,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/eh4jil4r","slide":7,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"name":"TextBox 19","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/gb25wj6t","slide":7,"name":"Picture 4","bbox":[55.68,174.72,686.4,446.4]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":""}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/18byd4zy","slide":8,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"name":"TextBox 3","text":"Formulario: éxito visual no equivale a contacto recibido","textPreview":"Formulario: éxito visual no equivale a contacto recibido","textChars":56,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/tkby9kzm","slide":8,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/sjix0zy1","slide":8,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"TextBox 7","text":"Prueba","textPreview":"Prueba","textChars":6,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"name":"TextBox 8","text":"La interfaz confirmó; Leonardo indicó no recepción.","textPreview":"La interfaz confirmó; Leonardo indicó no recepción.","textChars":51,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/o7ydoret","slide":8,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/98rehwve","slide":8,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"name":"TextBox 11","text":"Riesgo","textPreview":"Riesgo","textChars":6,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"name":"TextBox 12","text":"Posible pérdida de contactos.","textPreview":"Posible pérdida de contactos.","textChars":29,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/0jydkreh","slide":8,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/1k7edwv2","slide":8,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"name":"TextBox 15","text":"Pendiente","textPreview":"Pendiente","textChars":9,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/zipwbmdc","slide":8,"name":"TextBox 16","text":"Destinatario · SMTP · logs · recepción real.","textPreview":"Destinatario · SMTP · logs · recepción real.","textChars":44,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/lgbepgvm","slide":8,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"name":"TextBox 19","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/jqhsb2ls","slide":8,"name":"Picture 4","bbox":[55.68,174.72,686.4,446.4]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":""}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/1cfmhgne","slide":9,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"name":"TextBox 3","text":"WhatsApp: el contexto no es uniforme","textPreview":"WhatsApp: el contexto no es uniforme","textChars":36,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/9gzml0nq","slide":9,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/ofq5svm5","slide":9,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"name":"TextBox 7","text":"Fortaleza","textPreview":"Fortaleza","textChars":9,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"name":"TextBox 8","text":"Ficha individual puede precargar proyecto.","textPreview":"Ficha individual puede precargar proyecto.","textChars":42,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/oza1gfyh","slide":9,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/p0ji9kf2","slide":9,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"name":"TextBox 11","text":"Brecha","textPreview":"Brecha","textChars":6,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/3y107axw","slide":9,"name":"TextBox 12","text":"Otros accesos entregan menos contexto.","textPreview":"Otros accesos entregan menos contexto.","textChars":38,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/cnu1kzyd","slide":9,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/do3id4fy","slide":9,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/qlcjipgn","slide":9,"name":"TextBox 15","text":"Mejora","textPreview":"Mejora","textChars":6,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/bml0buxs","slide":9,"name":"TextBox 16","text":"Proyecto + comuna + origen + URL.","textPreview":"Proyecto + comuna + origen + URL.","textChars":33,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/0ru1ozyp","slide":9,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/lsn2h4fa","slide":9,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/98ji147e","slide":9,"name":"TextBox 19","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/ned87qxk","slide":9,"name":"Picture 4","bbox":[55.68,174.72,686.4,446.4]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":""}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/xc3mho32","slide":10,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"name":"TextBox 3","text":"Calculadora: existe intención de alto valor","textPreview":"Calculadora: existe intención de alto valor","textChars":43,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/l036l83y","slide":10,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/kzu5c32t","slide":10,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"name":"TextBox 7","text":"Fortaleza","textPreview":"Fortaleza","textChars":9,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"name":"TextBox 8","text":"Simulación con variables financieras.","textPreview":"Simulación con variables financieras.","textChars":37,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/d87uxg3m","slide":10,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"name":"TextBox 11","text":"Brecha","textPreview":"Brecha","textChars":6,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"name":"TextBox 12","text":"No continúa estructuradamente hacia contacto.","textPreview":"No continúa estructuradamente hacia contacto.","textChars":45,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/0bit8b2d","slide":10,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/1cru1g3y","slide":10,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"TextBox 15","text":"Mejora","textPreview":"Mejora","textChars":6,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/fapcz6ls","slide":10,"name":"TextBox 16","text":"Simulación → proyectos compatibles → asesor.","textPreview":"Simulación → proyectos compatibles → asesor.","textChars":44,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/ozitcv29","slide":10,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/p0ru503u","slide":10,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/xwnupgvy","slide":10,"name":"TextBox 19","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/nidcv6po","slide":10,"name":"Picture 4","bbox":[55.68,174.72,686.4,446.4]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":""}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/xcryxg7y","slide":11,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"name":"TextBox 3","text":"Quiénes somos: la confianza debe ser verificable","textPreview":"Quiénes somos: la confianza debe ser verificable","textChars":48,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/98rytw72","slide":11,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/o7ih0r6h","slide":11,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"name":"TextBox 7","text":"Actual","textPreview":"Actual","textChars":6,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"name":"TextBox 8","text":"Copy de cercanía y asesoría.","textPreview":"Copy de cercanía y asesoría.","textChars":28,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/ofqtgnyt","slide":11,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/9gza9sze","slide":11,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"name":"TextBox 11","text":"Oportunidad","textPreview":"Oportunidad","textChars":11,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/nehs7iho","slide":11,"name":"TextBox 12","text":"Equipo, experiencia y metodología.","textPreview":"Equipo, experiencia y metodología.","textChars":34,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/0b6tc3yx","slide":11,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/1cfa58zi","slide":11,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/epobatgr","slide":11,"name":"TextBox 15","text":"Regla","textPreview":"Regla","textChars":5,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/zaxs3yhc","slide":11,"name":"TextBox 16","text":"Solo evidencia real y autorizada.","textPreview":"Solo evidencia real y autorizada.","textChars":33,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/cn6t83y1","slide":11,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/dofa18z6","slide":11,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/tsnip0ny","slide":11,"name":"TextBox 19","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/jet8va5c","slide":11,"name":"Picture 4","bbox":[55.68,174.72,686.4,446.4]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":""}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/1gbm9s3a","slide":12,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"name":"TextBox 3","text":"Ficha: estado y contenido deben compartir una fuente de verdad","textPreview":"Ficha: estado y contenido deben compartir una fuente de verdad","textChars":62,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/dcbm583y","slide":12,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/sb2lcnmd","slide":12,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"name":"TextBox 7","text":"Hallazgo","textPreview":"Hallazgo","textChars":8,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"name":"TextBox 8","text":"Se observó inconsistencia estado/copy.","textPreview":"Se observó inconsistencia estado/copy.","textChars":38,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/wvupgz6t","slide":12,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/xw3q94ne","slide":12,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"name":"TextBox 11","text":"Impacto","textPreview":"Impacto","textChars":7,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/bulo7u58","slide":12,"name":"TextBox 12","text":"Confianza y filtros.","textPreview":"Confianza y filtros.","textChars":20,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/orapcf6h","slide":12,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/9sj65kn2","slide":12,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/mps7a5or","slide":12,"name":"TextBox 15","text":"Mejora","textPreview":"Mejora","textChars":6,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/nq1o3a5w","slide":12,"name":"TextBox 16","text":"Modelo único de estado + validación editorial.","textPreview":"Modelo único de estado + validación editorial.","textChars":46,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/0nap8f6l","slide":12,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/1oj61kn6","slide":12,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/hkbm5wzu","slide":12,"name":"TextBox 19","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/zuhs7e58","slide":12,"name":"Picture 4","bbox":[55.68,174.72,686.4,446.4]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":""}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/q50nydsj","slide":13,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"name":"TextBox 3","text":"Vendedor: una intención distinta necesita un recorrido distinto","textPreview":"Vendedor: una intención distinta necesita un recorrido distinto","textChars":63,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/21gnuts7","slide":13,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/32ponyts","slide":13,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"name":"TextBox 7","text":"Actual","textPreview":"Actual","textChars":6,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"name":"TextBox 8","text":"Deriva al contacto genérico.","textPreview":"Deriva al contacto genérico.","textChars":28,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/hcfy9k3u","slide":13,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/gb6x0zm9","slide":13,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"name":"TextBox 11","text":"Problema","textPreview":"Problema","textChars":8,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/u9ofyp43","slide":13,"name":"TextBox 12","text":"Se mezcla vendedor con inversionista.","textPreview":"Se mezcla vendedor con inversionista.","textChars":37,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/t8fy5k3i","slide":13,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/876xwfmx","slide":13,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/7mdg3als","slide":13,"name":"TextBox 15","text":"Mejora","textPreview":"Mejora","textChars":6,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/6l4fu547","slide":13,"name":"TextBox 16","text":"Landing + formulario específico.","textPreview":"Landing + formulario específico.","textChars":32,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/lkvy103m","slide":13,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/kjmxsfm1","slide":13,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/cnqh8fux","slide":13,"name":"TextBox 19","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/294fqhsb","slide":13,"name":"Picture 4","bbox":[70,198,600,390]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":""}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"HALLAZGO · EVIDENCIA","textShapes":11}
+{"kind":"shape","id":"sh/xc7eds76","slide":14,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"name":"TextBox 2","text":"HALLAZGO · EVIDENCIA","textPreview":"HALLAZGO · EVIDENCIA","textChars":20,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"name":"TextBox 3","text":"Beneficios: claridad de condiciones protege la confianza","textPreview":"Beneficios: claridad de condiciones protege la confianza","textChars":56,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/5grehs7i","slide":14,"name":"Rounded Rectangle 5","bbox":[770.88,174.72,453.12,121.92]}
+{"kind":"shape","id":"sh/kfidonqx","slide":14,"name":"Rounded Rectangle 6","bbox":[770.88,174.72,5.76,121.92]}
+{"kind":"textbox","id":"sh/zi5c3y98","slide":14,"name":"TextBox 7","text":"Observado","textPreview":"Observado","textChars":9,"textLines":1,"bbox":[790.08,192,419.52,26.88]}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"name":"TextBox 8","text":"Bono pie / arriendo garantizado.","textPreview":"Bono pie / arriendo garantizado.","textChars":32,"textLines":1,"bbox":[790.08,230.4,416.64,54.72]}
+{"kind":"shape","id":"sh/c3e1gjyd","slide":14,"name":"Rounded Rectangle 9","bbox":[770.88,312,453.12,121.92]}
+{"kind":"shape","id":"sh/x4ni9ofy","slide":14,"name":"Rounded Rectangle 10","bbox":[770.88,312,5.76,121.92]}
+{"kind":"textbox","id":"sh/a1wze9g7","slide":14,"name":"TextBox 11","text":"Riesgo","textPreview":"Riesgo","textChars":6,"textLines":1,"bbox":[790.08,329.28,419.52,26.88]}
+{"kind":"textbox","id":"sh/b2507exs","slide":14,"name":"TextBox 12","text":"Ambigüedad si se generalizan condiciones.","textPreview":"Ambigüedad si se generalizan condiciones.","textChars":41,"textLines":1,"bbox":[790.08,367.68,416.64,54.72]}
+{"kind":"shape","id":"sh/kre1k3y9","slide":14,"name":"Rounded Rectangle 13","bbox":[770.88,449.28,453.12,121.92]}
+{"kind":"shape","id":"sh/ls7idofu","slide":14,"name":"Rounded Rectangle 14","bbox":[770.88,449.28,5.76,121.92]}
+{"kind":"textbox","id":"sh/y5wjitgj","slide":14,"name":"TextBox 15","text":"Mejora","textPreview":"Mejora","textChars":6,"textLines":1,"bbox":[790.08,466.56,419.52,26.88]}
+{"kind":"textbox","id":"sh/z650byxo","slide":14,"name":"TextBox 16","text":"Vigencia + proyecto + condiciones.","textPreview":"Vigencia + proyecto + condiciones.","textChars":34,"textLines":1,"bbox":[790.08,504.96,416.64,54.72]}
+{"kind":"textbox","id":"sh/0buh8zy5","slide":14,"name":"TextBox 17","text":"Evidencia de revisión manual / material del levantamiento","textPreview":"Evidencia de revisión manual / material del levantamiento","textChars":57,"textLines":1,"bbox":[59.52,629.76,672,19.2]}
+{"kind":"textbox","id":"sh/1w3i14fq","slide":14,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/hsvy50re","slide":14,"name":"TextBox 19","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"image","id":"im/7ipgzel8","slide":14,"name":"Picture 4","bbox":[55.68,174.72,686.4,446.4]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":""}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"PRIORIZACIÓN","textShapes":19}
+{"kind":"shape","id":"sh/547mhg3m","slide":15,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/k3y5ov21","slide":15,"name":"TextBox 2","text":"PRIORIZACIÓN","textPreview":"PRIORIZACIÓN","textChars":12,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/76p4jqls","slide":15,"name":"TextBox 3","text":"Secuencia de implementación","textPreview":"Secuencia de implementación","textChars":27,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/65gnqlk7","slide":15,"name":"Rounded Rectangle 4","bbox":[67.2,177.6,1142.4,67.2]}
+{"kind":"textbox","id":"sh/t87ml0ji","slide":15,"name":"TextBox 5","text":"P0","textPreview":"P0","textChars":2,"textLines":1,"bbox":[91.2,198.72,52.8,19.2]}
+{"kind":"textbox","id":"sh/s7y5sv2x","slide":15,"name":"TextBox 6","text":"Validar","textPreview":"Validar","textChars":7,"textLines":1,"bbox":[158.4,195.84,192,24]}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"name":"TextBox 7","text":"Formulario · CTA/anchors · estados críticos","textPreview":"Formulario · CTA/anchors · estados críticos","textChars":43,"textLines":1,"bbox":[364.8,195.84,787.2,24]}
+{"kind":"shape","id":"sh/m9c3e1kn","slide":15,"name":"Rounded Rectangle 8","bbox":[67.2,265.92,1142.4,67.2]}
+{"kind":"textbox","id":"sh/wrm9kvep","slide":15,"name":"TextBox 9","text":"P1","textPreview":"P1","textChars":2,"textLines":1,"bbox":[91.2,287.04,52.8,19.2]}
+{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"name":"TextBox 10","text":"Recuperar contexto","textPreview":"Recuperar contexto","textChars":18,"textLines":1,"bbox":[158.4,284.16,192,24]}
+{"kind":"textbox","id":"sh/upkrilwj","slide":15,"name":"TextBox 11","text":"WhatsApp · vendedor · taxonomías","textPreview":"WhatsApp · vendedor · taxonomías","textChars":32,"textLines":1,"bbox":[364.8,284.16,787.2,24]}
+{"kind":"shape","id":"sh/vqdsrqx4","slide":15,"name":"Rounded Rectangle 12","bbox":[67.2,354.24,1142.4,67.2]}
+{"kind":"textbox","id":"sh/4vm9ovel","slide":15,"name":"TextBox 13","text":"P2","textPreview":"P2","textChars":2,"textLines":1,"bbox":[91.2,375.36,52.8,19.2]}
+{"kind":"textbox","id":"sh/5wvax0f6","slide":15,"name":"TextBox 14","text":"Conversión","textPreview":"Conversión","textChars":10,"textLines":1,"bbox":[158.4,372.48,192,24]}
+{"kind":"textbox","id":"sh/it4rm5wv","slide":15,"name":"TextBox 15","text":"Filtros · ficha · calculadora · confianza","textPreview":"Filtros · ficha · calculadora · confianza","textChars":41,"textLines":1,"bbox":[364.8,372.48,787.2,24]}
+{"kind":"shape","id":"sh/judsvqxg","slide":15,"name":"Rounded Rectangle 16","bbox":[67.2,442.56,1142.4,67.2]}
+{"kind":"textbox","id":"sh/0z29cbyh","slide":15,"name":"TextBox 17","text":"P3","textPreview":"P3","textChars":2,"textLines":1,"bbox":[91.2,463.68,52.8,19.2]}
+{"kind":"textbox","id":"sh/l0bqlgf2","slide":15,"name":"TextBox 18","text":"Medición","textPreview":"Medición","textChars":8,"textLines":1,"bbox":[158.4,460.8,192,24]}
+{"kind":"textbox","id":"sh/1kjyt83e","slide":15,"name":"TextBox 19","text":"Eventos · UTMs · recepción real","textPreview":"Eventos · UTMs · recepción real","textChars":31,"textLines":1,"bbox":[364.8,460.8,787.2,24]}
+{"kind":"shape","id":"sh/gjax03m9","slide":15,"name":"Rounded Rectangle 20","bbox":[67.2,530.88,1142.4,67.2]}
+{"kind":"textbox","id":"sh/fi1grylo","slide":15,"name":"TextBox 21","text":"P4","textPreview":"P4","textChars":2,"textLines":1,"bbox":[91.2,552,52.8,19.2]}
+{"kind":"textbox","id":"sh/ehsfyt43","slide":15,"name":"TextBox 22","text":"Escalar","textPreview":"Escalar","textChars":7,"textLines":1,"bbox":[158.4,549.12,192,24]}
+{"kind":"textbox","id":"sh/p8jyx83q","slide":15,"name":"TextBox 23","text":"SEO técnico y campañas después de validar","textPreview":"SEO técnico y campañas después de validar","textChars":41,"textLines":1,"bbox":[364.8,549.12,787.2,24]}
+{"kind":"textbox","id":"sh/o7ah4nm5","slide":15,"name":"TextBox 24","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/361gvilk","slide":15,"name":"TextBox 25","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":""}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"RECORRIDOS PROPUESTOS","textShapes":12}
+{"kind":"shape","id":"sh/8z2h8bq1","slide":16,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/9kby1g7m","slide":16,"name":"TextBox 2","text":"RECORRIDOS PROPUESTOS","textPreview":"RECORRIDOS PROPUESTOS","textChars":21,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/ytkf2h8j","slide":16,"name":"TextBox 3","text":"No todos los usuarios tienen la misma intención","textPreview":"No todos los usuarios tienen la misma intención","textChars":47,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/zutgvm94","slide":16,"name":"Rounded Rectangle 4","bbox":[62.4,187.2,552,153.6]}
+{"kind":"shape","id":"sh/kv2h4rqp","slide":16,"name":"Rounded Rectangle 5","bbox":[62.4,187.2,5.76,153.6]}
+{"kind":"textbox","id":"sh/lwbyxwra","slide":16,"name":"TextBox 6","text":"Inversionista","textPreview":"Inversionista","textChars":13,"textLines":1,"bbox":[81.6,204.48,518.4,26.88]}
+{"kind":"textbox","id":"sh/ip4zel83","slide":16,"name":"TextBox 7","text":"Campaña/SEO → proyecto → simulación → WhatsApp/cotización → asesoría → Excel","textPreview":"Campaña/SEO → proyecto → simulación → WhatsApp/cotización → asesoría → Excel","textChars":76,"textLines":1,"bbox":[81.6,242.88,515.52,86.4]}
+{"kind":"shape","id":"sh/3qdg7qpo","slide":16,"name":"Rounded Rectangle 8","bbox":[648,187.2,552,153.6]}
+{"kind":"shape","id":"sh/fm1gzq5o","slide":16,"name":"Rounded Rectangle 9","bbox":[648,187.2,5.76,153.6]}
+{"kind":"textbox","id":"sh/e1sf65o3","slide":16,"name":"TextBox 10","text":"Educación","textPreview":"Educación","textChars":9,"textLines":1,"bbox":[667.2,204.48,518.4,26.88]}
+{"kind":"textbox","id":"sh/1ojy10ne","slide":16,"name":"TextBox 11","text":"Contenido/calculadora → resultado → captura → proyectos compatibles → asesoría","textPreview":"Contenido/calculadora → resultado → captura → proyectos compatibles → asesoría","textChars":78,"textLines":1,"bbox":[667.2,242.88,515.52,86.4]}
+{"kind":"shape","id":"sh/gnax8v6t","slide":16,"name":"Rounded Rectangle 12","bbox":[62.4,379.2,552,153.6]}
+{"kind":"shape","id":"sh/nqlg3a5k","slide":16,"name":"Rounded Rectangle 13","bbox":[62.4,379.2,5.76,153.6]}
+{"kind":"textbox","id":"sh/2pcfa5oz","slide":16,"name":"TextBox 14","text":"Propietario","textPreview":"Propietario","textChars":11,"textLines":1,"bbox":[81.6,396.48,518.4,26.88]}
+{"kind":"textbox","id":"sh/ps3y5knq","slide":16,"name":"TextBox 15","text":"Vende tu propiedad → formulario específico → evaluación → contacto","textPreview":"Vende tu propiedad → formulario específico → evaluación → contacto","textChars":66,"textLines":1,"bbox":[81.6,434.88,515.52,86.4]}
+{"kind":"shape","id":"sh/oruhcf65","slide":16,"name":"Rounded Rectangle 16","bbox":[648,379.2,552,153.6]}
+{"kind":"shape","id":"sh/bulg7u5g","slide":16,"name":"Rounded Rectangle 17","bbox":[648,379.2,5.76,153.6]}
+{"kind":"textbox","id":"sh/atczepob","slide":16,"name":"TextBox 18","text":"Recuperación","textPreview":"Recuperación","textChars":12,"textLines":1,"bbox":[667.2,396.48,518.4,26.88]}
+{"kind":"textbox","id":"sh/mpgj6t8j","slide":16,"name":"TextBox 19","text":"Visita sin conversión → remarketing → proyecto/landing → contacto contextual","textPreview":"Visita sin conversión → remarketing → proyecto/landing → contacto contextual","textChars":76,"textLines":1,"bbox":[667.2,434.88,515.52,86.4]}
+{"kind":"textbox","id":"sh/7qp0zepo","slide":16,"name":"TextBox 20","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/8by18jq9","slide":16,"name":"TextBox 21","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":""}
+{"kind":"slide","id":"sl/14bup87q","slide":17,"title":"MEDICIÓN PROPUESTA","textShapes":11}
+{"kind":"shape","id":"sh/1c7e50ni","slide":17,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/gbedwfmx","slide":17,"name":"TextBox 2","text":"MEDICIÓN PROPUESTA","textPreview":"MEDICIÓN PROPUESTA","textChars":18,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/rm5czq50","slide":17,"name":"TextBox 3","text":"Eventos recomendados, pendientes de validación interna","textPreview":"Eventos recomendados, pendientes de validación interna","textChars":54,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/6lwvql4v","slide":17,"name":"Rounded Rectangle 4","bbox":[62.4,187.2,355.2,100.8]}
+{"kind":"textbox","id":"sh/t8ne10n6","slide":17,"name":"TextBox 5","text":"view_project","textPreview":"view_project","textChars":12,"textLines":1,"bbox":[79.68,219.84,321.6,24]}
+{"kind":"shape","id":"sh/snedsvml","slide":17,"name":"Rounded Rectangle 6","bbox":[456,187.2,355.2,100.8]}
+{"kind":"textbox","id":"sh/jilcvq54","slide":17,"name":"TextBox 7","text":"search_projects","textPreview":"search_projects","textChars":15,"textLines":1,"bbox":[473.28,219.84,321.6,24]}
+{"kind":"shape","id":"sh/ihcvml4j","slide":17,"name":"Rounded Rectangle 8","bbox":[849.6,187.2,355.2,100.8]}
+{"kind":"textbox","id":"sh/4by9or6l","slide":17,"name":"TextBox 9","text":"use_calculator","textPreview":"use_calculator","textChars":14,"textLines":1,"bbox":[866.88,219.84,321.6,24]}
+{"kind":"shape","id":"sh/pc7qhwn6","slide":17,"name":"Rounded Rectangle 10","bbox":[62.4,326.4,355.2,100.8]}
+{"kind":"textbox","id":"sh/29grm1of","slide":17,"name":"TextBox 11","text":"click_whatsapp","textPreview":"click_whatsapp","textChars":14,"textLines":1,"bbox":[79.68,359.04,321.6,24]}
+{"kind":"shape","id":"sh/3ap8fm50","slide":17,"name":"Rounded Rectangle 12","bbox":[456,326.4,355.2,100.8]}
+{"kind":"textbox","id":"sh/gnepkr69","slide":17,"name":"TextBox 13","text":"generate_lead","textPreview":"generate_lead","textChars":13,"textLines":1,"bbox":[473.28,359.04,321.6,24]}
+{"kind":"shape","id":"sh/honqdwnu","slide":17,"name":"Rounded Rectangle 14","bbox":[849.6,326.4,355.2,100.8]}
+{"kind":"textbox","id":"sh/ulw7ihoj","slide":17,"name":"TextBox 15","text":"schedule_meeting","textPreview":"schedule_meeting","textChars":16,"textLines":1,"bbox":[866.88,359.04,321.6,24]}
+{"kind":"shape","id":"sh/fm58bm54","slide":17,"name":"Rounded Rectangle 16","bbox":[67.2,484.8,1142.4,86.4]}
+{"kind":"textbox","id":"sh/0ji9wb6t","slide":17,"name":"TextBox 17","text":"Hipótesis a comprobar: una conversión basada solo en el mensaje de éxito podría contarse aunque el contacto no llegue.","textPreview":"Hipótesis a comprobar: una conversión basada solo en el mensaje de éxito podría contarse aunque el contacto no llegue.","textChars":118,"textLines":1,"bbox":[91.2,511.68,1089.6,30.72]}
+{"kind":"textbox","id":"sh/14rqpgne","slide":17,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/90nq9gfi","slide":17,"name":"TextBox 19","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/14bup87q","slide":17,"text":""}
+{"kind":"slide","id":"sl/y5wne50z","slide":18,"title":"BENCHMARK","textShapes":12}
+{"kind":"shape","id":"sh/wrelszu9","slide":18,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/hsn2l4bu","slide":18,"name":"TextBox 2","text":"BENCHMARK","textPreview":"BENCHMARK","textChars":9,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/itw3upcf","slide":18,"name":"TextBox 3","text":"Aprender del recorrido, no copiar interfaces","textPreview":"Aprender del recorrido, no copiar interfaces","textChars":44,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/je5knut0","slide":18,"name":"Rounded Rectangle 4","bbox":[67.2,192,355.2,201.6]}
+{"kind":"shape","id":"sh/4felwzu5","slide":18,"name":"Rounded Rectangle 5","bbox":[67.2,192,5.76,201.6]}
+{"kind":"textbox","id":"sh/5gnmp4bq","slide":18,"name":"TextBox 6","text":"Houm","textPreview":"Houm","textChars":4,"textLines":1,"bbox":[86.4,209.28,321.6,26.88]}
+{"kind":"textbox","id":"sh/6hw3y9sb","slide":18,"name":"TextBox 7","text":"Catálogo + datos/proyecciones + asesoría.","textPreview":"Catálogo + datos/proyecciones + asesoría.","textChars":41,"textLines":1,"bbox":[86.4,247.68,318.72,134.4]}
+{"kind":"shape","id":"sh/rip4retw","slide":18,"name":"Rounded Rectangle 8","bbox":[460.8,192,355.2,201.6]}
+{"kind":"shape","id":"sh/fapkr6pw","slide":18,"name":"Rounded Rectangle 9","bbox":[460.8,192,5.76,201.6]}
+{"kind":"textbox","id":"sh/upg3i18r","slide":18,"name":"TextBox 10","text":"Propital","textPreview":"Propital","textChars":8,"textLines":1,"bbox":[480,209.28,321.6,26.88]}
+{"kind":"textbox","id":"sh/1cr2tg72","slide":18,"name":"TextBox 11","text":"Filtros amplios y navegación por criterios.","textPreview":"Filtros amplios y navegación por criterios.","textChars":43,"textLines":1,"bbox":[480,247.68,318.72,134.4]}
+{"kind":"shape","id":"sh/gbylkbqh","slide":18,"name":"Rounded Rectangle 12","bbox":[854.4,192,355.2,201.6]}
+{"kind":"shape","id":"sh/7mpknmp0","slide":18,"name":"Rounded Rectangle 13","bbox":[854.4,192,5.76,201.6]}
+{"kind":"textbox","id":"sh/6lg3e18f","slide":18,"name":"TextBox 14","text":"Capitalizarme","textPreview":"Capitalizarme","textChars":13,"textLines":1,"bbox":[873.6,209.28,321.6,26.88]}
+{"kind":"textbox","id":"sh/to72pw76","slide":18,"name":"TextBox 15","text":"Perfil/capacidad + inversión + reunión.","textPreview":"Perfil/capacidad + inversión + reunión.","textChars":39,"textLines":1,"bbox":[873.6,247.68,318.72,134.4]}
+{"kind":"shape","id":"sh/snylgrql","slide":18,"name":"Rounded Rectangle 16","bbox":[67.2,446.4,1142.4,96]}
+{"kind":"textbox","id":"sh/bi94zqp4","slide":18,"name":"TextBox 17","text":"PROYECTO  →  NÚMEROS / CAPACIDAD  →  ASESORÍA CON CONTEXTO  →  SEGUIMIENTO","textPreview":"PROYECTO  →  NÚMEROS / CAPACIDAD  →  ASESORÍA CON CONTEXTO  →  SEGUIMIENTO","textChars":74,"textLines":1,"bbox":[96,478.08,1075.2,33.6]}
+{"kind":"textbox","id":"sh/qh03ql8j","slide":18,"name":"TextBox 18","text":"Aplicación: mantener WhatsApp + Excel, pero recibir un lead mejor identificado.","textPreview":"Aplicación: mantener WhatsApp + Excel, pero recibir un lead mejor identificado.","textChars":79,"textLines":1,"bbox":[76.8,585.6,1123.2,33.6]}
+{"kind":"textbox","id":"sh/md4nipsr","slide":18,"name":"TextBox 19","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/nedoru9c","slide":18,"name":"TextBox 20","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/y5wne50z","slide":18,"text":""}
+{"kind":"slide","id":"sl/nid43ytk","slide":19,"title":"SIGUIENTE FASE","textShapes":12}
+{"kind":"shape","id":"sh/9gb6xgbi","slide":19,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/8v2pobax","slide":19,"name":"TextBox 2","text":"SIGUIENTE FASE","textPreview":"SIGUIENTE FASE","textChars":14,"textLines":1,"bbox":[52.8,26.88,480,24]}
+{"kind":"textbox","id":"sh/vitozqt8","slide":19,"name":"TextBox 3","text":"La plataforma se define tras la auditoría técnica","textPreview":"La plataforma se define tras la auditoría técnica","textChars":49,"textLines":1,"bbox":[52.8,61.44,1161.6,67.2]}
+{"kind":"shape","id":"sh/ahk7qls3","slide":19,"name":"Rounded Rectangle 4","bbox":[62.4,192,360,211.2]}
+{"kind":"shape","id":"sh/xkbq10be","slide":19,"name":"Rounded Rectangle 5","bbox":[62.4,192,5.76,211.2]}
+{"kind":"textbox","id":"sh/wj2psvat","slide":19,"name":"TextBox 6","text":"WordPress optimizado","textPreview":"WordPress optimizado","textChars":20,"textLines":1,"bbox":[81.6,209.28,326.4,26.88]}
+{"kind":"textbox","id":"sh/jmd83atk","slide":19,"name":"TextBox 7","text":"Menor migración si la base es estable.","textPreview":"Menor migración si la base es estable.","textChars":38,"textLines":1,"bbox":[81.6,247.68,323.52,144]}
+{"kind":"shape","id":"sh/il47u5sz","slide":19,"name":"Rounded Rectangle 8","bbox":[457.92,192,360,211.2]}
+{"kind":"shape","id":"sh/cri1gnql","slide":19,"name":"Rounded Rectangle 9","bbox":[457.92,192,5.76,211.2]}
+{"kind":"textbox","id":"sh/dsri9sr6","slide":19,"name":"TextBox 10","text":"Next.js + CMS y base de datos","textPreview":"Next.js + CMS y base de datos","textChars":29,"textLines":1,"bbox":[477.12,209.28,326.4,26.88]}
+{"kind":"textbox","id":"sh/qpgjex8f","slide":19,"name":"TextBox 11","text":"Mayor control, pero exige migración y administración.","textPreview":"Mayor control, pero exige migración y administración.","textChars":53,"textLines":1,"bbox":[477.12,247.68,323.52,144]}
+{"kind":"shape","id":"sh/rqp07290","slide":19,"name":"Rounded Rectangle 12","bbox":[853.44,192,360,211.2]}
+{"kind":"shape","id":"sh/0vi1k7qx","slide":19,"name":"Rounded Rectangle 13","bbox":[853.44,192,5.76,211.2]}
+{"kind":"textbox","id":"sh/1gridcr2","slide":19,"name":"TextBox 14","text":"Next + WP headless","textPreview":"Next + WP headless","textChars":18,"textLines":1,"bbox":[872.64,209.28,326.4,26.88]}
+{"kind":"textbox","id":"sh/et0jix8r","slide":19,"name":"TextBox 15","text":"WP como backend + frontend desacoplado; más integración.","textPreview":"WP como backend + frontend desacoplado; más integración.","textChars":56,"textLines":1,"bbox":[872.64,247.68,323.52,144]}
+{"kind":"textbox","id":"sh/zu90b29c","slide":19,"name":"TextBox 16","text":"Hoy no existe acceso suficiente para recomendar una migración como conclusión del diagnóstico.","textPreview":"Hoy no existe acceso suficiente para recomendar una migración como conclusión del diagnóstico.","textChars":94,"textLines":1,"bbox":[72,465.6,1123.2,48]}
+{"kind":"textbox","id":"sh/oj21o7qt","slide":19,"name":"TextBox 17","text":"Fase 0 futura: WordPress · hosting · SMTP · datos · tracking · SEO · seguridad · costo de mantener vs. migrar.","textPreview":"Fase 0 futura: WordPress · hosting · SMTP · datos · tracking · SEO · seguridad · costo de mantener vs. migrar.","textChars":110,"textLines":1,"bbox":[72,542.4,1123.2,33.6]}
+{"kind":"textbox","id":"sh/9kb2hcre","slide":19,"name":"TextBox 18","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/x07i1cji","slide":19,"name":"TextBox 19","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/nid43ytk","slide":19,"text":""}
+{"kind":"slide","id":"sl/zyxsni5k","slide":20,"title":"PROPUESTA","textShapes":12}
+{"kind":"shape","id":"sh/qpwjmh8n","slide":20,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/rq50vmp8","slide":20,"name":"TextBox 2","text":"PROPUESTA","textPreview":"PROPUESTA","textChars":9,"textLines":1,"bbox":[67.2,62.4,192,24]}
+{"kind":"textbox","id":"sh/4nu1krqh","slide":20,"name":"TextBox 3","text":"Diagnóstico y Estrategia Digital","textPreview":"Diagnóstico y Estrategia Digital","textChars":32,"textLines":1,"bbox":[67.2,120,1113.6,62.4]}
+{"kind":"shape","id":"sh/po3itc72","slide":20,"name":"Rounded Rectangle 4","bbox":[69.12,244.8,350.4,192]}
+{"kind":"textbox","id":"sh/2lczih8r","slide":20,"name":"TextBox 5","text":"01 · Informe","textPreview":"01 · Informe","textChars":12,"textLines":1,"bbox":[91.2,276.48,302.4,28.8]}
+{"kind":"textbox","id":"sh/3ml0rmpw","slide":20,"name":"TextBox 6","text":"Respaldo metodológico, hallazgos, impacto, prioridades y recomendaciones.","textPreview":"Respaldo metodológico, hallazgos, impacto, prioridades y recomendaciones.","textChars":73,"textLines":1,"bbox":[91.2,331.2,302.4,69.12]}
+{"kind":"shape","id":"sh/gjuhg7ql","slide":20,"name":"Rounded Rectangle 7","bbox":[457.92,244.8,350.4,192]}
+{"kind":"textbox","id":"sh/hk3ipcr6","slide":20,"name":"TextBox 8","text":"02 · Presentación","textPreview":"02 · Presentación","textChars":17,"textLines":1,"bbox":[480,276.48,302.4,28.8]}
+{"kind":"textbox","id":"sh/dkfmp4zy","slide":20,"name":"TextBox 9","text":"Versión ejecutiva y visual del diagnóstico.","textPreview":"Versión ejecutiva y visual del diagnóstico.","textChars":43,"textLines":1,"bbox":[480,331.2,302.4,69.12]}
+{"kind":"shape","id":"sh/cj65wzyd","slide":20,"name":"Rounded Rectangle 10","bbox":[846.72,244.8,350.4,192]}
+{"kind":"textbox","id":"sh/rid4nuhs","slide":20,"name":"TextBox 11","text":"03 · Roadmap","textPreview":"03 · Roadmap","textChars":12,"textLines":1,"bbox":[868.8,276.48,302.4,28.8]}
+{"kind":"textbox","id":"sh/qh4nupg7","slide":20,"name":"TextBox 12","text":"Orden recomendado para validación e implementación posterior.","textPreview":"Orden recomendado para validación e implementación posterior.","textChars":61,"textLines":1,"bbox":[868.8,331.2,302.4,69.12]}
+{"kind":"textbox","id":"sh/pwvmlkzm","slide":20,"name":"TextBox 13","text":"VALOR DEL PAQUETE  ·  $100.000 CLP","textPreview":"VALOR DEL PAQUETE  ·  $100.000 CLP","textChars":34,"textLines":1,"bbox":[69.12,513.6,1123.2,43.2]}
+{"kind":"textbox","id":"sh/4vm5sfy1","slide":20,"name":"TextBox 14","text":"La implementación técnica es una etapa independiente y se define después de validar accesos y alcance.","textPreview":"La implementación técnica es una etapa independiente y se define después de validar accesos y alcance.","textChars":102,"textLines":1,"bbox":[69.12,590.4,1123.2,33.6]}
+{"kind":"textbox","id":"sh/3ud4juhg","slide":20,"name":"TextBox 15","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/2t4nqpgb","slide":20,"name":"TextBox 16","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/zyxsni5k","slide":20,"text":""}
+{"kind":"slide","id":"sl/m1wvqtk3","slide":21,"title":"SIGUIENTE PASO","textShapes":13}
+{"kind":"shape","id":"sh/1gbmxs7a","slide":21,"name":"Rectangle 1","bbox":[0,0,1279.97,720]}
+{"kind":"textbox","id":"sh/0f2lon6p","slide":21,"name":"TextBox 2","text":"SIGUIENTE PASO","textPreview":"SIGUIENTE PASO","textChars":14,"textLines":1,"bbox":[67.2,62.4,192,24]}
+{"kind":"textbox","id":"sh/ra9kryp8","slide":21,"name":"TextBox 3","text":"La prioridad es convertir el interés en contactos medibles","textPreview":"La prioridad es convertir el interés en contactos medibles","textChars":58,"textLines":1,"bbox":[67.2,134.4,1113.6,62.4]}
+{"kind":"textbox","id":"sh/qp03yt8n","slide":21,"name":"TextBox 4","text":"La propuesta mejora seis momentos del recorrido:","textPreview":"La propuesta mejora seis momentos del recorrido:","textChars":48,"textLines":1,"bbox":[69.12,235.2,768,38.4]}
+{"kind":"shape","id":"sh/dcb2t87y","slide":21,"name":"Rounded Rectangle 5","bbox":[69.12,302.4,321.6,69.12]}
+{"kind":"textbox","id":"sh/sb2lk36t","slide":21,"name":"TextBox 6","text":"¿de dónde llegó?","textPreview":"¿de dónde llegó?","textChars":16,"textLines":1,"bbox":[86.4,323.52,288,24]}
+{"kind":"shape","id":"sh/b6d432pc","slide":21,"name":"Rounded Rectangle 7","bbox":[429.12,302.4,321.6,69.12]}
+{"kind":"textbox","id":"sh/al43uxor","slide":21,"name":"TextBox 8","text":"¿qué buscó?","textPreview":"¿qué buscó?","textChars":11,"textLines":1,"bbox":[446.4,323.52,288,24]}
+{"kind":"shape","id":"sh/4jax4nqd","slide":21,"name":"Rounded Rectangle 9","bbox":[789.12,302.4,321.6,69.12]}
+{"kind":"textbox","id":"sh/5kjydsri","slide":21,"name":"TextBox 10","text":"¿qué le interesó?","textPreview":"¿qué le interesó?","textChars":17,"textLines":1,"bbox":[806.4,323.52,288,24]}
+{"kind":"shape","id":"sh/ixsf2d87","slide":21,"name":"Rounded Rectangle 11","bbox":[69.12,412.8,321.6,69.12]}
+{"kind":"textbox","id":"sh/jy1gbi9s","slide":21,"name":"TextBox 12","text":"¿cómo contactó?","textPreview":"¿cómo contactó?","textChars":15,"textLines":1,"bbox":[86.4,433.92,288,24]}
+{"kind":"shape","id":"sh/wvax03q1","slide":21,"name":"Rounded Rectangle 13","bbox":[429.12,412.8,321.6,69.12]}
+{"kind":"textbox","id":"sh/hwjy98rm","slide":21,"name":"TextBox 14","text":"¿el contacto llegó?","textPreview":"¿el contacto llegó?","textChars":19,"textLines":1,"bbox":[446.4,433.92,288,24]}
+{"kind":"shape","id":"sh/utsfyt8v","slide":21,"name":"Rounded Rectangle 15","bbox":[789.12,412.8,321.6,69.12]}
+{"kind":"textbox","id":"sh/vu1w7y9g","slide":21,"name":"TextBox 16","text":"¿qué pasó después?","textPreview":"¿qué pasó después?","textChars":18,"textLines":1,"bbox":[806.4,433.92,288,24]}
+{"kind":"textbox","id":"sh/8rqxw3q5","slide":21,"name":"TextBox 17","text":"Aprobar el paquete presentado · $100.000 CLP","textPreview":"Aprobar el paquete presentado · $100.000 CLP","textChars":44,"textLines":1,"bbox":[69.12,571.2,1123.2,43.2]}
+{"kind":"textbox","id":"sh/9sze58rq","slide":21,"name":"TextBox 18","text":"Carlos Lozano · Desarrollo web · UX/UI · Conversión · Analítica técnica · SEO técnico","textPreview":"Carlos Lozano · Desarrollo web · UX/UI · Conversión · Analítica técnica · SEO técnico","textChars":85,"textLines":1,"bbox":[69.12,657.6,1123.2,24]}
+{"kind":"textbox","id":"sh/porutkje","slide":21,"name":"TextBox 19","text":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textPreview":"INVIERTE360 · DIAGNÓSTICO Y ESTRATEGIA DIGITAL","textChars":46,"textLines":1,"bbox":[52.8,684.48,432,17.28]}
+{"kind":"textbox","id":"sh/onid0f2t","slide":21,"name":"TextBox 20","text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1171.2,681.6,48,19.2]}
+{"kind":"notes","id":"nt/m1wvqtk3","slide":21,"text":""}

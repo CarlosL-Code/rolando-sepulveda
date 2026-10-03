@@ -1,0 +1,1 @@
+import {FileBlob,PresentationFile} from '@oai/artifact-tool'; const p=await PresentationFile.importPptx(await FileBlob.load('C:/Users/carlo/Documents/Propuestas/Propuesta_Final/nuevos/Informe_Estrategico_Invierte360_Diseño_Final.pptx')); const x=await p.inspect({kind:'image',maxChars:100000}); console.log(x.ndjson);

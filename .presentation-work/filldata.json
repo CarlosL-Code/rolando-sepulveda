@@ -1,0 +1,92 @@
+{
+  "shape": "Rounded Rectangle 5",
+  "data": {
+    "id": "6",
+    "name": "Rounded Rectangle 5",
+    "type": 1,
+    "children": [],
+    "levelsStyles": [],
+    "citations": [],
+    "lineReference": {
+      "index": "1",
+      "color": {
+        "type": 2,
+        "value": "accent1"
+      }
+    },
+    "fillReference": {
+      "index": "3",
+      "color": {
+        "type": 2,
+        "value": "accent1"
+      }
+    },
+    "effectReference": {
+      "index": "2",
+      "color": {
+        "type": 2,
+        "value": "accent1"
+      }
+    },
+    "fontReference": {
+      "index": "minor",
+      "color": {
+        "type": 2,
+        "value": "lt1"
+      }
+    },
+    "shape": {
+      "geometry": 26,
+      "fill": {
+        "type": 1,
+        "color": {
+          "type": 1,
+          "value": "F1F5F9"
+        },
+        "gradientStops": [],
+        "pictureEffects": []
+      },
+      "line": {
+        "style": 0,
+        "fill": {
+          "type": 0,
+          "gradientStops": [],
+          "pictureEffects": []
+        }
+      },
+      "adjustmentList": [],
+      "customPaths": [],
+      "customGeometryGuides": []
+    },
+    "creationId": "{B61BABF4-376F-4612-81BA-0DC04EE714A3}"
+  },
+  "fillProto": [
+    "constructor",
+    "type",
+    "isSet",
+    "isExplicitNone",
+    "relId",
+    "gradientKind",
+    "angleDeg",
+    "isScaled",
+    "imageReference",
+    "stretchFillRect",
+    "fillRect",
+    "tileRect",
+    "srcRect",
+    "rotateWithShape",
+    "tile",
+    "pathType",
+    "alphaModFix",
+    "pictureEffects",
+    "transparency",
+    "gradientStops",
+    "pattern",
+    "color",
+    "toProto",
+    "toConfig"
+  ],
+  "fillString": "[object Object]",
+  "fillType": 1,
+  "color": {}
+}

@@ -1,0 +1,3 @@
+import fs from 'node:fs/promises'; import {FileBlob,PresentationFile} from '@oai/artifact-tool';
+const p=await PresentationFile.importPptx(await FileBlob.load('C:/Users/carlo/Documents/PROYECTOS/CONTADORES/contabilidad-rs/output/pptx/Invierte360_Diagnostico_y_Propuesta_Digital_v2.pptx'));
+const s=await p.inspect({kind:'slide',maxChars:20000}); await fs.writeFile('titles.ndjson',s.ndjson); const b=await p.slides.items[12].export({format:'png',scale:1}); await fs.writeFile('seller.png',new Uint8Array(await b.arrayBuffer())); const m=await p.export({format:'webp',montage:true,scale:.35}); await fs.writeFile('montage.webp',new Uint8Array(await m.arrayBuffer())); console.log('slides',p.slides.items.length);

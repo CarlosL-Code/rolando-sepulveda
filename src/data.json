@@ -1,4 +1,4 @@
-﻿{
+{
     "profesional":  {
                         "nombre_completo":  "Rolando Fidel Sepúlveda Quidel",
                         "profesion":  "Contador Público y Auditor",
@@ -51,7 +51,6 @@
                                         ],
     "contacto":  {
                      "direccion":  "Arturo Prat 696, of. 326, Temuco, Chile, 4780000",
-                     "telefono_fijo":  "(45) 221 3212",
                      "celular_whatsapp":  "+56 9 9452 7995",
                      "email":  "fidelauditoria@gmail.com",
                      "sitio_web":  "contabilidadrs.cl",

@@ -1,0 +1,94 @@
+--- PAGE 1 ---
+INVIERTE360 / DIAGNÓSTICO Y ESTRATEGIA DIGITAL
+Análisis visual, funcional
+y estrategia digital
+Documento de respaldo del levantamiento realizado
+sobre la experiencia pública del sitio, sus recorridos
+de contacto y oportunidades de mejora.
+TESIS CENTRAL
+Antes de aumentar la adquisición, conviene asegurar que el
+interés existente pueda convertirse en contactos reales,
+contextualizados y medibles.
+INVIERTE360 / DIAGNÓSTICO Y ESTRATEGIA DIGITAL
+Confidencial - Invierte360 Página 1 de 6
+--- PAGE 2 ---
+INVIERTE360 / DIAGNÓSTICO Y ESTRATEGIA DIGITAL
+Confidencial - Invierte360 Página 2 de 6
+--- PAGE 3 ---
+Hallazgos visuales y funcionales
+El levantamiento se concentró en lo que un usuario puede ver y hacer públicamente en Invierte360. A
+continuación se expone la evidencia visual y su respectivo análisis.
+1. Home: el recorrido debe terminar en una acción verificable
+EVIDENCIA
+CTA/anchor observado en el
+levantamiento; revalidar estado.
+IMPACTO
+Una interrupción puede desperdiciar
+intención.
+MEJORA
+CTA por intención + destino funcional.
+2. Filtros: necesitan más certeza de interacción
+ACTUAL
+Catálogo y filtros operativos.
+FRICCIÓN
+Actualización / Aplicar puede sentirse
+redundante.
+MEJORA
+Una lógica clara + feedback + resultados.
+INVIERTE360 / DIAGNÓSTICO Y ESTRATEGIA DIGITAL
+Confidencial - Invierte360 Página 3 de 6
+--- PAGE 4 ---
+3. Formulario: éxito visual no equivale a contacto recibido
+PRUEBA
+La interfaz confirmó; se indicó no
+recepción real.
+RIESGO
+Posible pérdida de contactos.
+PENDIENTE
+Validar Destinatario → SMTP → recepción
+real.
+4. WhatsApp: el contexto no es uniforme
+FORTALEZA
+Ficha individual puede precargar
+proyecto.
+BRECHA
+Otros accesos entregan menos contexto.
+MEJORA
+Contexto = Proyecto + comuna + origen
++ URL.
+INVIERTE360 / DIAGNÓSTICO Y ESTRATEGIA DIGITAL
+Confidencial - Invierte360 Página 4 de 6
+--- PAGE 5 ---
+5. Calculadora: intención de alto valor
+FORTALEZA
+Simulación con variables financieras
+reales.
+BRECHA
+No continúa estructuradamente hacia
+contacto.
+MEJORA
+Simulación → proyectos compatibles →
+asesor.
+6. Vendedor: intención distinta, recorrido distinto
+ACTUAL
+Deriva al contacto genérico.
+PROBLEMA
+Se mezcla vendedor con inversionista.
+MEJORA
+Landing + formulario específico para
+venta.
+INVIERTE360 / DIAGNÓSTICO Y ESTRATEGIA DIGITAL
+Confidencial - Invierte360 Página 5 de 6
+--- PAGE 6 ---
+Conclusión del diagnóstico
+El levantamiento realizado permite definir con claridad dónde existen fricciones visibles, qué pruebas
+necesitan confirmación técnica y qué mejoras pueden aumentar la continuidad entre interés y contacto.
+Prioridad Qué abordar
+P0 · Validar Recepción real del formulario; revalidar CTA/anchors; consistencia de estados críticos.
+P1 · Recuperar WhatsApp contextual, flujo vendedor, taxonomías y CTA.
+P2 · Convertir Filtros UX, ficha, calculadora y señales de confianza.
+P3 · Medir Eventos, UTMs, conversiones y vínculo con operación comercial.
+Carlos Lozano
+Desarrollo web · UX/UI · Conversión · Analítica técnica · SEO técnico
+INVIERTE360 / DIAGNÓSTICO Y ESTRATEGIA DIGITAL
+Confidencial - Invierte360 Página 6 de 6
