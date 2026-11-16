@@ -51,7 +51,7 @@
       "permanent": true
     },
     {
-      "source": "/wb_popup:(.*)",
+      "source": "/wb_popup:slug",
       "destination": "/",
       "permanent": true
     }
