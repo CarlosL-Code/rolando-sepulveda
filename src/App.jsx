@@ -7,6 +7,7 @@ import ServiceDetail from './pages/ServiceDetail';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="Sobre-nosotros" element={<Navigate to="/sobre-nosotros" replace />} />
         <Route path="Servicios" element={<Navigate to="/servicios" replace />} />
         <Route path="Blog" element={<Navigate to="/blog" replace />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

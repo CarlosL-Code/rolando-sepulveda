@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { SeoContext } from './seoContext';
 
-const SITE_URL = 'https://contabilidadrs.cl';
+const SITE_URL = 'https://www.contabilidadrs.cl';
 
 function setMetaTag(selector, attribute, value, createTag) {
   let element = document.head.querySelector(selector);
@@ -11,11 +12,16 @@ function setMetaTag(selector, attribute, value, createTag) {
   element.setAttribute(attribute, value);
 }
 
-const SeoHead = ({ title, description, canonicalPath = '/', ogType = 'website' }) => {
-  useEffect(() => {
-    const normalizedPath = canonicalPath === '/' ? '/' : `/${canonicalPath.replace(/^\/+|\/+$/g, '')}`;
-    const canonicalUrl = `${SITE_URL}${normalizedPath}`;
+const SeoHead = ({ title, description, canonicalPath = '/', ogType = 'website', noindex = false }) => {
+  const onSeoUpdate = useContext(SeoContext);
+  const normalizedPath = canonicalPath === '/' ? '/' : `/${canonicalPath.replace(/^\/+|\/+$/g, '')}`;
+  const canonicalUrl = `${SITE_URL}${normalizedPath}`;
 
+  if (onSeoUpdate) {
+    onSeoUpdate({ title, description, canonicalUrl, ogType, noindex });
+  }
+
+  useEffect(() => {
     if (title) {
       document.title = title;
       setMetaTag('meta[property="og:title"]', 'content', title, () => {
@@ -25,7 +31,7 @@ const SeoHead = ({ title, description, canonicalPath = '/', ogType = 'website' }
       });
     }
 
-    if (description) {
+    if (description !== undefined) {
       setMetaTag('meta[name="description"]', 'content', description, () => {
         const meta = document.createElement('meta');
         meta.setAttribute('name', 'description');
@@ -55,7 +61,18 @@ const SeoHead = ({ title, description, canonicalPath = '/', ogType = 'website' }
       meta.setAttribute('property', 'og:type');
       return meta;
     });
-  }, [title, description, canonicalPath, ogType]);
+
+    const robotsTag = document.head.querySelector('meta[name="robots"]');
+    if (noindex) {
+      setMetaTag('meta[name="robots"]', 'content', 'noindex, follow', () => {
+        const meta = document.createElement('meta');
+        meta.setAttribute('name', 'robots');
+        return meta;
+      });
+    } else if (robotsTag) {
+      robotsTag.remove();
+    }
+  }, [title, description, canonicalUrl, ogType, noindex]);
 
   return null;
 };

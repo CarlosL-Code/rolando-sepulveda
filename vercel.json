@@ -1,4 +1,6 @@
 {
+  "trailingSlash": false,
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/(.*)",
@@ -9,7 +11,7 @@
           "value": "http"
         }
       ],
-      "destination": "https://contabilidadrs.cl/$1",
+      "destination": "https://www.contabilidadrs.cl/$1",
       "permanent": true
     },
     {
@@ -18,19 +20,19 @@
         {
           "type": "host",
           "key": "",
-          "value": "www.contabilidadrs.cl"
+          "value": "contabilidadrs.cl"
         }
       ],
-      "destination": "https://contabilidadrs.cl/$1",
+      "destination": "https://www.contabilidadrs.cl/$1",
+      "permanent": true
+    },
+    {
+      "source": "/Sobre-nosotros",
+      "destination": "/sobre-nosotros",
       "permanent": true
     },
     {
       "source": "/Contactos",
-      "destination": "/contacto",
-      "permanent": true
-    },
-    {
-      "source": "/Contactos/",
       "destination": "/contacto",
       "permanent": true
     },
@@ -40,42 +42,7 @@
       "permanent": true
     },
     {
-      "source": "/contactos/",
-      "destination": "/contacto",
-      "permanent": true
-    },
-    {
-      "source": "/contacto/",
-      "destination": "/contacto",
-      "permanent": true
-    },
-    {
-      "source": "/Sobre-nosotros",
-      "destination": "/sobre-nosotros",
-      "permanent": true
-    },
-    {
-      "source": "/Sobre-nosotros/",
-      "destination": "/sobre-nosotros",
-      "permanent": true
-    },
-    {
-      "source": "/sobre-nosotros/",
-      "destination": "/sobre-nosotros",
-      "permanent": true
-    },
-    {
       "source": "/Servicios",
-      "destination": "/servicios",
-      "permanent": true
-    },
-    {
-      "source": "/Servicios/",
-      "destination": "/servicios",
-      "permanent": true
-    },
-    {
-      "source": "/servicios/",
       "destination": "/servicios",
       "permanent": true
     },
@@ -85,20 +52,9 @@
       "permanent": true
     },
     {
-      "source": "/Blog/",
-      "destination": "/blog",
+      "source": "/wb_popup:(.*)",
+      "destination": "/",
       "permanent": true
-    },
-    {
-      "source": "/blog/",
-      "destination": "/blog",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }
