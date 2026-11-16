@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import data from '../data.json';
 import { Icon } from '@iconify/react';
 import brandLogo from '../assets/images/rolando-sepulveda-logo.png';
@@ -27,6 +27,8 @@ const Layout = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'auto' });
     }
   }, [location]);
 
@@ -37,21 +39,23 @@ const Layout = () => {
       <nav className={`navbar ${(scrolled || !isHome) ? 'scrolled' : ''}`}>
         <div className="container">
           <NavLink to="/" className="nav-brand" onClick={closeMenu}>
-            <img src={brandLogo} alt="Rolando Sepúlveda" />
+            <img src={brandLogo} alt="Rolando Sepúlveda Auditorías - Contador en Temuco" />
           </NavLink>
 
           {/* Desktop Nav */}
           <div className="nav-menu desktop-nav">
             <div className="nav-links">
               {navegacion.map((item, index) => (
-                <NavLink key={index} to={item.url}>{item.texto}</NavLink>
+                <NavLink key={index} to={item.url} end={item.url === '/'}>
+                  {item.texto}
+                </NavLink>
               ))}
             </div>
-            <a href="#contacto" className="btn btn-glass">CONTÁCTANOS</a>
+            <Link to="/contacto" className="btn btn-glass">CONTÁCTANOS</Link>
           </div>
 
           {/* Hamburger Icon */}
-          <button className="menu-toggle" onClick={() => setMenuOpen(true)}>
+          <button className="menu-toggle" onClick={() => setMenuOpen(true)} aria-label="Abrir menú">
             <Icon icon="mdi:menu" />
           </button>
         </div>
@@ -64,24 +68,30 @@ const Layout = () => {
       <div className={`offcanvas-menu ${menuOpen ? 'active' : ''}`}>
         <div className="offcanvas-header">
           <NavLink to="/" className="nav-brand" onClick={closeMenu}>
-            <img src={brandLogo} alt="Rolando Sepúlveda" className="navbar-logo-mobile" />
+            <img src={brandLogo} alt="Rolando Sepúlveda Auditorías" className="navbar-logo-mobile" />
           </NavLink>
-          <button className="close-menu" onClick={closeMenu}>
+          <button className="close-menu" onClick={closeMenu} aria-label="Cerrar menú">
             <Icon icon="mdi:close" />
           </button>
         </div>
         <div className="offcanvas-links">
           {navegacion.map((item, index) => (
-            <NavLink key={index} to={item.url} onClick={closeMenu}>{item.texto}</NavLink>
+            <NavLink key={index} to={item.url} end={item.url === '/'} onClick={closeMenu}>
+              {item.texto}
+            </NavLink>
           ))}
-          <a href="#contacto" className="btn btn-cyan" style={{marginTop: '20px', width: '100%', textAlign: 'center'}} onClick={closeMenu}>CONTÁCTANOS</a>
+          <Link to="/contacto" className="btn btn-cyan" style={{marginTop: '20px', width: '100%', textAlign: 'center'}} onClick={closeMenu}>
+            CONTÁCTANOS
+          </Link>
         </div>
-        
+
         <div className="offcanvas-footer">
           <div className="social-icons">
-             {redes_sociales.map((social, idx) => (
-                <a key={idx} href={social.url} target="_blank" rel="noreferrer"><Icon icon={`mdi:${social.red.toLowerCase()}`} /></a>
-             ))}
+            {redes_sociales.map((social, idx) => (
+              <a key={idx} href={social.url} target="_blank" rel="noreferrer" aria-label={social.red}>
+                <Icon icon={`mdi:${social.red.toLowerCase()}`} />
+              </a>
+            ))}
           </div>
         </div>
       </div>
@@ -96,6 +106,15 @@ const Layout = () => {
             <div className="footer-col">
               <h4>{empresa.nombre}</h4>
               <p>{empresa.categoria}</p>
+              <ul style={{marginTop: '12px'}}>
+                {navegacion.map((item, idx) => (
+                  <li key={idx}>
+                    <Link to={item.url}>
+                      <Icon icon="mdi:chevron-right" /> {item.texto}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="footer-col">
               <h4>Contacto</h4>
@@ -103,6 +122,7 @@ const Layout = () => {
                 <li><Icon icon="mdi:map-marker" /> {contacto.direccion}</li>
                 <li><Icon icon="mdi:whatsapp" /> {contacto.celular_whatsapp}</li>
                 <li><Icon icon="mdi:email" /> {contacto.email}</li>
+                <li><Icon icon="mdi:clock-outline" /> {contacto.horario}</li>
               </ul>
             </div>
             <div className="footer-col">
@@ -119,7 +139,7 @@ const Layout = () => {
                 {redes_sociales.map((social, idx) => (
                   <li key={idx}><a href={social.url} target="_blank" rel="noreferrer"><Icon icon={`mdi:${social.red.toLowerCase()}`} /> {social.red}</a></li>
                 ))}
-                <li><a href={empresa.sitio_web} target="_blank" rel="noreferrer"><Icon icon="mdi:web" /> Sitio Web</a></li>
+                <li><Link to="/servicios"><Icon icon="mdi:briefcase-outline" /> Nuestros Servicios</Link></li>
               </ul>
             </div>
           </div>
@@ -129,7 +149,7 @@ const Layout = () => {
           </div>
         </div>
       </footer>
-      <a href={whatsappLink('Hola, me gustaría hacer una consulta en general.')} className="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+      <a href={whatsappLink('Hola, me gustaría hacer una consulta en general.')} className="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
         <Icon icon="mdi:whatsapp" />
       </a>
     </>

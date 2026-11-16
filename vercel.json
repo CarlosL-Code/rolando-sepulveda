@@ -1,4 +1,100 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-forwarded-proto",
+          "value": "http"
+        }
+      ],
+      "destination": "https://contabilidadrs.cl/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "key": "",
+          "value": "www.contabilidadrs.cl"
+        }
+      ],
+      "destination": "https://contabilidadrs.cl/$1",
+      "permanent": true
+    },
+    {
+      "source": "/Contactos",
+      "destination": "/contacto",
+      "permanent": true
+    },
+    {
+      "source": "/Contactos/",
+      "destination": "/contacto",
+      "permanent": true
+    },
+    {
+      "source": "/contactos",
+      "destination": "/contacto",
+      "permanent": true
+    },
+    {
+      "source": "/contactos/",
+      "destination": "/contacto",
+      "permanent": true
+    },
+    {
+      "source": "/contacto/",
+      "destination": "/contacto",
+      "permanent": true
+    },
+    {
+      "source": "/Sobre-nosotros",
+      "destination": "/sobre-nosotros",
+      "permanent": true
+    },
+    {
+      "source": "/Sobre-nosotros/",
+      "destination": "/sobre-nosotros",
+      "permanent": true
+    },
+    {
+      "source": "/sobre-nosotros/",
+      "destination": "/sobre-nosotros",
+      "permanent": true
+    },
+    {
+      "source": "/Servicios",
+      "destination": "/servicios",
+      "permanent": true
+    },
+    {
+      "source": "/Servicios/",
+      "destination": "/servicios",
+      "permanent": true
+    },
+    {
+      "source": "/servicios/",
+      "destination": "/servicios",
+      "permanent": true
+    },
+    {
+      "source": "/Blog",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/Blog/",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

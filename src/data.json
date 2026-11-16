@@ -1,123 +1,354 @@
 {
-    "profesional":  {
-                        "nombre_completo":  "Rolando Fidel Sepúlveda Quidel",
-                        "profesion":  "Contador Público y Auditor",
-                        "titulos_y_formacion":  [
-                                                    "Contador Público y Auditor",
-                                                    "Licenciado en Control de Gestión Tributaria",
-                                                    "Diplomado en Normas Internacionales de Información Financiera (NIIF)"
-                                                ],
-                        "colegiatura":  "Colegio de Contadores de Chile",
-                        "experiencia":  "Más de 40 años en asesorías contables y tributarias"
-                    },
-    "empresa":  {
-                    "nombre":  "Rolando Sepúlveda Auditorías",
-                    "pagina_facebook":  "contabilidadrs",
-                    "sitio_web":  "https://www.contabilidadrs.cl",
-                    "categoria":  "Servicio financiero",
-                    "estadisticas":  {
-                                         "clientes_felices":  80,
-                                         "cantidad_servicios":  5,
-                                         "miembros_equipo":  7,
-                                         "seguidores_facebook":  169,
-                                         "opiniones_facebook":  2
-                                     },
-                    "mision":  "Prestar apoyo y servicios personalizados a los clientes de manera oportuna y de gran calidad, brindando seguridad en materia contable, tributaria y laboral, entregando información oportuna y confiable, ajustándose a las disposiciones legales y atendiendo contingencias ante organismos fiscalizadores.",
-                    "vision":  "Ser una empresa con servicios de calidad y compromiso, aplicando tecnología y sistemas para un servicio personalizado, enfocada en pequeñas, medianas y grandes empresas, buscando ser reconocidos a nivel nacional."
-                },
-    "servicios":  [
-                      "Contabilidad para empresas",
-                      "Auditorías contables",
-                      "Recursos humanos y remuneraciones",
-                      "Servicios para corporaciones educacionales, fundaciones y entidades individuales",
-                      "Facturación electrónica",
-                      "Asesoría para conformación de empresas"
-                  ],
-    "tipos_de_sociedades_que_asesora":  [
-                                            {
-                                                "tipo":  "SpA",
-                                                "nombre_completo":  "Sociedad por Acciones",
-                                                "descripcion":  "Persona jurídica creada por una o más personas cuya participación en el capital es representada por acciones."
-                                            },
-                                            {
-                                                "tipo":  "Responsabilidad Limitada",
-                                                "descripcion":  "Empresa constituida por varias personas naturales, o personas naturales y jurídicas."
-                                            },
-                                            {
-                                                "tipo":  "EIRL",
-                                                "nombre_completo":  "Empresa Individual de Responsabilidad Limitada",
-                                                "descripcion":  "Solo personas naturales (no jurídicas) pueden constituir este tipo de empresa."
-                                            }
-                                        ],
-    "contacto":  {
-                     "direccion":  "Arturo Prat 696, of. 326, Temuco, Chile, 4780000",
-                     "celular_whatsapp":  "+56 9 9452 7995",
-                     "email":  "fidelauditoria@gmail.com",
-                     "sitio_web":  "contabilidadrs.cl",
-                     "facebook":  "https://www.facebook.com/contabilidadrs/"
-                 },
-    "navegacion":  [
-                       {
-                           "texto":  "Inicio",
-                           "url":  "/"
-                       },
-                       {
-                           "texto":  "Nuestra Firma",
-                           "url":  "/#nuestra-firma"
-                       },
-                       {
-                           "texto":  "Servicios",
-                           "url":  "/servicios"
-                       },
-                       {
-                           "texto":  "Contactos",
-                           "url":  "/contacto"
-                       }
-                   ],
-    "sobre_nosotros_pagina":  {
-                                  "titulo":  "Sobre nosotros",
-                                  "descripcion":  "Rolando Fidel Sepúlveda Quidel, contador público y auditor, licenciado en control de gestión tributaria, diplomado en normas internacionales de información financiera, con más de 40 años de experiencia en asesorías contables y tributarias, colegiado en el Colegio de Contadores de Chile. Contamos con un equipo de trabajo capacitado para entregar un servicio de calidad y atención personalizada a cada cliente.",
-                                  "mision":  "Somos una empresa que presta apoyo y servicios personalizados a nuestro cliente de manera oportuna y de gran calidad, para así brindarles seguridad en materia contable, tributaria y laboral, velando por entregar información oportuna y confiable para proteger los intereses de nuestros clientes, ajustándonos a las disposiciones y requerimientos legales establecidos, atendiendo las eventuales contingencias de los organismos fiscalizadores.",
-                                  "vision":  "Ser una empresa con servicios de calidad y compromiso para nuestros clientes, así también como para nuestro personal de trabajo, aplicar tecnología y sistemas en nuestro trabajo en pos de un servicio de calidad y personalizado para nuestros clientes, enfocándonos a pequeñas, medianas y grandes empresas que requieran de nuestros servicios, para ser reconocidos a nivel Nacional."
-                              },
-    "enlaces_de_interes":  [
-                               {
-                                   "nombre":  "AFC Chile (Seguro de Cesantía)",
-                                   "url":  "http://www.afc.cl"
-                               },
-                               {
-                                   "nombre":  "SII (Servicio de Impuestos Internos)",
-                                   "url":  "http://www.sii.cl"
-                               }
-                           ],
-    "redes_sociales":  [
-                           {
-                               "red":  "Facebook",
-                               "url":  "https://www.facebook.com/contabilidadrs"
-                           }
-                       ],
-    "noticias_destacadas":  [
-                                {
-                                    "titulo":  "Cumplimiento Tributario y Fiscalización",
-                                    "fecha":  "Actualidad SII",
-                                    "descripcion":  "El Servicio de Impuestos Internos fortalece constantemente la fiscalización. Es vital mantener una contabilidad ordenada y al día para evitar observaciones, multas e intereses.",
-                                    "imagen":  "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200\u0026q=80",
-                                    "url":  "https://www.bcn.cl/leychile/navegar?idNorma=1209351"
-                                },
-                                {
-                                    "titulo":  "Implementación Ley 40 Horas",
-                                    "fecha":  "Actualidad Laboral",
-                                    "descripcion":  "Te guiamos en la adaptación y cumplimiento gradual de la reducción de la jornada laboral a 40 horas semanales, ajustando contratos y anexos según la nueva normativa legal.",
-                                    "imagen":  "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600\u0026q=80",
-                                    "url":  "https://www.mintrab.gob.cl/40-horas/"
-                                },
-                                {
-                                    "titulo":  "Beneficios Tributarios para Pymes",
-                                    "fecha":  "Actualidad Pyme",
-                                    "descripcion":  "Conoce los regímenes tributarios Pro Pyme (Transparente y General) y cómo acogerse a los beneficios fiscales vigentes para potenciar el crecimiento y liquidez de tu empresa.",
-                                    "imagen":  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600\u0026q=80",
-                                    "url":  "https://www.bcn.cl/portal/leyfacil/recurso/regimen-tributario-para-micro,-pequenas-y-medianas-empresas-(mipymes)"
-                                }
-                            ]
+  "profesional": {
+    "nombre_completo": "Rolando Fidel Sepúlveda Quidel",
+    "profesion": "Contador Público y Auditor",
+    "titulos_y_formacion": [
+      "Contador Público y Auditor",
+      "Licenciado en Control de Gestión Tributaria",
+      "Diplomado en Normas Internacionales de Información Financiera (NIIF)"
+    ],
+    "colegiatura": "Colegio de Contadores de Chile",
+    "experiencia": "Más de 40 años en asesorías contables y tributarias"
+  },
+  "empresa": {
+    "nombre": "Rolando Sepúlveda Auditorías",
+    "pagina_facebook": "contabilidadrs",
+    "sitio_web": "https://contabilidadrs.cl",
+    "categoria": "Servicio financiero y contable en Temuco",
+    "estadisticas": {
+      "clientes_felices": 80,
+      "cantidad_servicios": 5,
+      "miembros_equipo": 7,
+      "seguidores_facebook": 169,
+      "opiniones_facebook": 2
+    },
+    "mision": "Prestar apoyo y servicios personalizados a los clientes de manera oportuna y de gran calidad, brindando seguridad en materia contable, tributaria y laboral, entregando información oportuna y confiable, ajustándose a las disposiciones legales y atendiendo contingencias ante organismos fiscalizadores.",
+    "vision": "Ser una empresa con servicios de calidad y compromiso, aplicando tecnología y sistemas para un servicio personalizado, enfocada en pequeñas, medianas y grandes empresas, buscando ser reconocidos a nivel nacional."
+  },
+  "servicios": [
+    "Contabilidad mensual",
+    "Renta F22",
+    "IVA F29",
+    "Remuneraciones",
+    "Constitución de empresas"
+  ],
+  "servicios_detalle": [
+    {
+      "slug": "contabilidad-mensual",
+      "titulo": "Contabilidad Mensual para Empresas y Pymes en Temuco",
+      "titulo_corto": "Contabilidad Mensual",
+      "icono": "mdi:calculator-variant-outline",
+      "imagen": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=900&q=80",
+      "meta_title": "Contabilidad Mensual en Temuco | Empresas y Pymes | Rolando Sepúlveda",
+      "meta_description": "Servicio de contabilidad mensual en Temuco para Pymes y empresas. Balances, registros contables al día y asesoría ante el SII. ¡Solicita tu cotización hoy!",
+      "resumen": "Llevamos los registros contables mensuales de tu empresa o Pyme al día, con balances claros y cumplimiento normativo permanente.",
+      "descripcion_larga": "Nuestro servicio de contabilidad mensual en Temuco está diseñado para que dueños de Pymes, profesionales y empresas de la Región de La Araucanía cuenten con información financiera real, ordenada y lista para la toma de decisiones y fiscalizaciones del SII.",
+      "ideal_para": "SpA, Sociedades Limitadas, EIRL, corporaciones educacionales, fundaciones y emprendedores en crecimiento.",
+      "incluye": [
+        "Registro mensual de compras, ventas, ingresos y egresos",
+        "Conciliación bancaria y control de flujo de caja",
+        "Emisión de balances de comprobación, saldos y estados de resultados",
+        "Revisión tributaria preventiva bajo normativa SII y NIIF",
+        "Acompañamiento directo de Contador Público y Auditor colegiado"
+      ],
+      "beneficios": [
+        "Evita multas e intereses por desorden documental o atrasos",
+        "Conoce la rentabilidad real de tu negocio mes a mes",
+        "Respaldo técnico ante requerimientos del Servicio de Impuestos Internos"
+      ]
+    },
+    {
+      "slug": "renta-f22",
+      "titulo": "Declaración de Renta F22 para Empresas y Personas en Temuco",
+      "titulo_corto": "Renta F22",
+      "icono": "mdi:file-document-check-outline",
+      "imagen": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80",
+      "meta_title": "Declaración de Renta F22 en Temuco | Operación Renta SII | Rolando Sepúlveda",
+      "meta_description": "Preparamos tu Declaración de Renta F22 y Declaraciones Juradas en Temuco. Optimiza tu carga tributaria bajo el régimen Pro Pyme. ¡Cotiza con expertos!",
+      "resumen": "Preparación integral de Operación Renta F22, declaraciones juradas y determinación de impuestos anuales ante el SII.",
+      "descripcion_larga": "En cada Operación Renta analizamos la situación tributaria de tu empresa y socios para presentar el Formulario 22 sin observaciones. Trabajamos con regímenes Pro Pyme General (14 D3), Pro Pyme Transparente (14 D8) y Régimen General (14 A).",
+      "ideal_para": "Empresas, Pymes, socios de sociedades, profesionales independientes y contribuyentes con rentas de capital.",
+      "incluye": [
+        "Confección y envío de Declaraciones Juradas (DJ) exigidas por el SII",
+        "Determinación de Renta Líquida Imponible (RLI) y Capital Propio Tributario",
+        "Confección y presentación de Formulario 22 de empresas y socios",
+        "Revisión de créditos tributarios, retiros y gastos rechazados",
+        "Subsanación de observaciones de rentas anteriores ante el SII"
+      ],
+      "beneficios": [
+        "Maximiza tus beneficios tributarios de manera legal y segura",
+        "Reduce al mínimo el riesgo de observaciones en Operación Renta",
+        "Atención personalizada en Temuco o de forma remota en todo Chile"
+      ]
+    },
+    {
+      "slug": "iva-f29",
+      "titulo": "Declaración Mensual de IVA F29 en Temuco",
+      "titulo_corto": "IVA F29",
+      "icono": "mdi:receipt-text-check-outline",
+      "imagen": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&q=80",
+      "meta_title": "Declaración de IVA F29 en Temuco | Gestión Mensual SII | Rolando Sepúlveda",
+      "meta_description": "Gestión y declaración mensual de IVA Formulario 29 en Temuco. Cuadratura del Registro de Compras y Ventas y cálculo de PPM. ¡Agenda tu asesoría ahora!",
+      "resumen": "Revisión del Registro de Compras y Ventas, cálculo exacto de IVA, PPM y retenciones para presentar tu F29 a tiempo cada mes.",
+      "descripcion_larga": "Un error en el Formulario 29 genera multas, reajustes o pérdida de crédito fiscal. Revisamos cada factura emitida y recibida en el Registro de Compras y Ventas (RCV) del SII antes de declarar, asegurando exactitud y puntualidad.",
+      "ideal_para": "Comercios, empresas de servicios, pymes con facturación electrónica y contribuyentes afectos a IVA.",
+      "incluye": [
+        "Cuadratura mensual del Registro de Compras y Ventas (RCV) en el SII",
+        "Verificación de facturas electrónicas, notas de crédito y débito",
+        "Cálculo de Pagos Provisionales Mensuales (PPM) y retenciones de boletas",
+        "Control de remanente de crédito fiscal IVA",
+        "Presentación oportuna del Formulario 29 y envío de comprobante de pago"
+      ],
+      "beneficios": [
+        "Cero atrasos ni recargos por declaraciones fuera de plazo",
+        "Aprovechamiento correcto del crédito fiscal de tus compras",
+        "Tranquilidad tributaria todos los meses del año"
+      ]
+    },
+    {
+      "slug": "remuneraciones",
+      "titulo": "Remuneraciones y Gestión Laboral en Temuco",
+      "titulo_corto": "Remuneraciones",
+      "icono": "mdi:account-group-outline",
+      "imagen": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80",
+      "meta_title": "Servicio de Remuneraciones en Temuco | Contratos y Previred | Rolando Sepúlveda",
+      "meta_description": "Externaliza tus remuneraciones en Temuco. Liquidaciones de sueldo, contratos, Previred, finiquitos y cumplimiento de Ley 40 Horas. ¡Cotiza gratis!",
+      "resumen": "Cálculo mensual de liquidaciones de sueldo, cotizaciones en Previred, contratos de trabajo, anexos y finiquitos.",
+      "descripcion_larga": "Administramos el área laboral de tu empresa cumpliendo estrictamente el Código del Trabajo, la implementación gradual de la Ley de 40 Horas y los reportes ante la Dirección del Trabajo y Previred.",
+      "ideal_para": "Pymes y empresas con trabajadores contratados en Temuco y la Región de La Araucanía.",
+      "incluye": [
+        "Emisión mensual de liquidaciones de sueldo y libro de remuneraciones electrónico",
+        "Cálculo y carga de planillas previsionales en Previred (AFP, Salud, AFC, Mutual)",
+        "Redacción de contratos de trabajo, anexos y registro en Dirección del Trabajo",
+        "Cálculo de vacaciones, licencias médicas, horas extras y gratificaciones",
+        "Confección de cartas de aviso y finiquitos laborales"
+      ],
+      "beneficios": [
+        "Cumplimiento estricto ante la Inspección del Trabajo",
+        "Ahorro de tiempo administrativo para enfocarte en tu negocio",
+        "Cálculos exactos y confidencialidad total de tu nómina"
+      ]
+    },
+    {
+      "slug": "constitucion-de-empresas",
+      "titulo": "Constitución de Empresas e Inicio de Actividades en Temuco",
+      "titulo_corto": "Constitución de Empresas",
+      "icono": "mdi:domain-plus",
+      "imagen": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80",
+      "meta_title": "Constitución de Empresas en Temuco | SpA, Ltda y EIRL | Rolando Sepúlveda",
+      "meta_description": "Te ayudamos a crear tu empresa en Temuco: SpA, Ltda. o EIRL, obtención de RUT, inicio de actividades en el SII y facturación electrónica. ¡Cotiza aquí!",
+      "resumen": "Asesoría completa para formalizar tu negocio: elección de sociedad (SpA, Ltda. o EIRL), escritura, RUT e inicio de actividades en el SII.",
+      "descripcion_larga": "Empezar bien desde el día uno evita costosos cambios tributarios futuros. Te orientamos para elegir la figura societaria y el régimen tributario más conveniente, gestionando la constitución en Tu Empresa en un Día y el inicio de actividades ante el SII.",
+      "ideal_para": "Emprendedores, socios comerciales y profesionales que desean formalizar su actividad en Temuco.",
+      "incluye": [
+        "Asesoría para elegir entre SpA, Sociedad de Responsabilidad Limitada o EIRL",
+        "Redacción de estatutos y constitución en Registro de Empresas y Sociedades",
+        "Obtención de RUT e Inicio de Actividades en el Servicio de Impuestos Internos",
+        "Acreditación de domicilio tributario y verificación de actividad",
+        "Habilitación de sistema de facturación electrónica y boletas del SII"
+      ],
+      "beneficios": [
+        "Tu empresa queda operativa y lista para facturar en pocos días",
+        "Elección óptima del régimen tributario desde el inicio",
+        "Acompañamiento contable continuo tras la formalización"
+      ]
+    }
+  ],
+  "tipos_de_sociedades_que_asesora": [
+    {
+      "tipo": "SpA",
+      "nombre_completo": "Sociedad por Acciones",
+      "descripcion": "Persona jurídica creada por una o más personas cuya participación en el capital es representada por acciones."
+    },
+    {
+      "tipo": "Responsabilidad Limitada",
+      "descripcion": "Empresa constituida por varias personas naturales, o personas naturales y jurídicas."
+    },
+    {
+      "tipo": "EIRL",
+      "nombre_completo": "Empresa Individual de Responsabilidad Limitada",
+      "descripcion": "Solo personas naturales (no jurídicas) pueden constituir este tipo de empresa."
+    }
+  ],
+  "contacto": {
+    "direccion": "Arturo Prat 696, of. 326, Temuco, Chile, 4780000",
+    "celular_whatsapp": "+56 9 9452 7995",
+    "email": "fidelauditoria@gmail.com",
+    "horario": "Lunes a Viernes, 09:00 a 18:00 hrs",
+    "sitio_web": "https://contabilidadrs.cl",
+    "facebook": "https://www.facebook.com/contabilidadrs/"
+  },
+  "navegacion": [
+    {
+      "texto": "Inicio",
+      "url": "/"
+    },
+    {
+      "texto": "Sobre Nosotros",
+      "url": "/sobre-nosotros"
+    },
+    {
+      "texto": "Servicios",
+      "url": "/servicios"
+    },
+    {
+      "texto": "Blog",
+      "url": "/blog"
+    },
+    {
+      "texto": "Contacto",
+      "url": "/contacto"
+    }
+  ],
+  "sobre_nosotros_pagina": {
+    "titulo": "Sobre nosotros",
+    "descripcion": "Rolando Fidel Sepúlveda Quidel, contador público y auditor, licenciado en control de gestión tributaria, diplomado en normas internacionales de información financiera, con más de 40 años de experiencia en asesorías contables y tributarias, colegiado en el Colegio de Contadores de Chile. Contamos con un equipo de trabajo capacitado para entregar un servicio de calidad y atención personalizada a cada cliente.",
+    "mision": "Somos una empresa que presta apoyo y servicios personalizados a nuestro cliente de manera oportuna y de gran calidad, para así brindarles seguridad en materia contable, tributaria y laboral, velando por entregar información oportuna y confiable para proteger los intereses de nuestros clientes, ajustándonos a las disposiciones y requerimientos legales establecidos, atendiendo las eventuales contingencias de los organismos fiscalizadores.",
+    "vision": "Ser una empresa con servicios de calidad y compromiso para nuestros clientes, así también como para nuestro personal de trabajo, aplicar tecnología y sistemas en nuestro trabajo en pos de un servicio de calidad y personalizado para nuestros clientes, enfocándonos a pequeñas, medianas y grandes empresas que requieran de nuestros servicios, para ser reconocidos a nivel Nacional."
+  },
+  "enlaces_de_interes": [
+    {
+      "nombre": "AFC Chile (Seguro de Cesantía)",
+      "url": "https://www.afc.cl"
+    },
+    {
+      "nombre": "SII (Servicio de Impuestos Internos)",
+      "url": "https://www.sii.cl"
+    }
+  ],
+  "redes_sociales": [
+    {
+      "red": "Facebook",
+      "url": "https://www.facebook.com/contabilidadrs"
+    }
+  ],
+  "blog_articulos": [
+    {
+      "slug": "como-elegir-contador-en-temuco",
+      "titulo": "Cómo elegir un contador en Temuco para tu Pyme o empresa",
+      "meta_title": "Cómo elegir un contador en Temuco para tu Pyme | Rolando Sepúlveda",
+      "meta_description": "Guía clave para elegir un contador en Temuco: experiencia SII, colegiatura, atención personalizada y servicios para Pymes. ¡Asesórate con expertos!",
+      "fecha": "16 de noviembre de 2026",
+      "categoria": "Guía Local Temuco",
+      "tiempo_lectura": "4 min",
+      "imagen": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80",
+      "resumen": "Elegir el estudio contable adecuado en Temuco marca la diferencia entre pagar multas al SII o hacer crecer tu empresa con tranquilidad.",
+      "keywords": ["contador en temuco", "contadores en temuco", "empresa de contabilidad"],
+      "contenido": [
+        {
+          "subtitulo": "1. Verifica título profesional, colegiatura y experiencia tributaria",
+          "texto": "Al buscar un contador en Temuco, asegúrate de que cuente con título de Contador Público y Auditor y respaldo profesional vigente. La normativa tributaria chilena cambia con frecuencia, por lo que la experiencia práctica ante el SII y organismos fiscalizadores es indispensable."
+        },
+        {
+          "subtitulo": "2. Atención personalizada y cercanía en La Araucanía",
+          "texto": "Muchas Pymes sufren por falta de respuesta cuando tienen una fiscalización o una duda urgente de facturación. Un estudio contable en Temuco con oficina presencial en el centro y canales directos por WhatsApp te da respaldo real cuando más lo necesitas."
+        },
+        {
+          "subtitulo": "3. Cobertura integral: contabilidad, IVA F29, Renta F22 y remuneraciones",
+          "texto": "Centralizar la contabilidad mensual, las declaraciones de IVA F29, la Operación Renta F22 y las liquidaciones de sueldo en un mismo equipo evita descoordinaciones entre lo laboral y lo tributario."
+        }
+      ]
+    },
+    {
+      "slug": "declaracion-renta-f22-pymes-temuco",
+      "titulo": "Declaración de Renta F22: qué deben revisar las Pymes de Temuco antes de abril",
+      "meta_title": "Declaración de Renta F22 para Pymes en Temuco | Guía SII | Rolando Sepúlveda",
+      "meta_description": "Prepárate para la Operación Renta F22 en Temuco. Revisa Declaraciones Juradas, régimen Pro Pyme y evita observaciones del SII. ¡Cotiza tu revisión!",
+      "fecha": "10 de noviembre de 2026",
+      "categoria": "Operación Renta",
+      "tiempo_lectura": "5 min",
+      "imagen": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80",
+      "resumen": "La Operación Renta F22 comienza mucho antes de abril. Conoce los puntos críticos que revisamos para Pymes en Temuco y La Araucanía.",
+      "keywords": ["renta f22", "contador para empresas temuco", "pro pyme"],
+      "contenido": [
+        {
+          "subtitulo": "Cuadratura de ingresos, gastos y PPM",
+          "texto": "Antes de enviar el Formulario 22, es fundamental conciliar los registros de compras y ventas del año comercial con la cartola bancaria y los Pagos Provisionales Mensuales (PPM) declarados en los F29."
+        },
+        {
+          "subtitulo": "Declaraciones Juradas sin inconsistencias",
+          "texto": "Las Declaraciones Juradas de sueldos, honorarios y retiros deben presentarse dentro de los plazos de marzo. Un error en una DJ bloquea automáticamente la devolución o genera observación en el F22 de la empresa y sus socios."
+        },
+        {
+          "subtitulo": "Elección y mantención del régimen Pro Pyme",
+          "texto": "Evaluar si conviene tributar bajo el artículo 14 D N°3 (Pro Pyme General) o 14 D N°8 (Pro Pyme Transparente) permite optimizar la carga tributaria anual de forma 100% legal."
+        }
+      ]
+    },
+    {
+      "slug": "iva-f29-mensual-evitar-multas-sii",
+      "titulo": "IVA F29 mensual: 4 errores comunes que generan multas en el SII",
+      "meta_title": "IVA F29 Mensual: Cómo evitar multas del SII | Contador en Temuco",
+      "meta_description": "Conoce los errores más frecuentes al declarar el IVA F29 en Chile y cómo evitar multas del SII con asesoría contable en Temuco. ¡Contáctanos!",
+      "fecha": "02 de noviembre de 2026",
+      "categoria": "IVA y Tributación",
+      "tiempo_lectura": "4 min",
+      "imagen": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&q=80",
+      "resumen": "Confiar ciegamente en la propuesta automática del SII sin revisar tus facturas puede costarte dinero. Revisa estos 4 errores frecuentes.",
+      "keywords": ["iva f29", "contador temuco", "multas sii"],
+      "contenido": [
+        {
+          "subtitulo": "1. Aceptar la propuesta del F29 sin revisar el Registro de Compras",
+          "texto": "El SII prellena el Formulario 29, pero no clasifica automáticamente si una factura de compra corresponde al giro, si es de activo fijo o si requiere acuse de recibo dentro de plazo."
+        },
+        {
+          "subtitulo": "2. Olvidar el cálculo correcto del PPM",
+          "texto": "Ajustar la tasa de Pago Provisional Mensual según tus ingresos netos evita pagar de menos o inmovilizar capital innecesariamente durante el año."
+        },
+        {
+          "subtitulo": "3. Declarar fuera de plazo sin pago oportuno",
+          "texto": "Incluso cuando el F29 resulta sin movimiento o con remanente de crédito fiscal, no enviarlo antes del vencimiento mensual genera multas automáticas."
+        }
+      ]
+    },
+    {
+      "slug": "spa-ltda-eirl-constituir-empresa-temuco",
+      "titulo": "SpA, Ltda. o EIRL: qué tipo de empresa conviene constituir en Temuco",
+      "meta_title": "SpA, Ltda o EIRL en Temuco: Qué empresa constituir | Rolando Sepúlveda",
+      "meta_description": "¿Vas a emprender en Temuco? Compara SpA, Sociedad Limitada y EIRL antes de iniciar actividades en el SII. ¡Solicita asesoría para crear tu empresa!",
+      "fecha": "25 de octubre de 2026",
+      "categoria": "Emprendimiento",
+      "tiempo_lectura": "5 min",
+      "imagen": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80",
+      "resumen": "Antes de crear tu empresa en Tu Empresa en un Día, revisa las diferencias prácticas y tributarias entre SpA, Limitada y EIRL.",
+      "keywords": ["constitución de empresas temuco", "spa eirl ltda", "inicio de actividades sii"],
+      "contenido": [
+        {
+          "subtitulo": "EIRL: pensada para emprendedores individuales",
+          "texto": "La Empresa Individual de Responsabilidad Limitada separa tu patrimonio personal del negocio, pero solo admite un dueño persona natural y un giro específico."
+        },
+        {
+          "subtitulo": "Sociedad de Responsabilidad Limitada (Ltda.)",
+          "texto": "Es ideal para negocios familiares o sociedades entre 2 o más socios de confianza que buscan estabilidad y reglas claras para el ingreso o salida de socios."
+        },
+        {
+          "subtitulo": "SpA (Sociedad por Acciones): máxima flexibilidad",
+          "texto": "Puede iniciar con un solo accionista y sumar nuevos socios o inversionistas fácilmente mediante venta de acciones, siendo la opción preferida para Pymes en crecimiento en Temuco."
+        }
+      ]
+    }
+  ],
+  "noticias_destacadas": [
+    {
+      "titulo": "Cumplimiento Tributario y Fiscalización",
+      "fecha": "Actualidad SII",
+      "descripcion": "El Servicio de Impuestos Internos fortalece constantemente la fiscalización. Es vital mantener una contabilidad ordenada y al día para evitar observaciones, multas e intereses.",
+      "imagen": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80",
+      "url": "/blog/iva-f29-mensual-evitar-multas-sii"
+    },
+    {
+      "titulo": "Cómo elegir un contador en Temuco",
+      "fecha": "Guía Local",
+      "descripcion": "Conoce qué debes evaluar antes de contratar un estudio contable para tu Pyme o empresa en La Araucanía.",
+      "imagen": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80",
+      "url": "/blog/como-elegir-contador-en-temuco"
+    },
+    {
+      "titulo": "Declaración de Renta F22 para Pymes",
+      "fecha": "Operación Renta",
+      "descripcion": "Revisa los puntos críticos de Declaraciones Juradas y regímenes Pro Pyme antes de presentar tu F22.",
+      "imagen": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
+      "url": "/blog/declaracion-renta-f22-pymes-temuco"
+    }
+  ]
 }
-

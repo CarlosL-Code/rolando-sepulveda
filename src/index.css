@@ -1710,3 +1710,168 @@ textarea.form-control {
 
 
 
+
+/* =========================================
+   SEO PAGES: ABOUT, SERVICE DETAIL & BLOG
+   ========================================= */
+.breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-secondary);
+}
+
+.info-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.info-card h2,
+.info-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.societies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.society-full {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+}
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.detail-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.detail-checklist li svg {
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sidebar-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links-list li {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sidebar-links-list li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-links-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.sidebar-links-list a:hover {
+  color: var(--color-secondary);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+}
+
+.blog-category {
+  background: rgba(76, 195, 232, 0.14);
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.blog-lead {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  border-left: 4px solid var(--color-secondary);
+  padding-left: 16px;
+}
+
+.blog-article-body h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.blog-cta-box {
+  margin-top: 36px;
+  padding: 28px;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.blog-cta-box h3 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .mission-vision-grid,
+  .societies-grid,
+  .service-detail-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
